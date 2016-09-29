@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Secure/Helpdesk/Default.aspx" title="Helpdesk" roles="SystemAdministrator, Helpdesk, SuperHelpdesk, Supervisor">
+    <siteMapNode url="~/Secure/Helpdesk/SearchReporters.aspx" title="Αναφέροντες" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/SearchIncidentReports.aspx" title="Τηλεφωνικές Αναφορές" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/OnlineReports.aspx" title="Online Αναφορές" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/SearchProviders.aspx" title="Φορείς Υποδοχής" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/SearchOffices.aspx" title="Γραφεία Πρακτικής" roles="Helpdesk, SuperHelpdesk" />
+    <!--<siteMapNode url="~/Secure/Helpdesk/SearchOfficeStudents.aspx" title="Φοιτητές ΓΠΑ" roles="Helpdesk, SuperHelpdesk" />-->
+    <siteMapNode url="~/Secure/Helpdesk/SearchStudents.aspx" title="Φοιτητές" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/SearchAndRegisterStudents.aspx" title="Αναζήτηση Φοιτητών" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/SearchAcademics.aspx" title="Τμήματα" roles="SystemAdministrator, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/SearchPositionGroups.aspx" title="Ομαδοποιημένες ΘΠΑ" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/SearchPositions.aspx" title="Θέσεις Πρακτικής" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/WithdrawPositions.aspx" title="Απόσυρση Ομαδοποιημένων ΘΠΑ" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/BlockedPositions.aspx" title="Μπλοκαρισμένες Θέσεις" roles="Helpdesk, SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/TransferPositions.aspx" title="Μεταφορά Θέσεων" roles="SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/HelpdeskUsers.aspx" title="Χρήστες Helpdesk" roles="SuperHelpdesk" />
+    <siteMapNode url="~/Secure/Helpdesk/SearchSupervisorReports.aspx" title="Αναζήτηση Συμβάντων" roles="MasterOffice" />
+  </siteMapNode>
+</siteMap>

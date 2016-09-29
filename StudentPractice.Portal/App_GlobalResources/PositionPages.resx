@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PositionAcademics_AddAcademics" xml:space="preserve">
+    <value>Προσθήκη Σχολών/Τμημάτων</value>
+  </data>
+  <data name="PositionAcademics_ConfirmVisibleToAll" xml:space="preserve">
+    <value>Επιλέξατε ότι θέλετε η θέση πρακτικής άσκησης να είναι προσβάσιμη σε ΟΛΑ τα Τμήματα της επικράτειας.\n\nΕπισημαίνεται ότι περιορίζοντας τη θέση μόνο σε Τμήματα σχετικά με το γνωστικό αντικείμενο της, αυξάνετε τις πιθανότητες επιλογής της.\n\nΕίστε σίγουρος/η ότι θέλετε η θέση να είναι προσβάσιμη από όλες τις σχολές</value>
+  </data>
+  <data name="PositionAcademics_Error" xml:space="preserve">
+    <value>Πρέπει να δηλώσετε τα Τμήματα για τα οποία θέλετε να είναι διαθέσιμη η θέση πρακτικής άσκησης για να μπορέσετε να συνεχίσετε.</value>
+  </data>
+  <data name="PositionAcademics_OfficeRules" xml:space="preserve">
+    <value>Κανόνες Πρακτικής Άσκησης Τμημάτων</value>
+  </data>
+  <data name="PositionAcademics_RestrictAcademics" xml:space="preserve">
+    <value>Περιορισμός σε συγκεκριμένες Σχολές/Τμήματα</value>
+  </data>
+  <data name="PositionAcademics_SelectAcademics" xml:space="preserve">
+    <value>Επιλέξτε τα Τμήματα για τα οποία θέλετε να είναι προσβάσιμη η θέση</value>
+  </data>
+  <data name="PositionAcademics_VisibleToAll" xml:space="preserve">
+    <value>Προσβάσιμη από όλες τις Σχολές</value>
+  </data>
+  <data name="PositionAcademics_VisibleToAllAcademics1" xml:space="preserve">
+    <value>Έχετε επιλέξει ότι η θέση Πρακτικής Άσκησης είναι προσβάσιμη από φοιτητές όλων των Σχολών/Τμημάτων.</value>
+  </data>
+  <data name="PositionAcademics_VisibleToAllAcademics2" xml:space="preserve">
+    <value>Αν θέλετε να περιορίσετε τη θέση σε συγκεκριμένες Σχολές/Τμήματα πατήστε το παρακάτω κουμπί.</value>
+  </data>
+  <data name="PositionAcademics_VisibleToAllAcademics3" xml:space="preserve">
+    <value>Επισημαίνεται ότι περιορίζοντας τη θέση μόνο σε Τμήματα σχετικά με το γνωστικό αντικείμενο της, αυξάνετε τις πιθανότητες επιλογής της.</value>
+  </data>
+  <data name="PositionDetails_CreationNotAllowed" xml:space="preserve">
+    <value>Η δημιουργία νέας θέσης δεν είναι διαθέσιμη.</value>
+  </data>
+  <data name="PositionDetails_Note" xml:space="preserve">
+    <value>Μπορείτε να επεξεργαστείτε τη νέα θέση που δημιουργήσατε και, αν υπάρχουν παραπάνω από μία διαθέσιμες θέσεις, να τροποποιήσετε κατάλληλα το πεδίο 'Διαθέσιμες Θέσεις'</value>
+  </data>
+  <data name="PositionPhysicalObject_Add" xml:space="preserve">
+    <value>Προσθήκη Αντικειμένου Θέσης</value>
+  </data>
+  <data name="PositionPhysicalObject_Error" xml:space="preserve">
+    <value>Πρέπει να προσθέσετε τουλάχιστον ένα γνωστικό αντικείμενο για τη θέση πρακτικής άσκησης για να μπορέσετε να συνεχίσετε.</value>
+  </data>
+  <data name="PositionPhysicalObject_Info" xml:space="preserve">
+    <value>Επιλέξτε ένα ή περισσότερα αντικείμενα, τα οποία θεωρείτε ότι ταιριάζουν περισσότερο με τη θέση.</value>
+  </data>
+  <data name="PositionPreview_FlashMessage" xml:space="preserve">
+    <value>Η θέση έχει αποθηκευτεί. Ωστόσο δε θα είναι διαθέσιμη στην Αναζήτηση μέχρι να επιλέξετε «Δημοσίευση»</value>
+  </data>
+  <data name="PositionPreview_SavePosition" xml:space="preserve">
+    <value>Αποθήκευση Θέσης</value>
+  </data>
+</root>

@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PopUpPublic.master.cs" Inherits="StudentPractice.Portal.PopUpPublic" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="el">
+<head runat="server">
+    <meta name="description" content="Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ" />
+    <meta name="keywords" content="Φοιτητής, Πρακτική Άσκηση, Υπουργείο Παιδείας" />
+    <meta name="language" content="Modern Greek (1453-)" />
+    <meta http-equiv="Content-Language" content="el" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PopUp</title>
+    <asp:PlaceHolder runat="server">
+        <%= StudentPractice.Portal.Html.Css("/_css/style-common.css") %>
+        <%= StudentPractice.Portal.Html.Css("/_css/style-popup-public.css") %>
+        <%= StudentPractice.Portal.Html.Css("/_css/jquery-ui.css", StudentPractice.Portal.enVersioning.Disabled) %>
+        <meta name="version" content="<%= StudentPractice.Portal.Global.VersionNumber %>" />
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="sm">
+            <CompositeScript>
+                <Scripts>
+                    <asp:ScriptReference Path="~/_js/jquery-1.9.1.min.js" />
+                    <asp:ScriptReference Path="~/_js/Resources.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-migrate-1.1.1.min.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-ui-1.10.1.custom.min.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-ui-datepickerRegional.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-impromptu.1.8.js" />
+                    <asp:ScriptReference Path="~/_js/jquery.printElement.js" />
+                    <asp:ScriptReference Path="~/_js/Imis.Lib.js" />
+                    <asp:ScriptReference Path="~/_js/popUp.js" />
+                    <asp:ScriptReference Path="~/_js/SchoolSearch.js" />
+                    <asp:ScriptReference Path="~/_js/DxExtensions.js" />
+                    <asp:ScriptReference Path="~/_js/StudentPractice.js" />
+                </Scripts>
+            </CompositeScript>
+        </asp:ScriptManager>
+        <div>
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

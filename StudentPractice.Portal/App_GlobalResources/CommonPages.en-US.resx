@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied_Header" xml:space="preserve">
+    <value>Access Denied</value>
+  </data>
+  <data name="AccessDenied_Message" xml:space="preserve">
+    <value>Access is denied in this page</value>
+  </data>
+  <data name="ChangePassword_Btn" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePassword_Conf" xml:space="preserve">
+    <value>Password Confirmation</value>
+  </data>
+  <data name="ChangePassword_ConfRequired" xml:space="preserve">
+    <value>Field 'Password Confirmation' is required</value>
+  </data>
+  <data name="ChangePassword_Header" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePassword_Here" xml:space="preserve">
+    <value>here</value>
+  </data>
+  <data name="ChangePassword_Match" xml:space="preserve">
+    <value>Password and Confirmation Password do no match</value>
+  </data>
+  <data name="ChangePassword_Message1" xml:space="preserve">
+    <value>Because it is the first time you log in to after receiving a password reminder, please, change the password that came with the e-mail.</value>
+  </data>
+  <data name="ChangePassword_Message2" xml:space="preserve">
+    <value>For your own safety, we recommend that you choose a combination of letters , numbers or symbols to create a unique password that is not associated with your personal data . Or, choose a random word or phrase and enter words and numbers in the beginning, middle and end , to be even more difficult to guess (for example 'm1awra1ap3tal0uda'). The use of simple words or phrases such as 'password' or 'letmein', the key sequences like 'qwerty' or 'qazwsx' or sequences of consecutive characters , such as 'abcd1234' make it easier to decrypt the password. Also , when logging in from a public computer , be sure to always press the button 'Log ' top right of the screen you out .</value>
+  </data>
+  <data name="ChangePassword_New" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="ChangePassword_NewRegex" xml:space="preserve">
+    <value>Password must be at least 7 characters long</value>
+  </data>
+  <data name="ChangePassword_NewRequired" xml:space="preserve">
+    <value>Field 'New Password' is required</value>
+  </data>
+  <data name="ChangePassword_Old" xml:space="preserve">
+    <value>Old Password</value>
+  </data>
+  <data name="ChangePassword_OldRequired" xml:space="preserve">
+    <value>Field 'Old Password' is required</value>
+  </data>
+  <data name="ChangePassword_Student" xml:space="preserve">
+    <value>To change the password should contact the Network Operations Center of your institution.</value>
+  </data>
+  <data name="ChangePassword_Success" xml:space="preserve">
+    <value>Changing the password was successfully performed. To continue using the application press</value>
+  </data>
+  <data name="ChangePassword_Validation" xml:space="preserve">
+    <value>There is an error or lack of completion of one of the form fields. Please make the necessary corrections.</value>
+  </data>
+  <data name="ChangePassword_WrongOld" xml:space="preserve">
+    <value>The old password is not correct. Make sure you correctly enter the password that came with your e-mail password reminders.</value>
+  </data>
+  <data name="ForgotPassword_Btn" xml:space="preserve">
+    <value>Send Password</value>
+  </data>
+  <data name="ForgotPassword_EmailNotFound" xml:space="preserve">
+    <value>The E-mail you entered did not match any user's. &lt;br/&gt; &lt;br/&gt; Make sure you type it correctly, otherwise contact the Helpdesk at&lt;b&gt; +302152157860 &lt;/ b&gt; to see what happened. &lt;br/&gt; &lt;br/&gt; We remind you that if you are Undergraduate Student should contact the Network Operations Center of the Institution.</value>
+  </data>
+  <data name="ForgotPassword_EmailRegex" xml:space="preserve">
+    <value>E-mail is not valid</value>
+  </data>
+  <data name="ForgotPassword_EmailRequired" xml:space="preserve">
+    <value>Field 'E-mail' is required</value>
+  </data>
+  <data name="ForgotPassword_Error" xml:space="preserve">
+    <value>There was an error</value>
+  </data>
+  <data name="ForgotPassword_Header" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="ForgotPassword_Message1" xml:space="preserve">
+    <value>If you have forgotten your password, enter your e-mail that you gave when creating the account to be send a new password. This code can be changed after login.</value>
+  </data>
+  <data name="ForgotPassword_Message2" xml:space="preserve">
+    <value>Important Note: </value>
+  </data>
+  <data name="ForgotPassword_Message3" xml:space="preserve">
+    <value>Students who have forgotten the password should be addressed at Center Networks of institutions, since the connection to the application made ​​by the Foundation in which attending</value>
+  </data>
+  <data name="ForgotPassword_MoreEmail" xml:space="preserve">
+    <value>We found more than one user with the e-mail you entered. Please contact the Helpdesk to see what happened.</value>
+  </data>
+  <data name="ForgotPassword_Success" xml:space="preserve">
+    <value>The new password was successfully sent to e-mail you provided.</value>
+  </data>
+  <data name="ForgotPassword_User" xml:space="preserve">
+    <value>User Details</value>
+  </data>
+  <data name="ForgotPassword_Validation" xml:space="preserve">
+    <value>There is an error or lack of completion of one of the form fields. Please make the necessary corrections.</value>
+  </data>
+  <data name="GeneralError_Header" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="GeneralError_Message1" xml:space="preserve">
+    <value>An error occured in the application. We apologize for the problem.</value>
+  </data>
+  <data name="GeneralError_Message2" xml:space="preserve">
+    <value>You can get redirected in the </value>
+  </data>
+  <data name="GeneralError_Message3" xml:space="preserve">
+    <value>home page</value>
+  </data>
+  <data name="GeneralError_Message4" xml:space="preserve">
+    <value>to retry. Do not try to use the keys "back" or "reload" of your browser as you will repeat the same mistake.</value>
+  </data>
+  <data name="LoggedAs" xml:space="preserve">
+    <value>Logged in as</value>
+  </data>
+  <data name="PageNotFound_Header" xml:space="preserve">
+    <value>Page not found</value>
+  </data>
+  <data name="PageNotFound_Message1" xml:space="preserve">
+    <value>Page was not found. Redirect to the </value>
+  </data>
+  <data name="PageNotFound_Message2" xml:space="preserve">
+    <value>home page</value>
+  </data>
+  <data name="VerifyEmail_AlreadyVerified" xml:space="preserve">
+    <value>Email is already verified.</value>
+  </data>
+  <data name="VerifyEmail_Header" xml:space="preserve">
+    <value>Verify user Email</value>
+  </data>
+  <data name="VerifyEmail_InvalideUrl" xml:space="preserve">
+    <value>Verification Url is not valid</value>
+  </data>
+  <data name="VerifyEmail_NoUser" xml:space="preserve">
+    <value>No user found with the e-mail you provided. If you have altered any e-mail that you said or pressed 2 times the button reshipment Certification E-mail, make sure you press the link of the last e-mail that you have come.</value>
+  </data>
+  <data name="VerifyEmail_Verified" xml:space="preserve">
+    <value>Confirmation of your e-mail was successfully performed. To log in click &lt;a href='../DefaultEN.aspx'&gt; here &lt;/ a&gt;</value>
+  </data>
+</root>

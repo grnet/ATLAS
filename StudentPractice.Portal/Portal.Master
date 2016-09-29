@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="StudentPractice.Portal.Portal" CodeBehind="Portal.Master.cs" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>
+        <asp:Literal ID="litTitle" runat="server" Text="Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ" />
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <meta name="description" content="Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ" />
+    <meta name="keywords" content="Φοιτητής, Πρακτική Άσκηση, Υπουργείο Παιδείας" />
+    <meta name="language" content="Modern Greek (1453-)" />
+    <meta http-equiv="Content-Language" content="el" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <asp:PlaceHolder runat="server">
+        <meta name="version" content="<%= StudentPractice.Portal.Global.VersionNumber %>" />
+        <%= StudentPractice.Portal.Html.Css("/_css/style-common.css") %>
+        <%= StudentPractice.Portal.Html.Css("/_css/jquery-ui.css", StudentPractice.Portal.enVersioning.Disabled) %>
+        <%= StudentPractice.Portal.Html.Css("/_css/jquery.tipsy.css", StudentPractice.Portal.enVersioning.Disabled) %>
+        <%= StudentPractice.Portal.Html.Css("/_css/style-secure.css") %>
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="cphHead" runat="server" />
+</head>
+<body>
+    <div id="body-container">
+        <div id="header">
+            <table style="width: 100%">
+                <tr>
+                    <td>
+                        <a href="http://atlas.grnet.gr" target="_blank">
+                            <img src="/_img/atlas_logo.png" alt="ΑΤΛΑΣ - Κόμβος Πρακτικής Άσκησης" />
+                        </a>
+                    </td>
+                    <td>
+                        <h1 style="text-align: center; width: 100%;">
+                            <asp:Literal runat="server" Text="<%$ Resources:GlobalProvider, MainHeader %>" />
+                        </h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <asp:PlaceHolder ID="phPilotApplication" runat="server">
+            <div class="globalMessage">
+                <span>ΠΡΟΣΟΧΗ: Βρίσκεστε στην πιλοτική εφαρμογή της δράσης "Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ"</span>
+            </div>
+        </asp:PlaceHolder>
+        <asp:ContentPlaceHolder ID="cpHelpBar" runat="server" />
+        <div id="container">
+            <form id="form1" runat="server">
+                <fieldset>
+                    <asp:ScriptManager ID="sm" runat="server" EnableScriptGlobalization="true" EnableScriptLocalization="true">
+                        <CompositeScript>
+                            <Scripts>
+                                <asp:ScriptReference Path="~/_js/jquery-1.9.1.min.js" />
+                                <asp:ScriptReference Path="~/_js/Resources.js" />
+                                <asp:ScriptReference Path="~/_js/jquery-migrate-1.1.1.min.js" />
+                                <asp:ScriptReference Path="~/_js/jquery-ui-1.10.1.custom.min.js" />
+                                <asp:ScriptReference Path="~/_js/jquery-ui-datepickerRegional.js" />
+                                <asp:ScriptReference Path="~/_js/jquery-impromptu.1.8.js" />
+                                <asp:ScriptReference Path="~/_js/jquery.printElement.js" />
+                                <asp:ScriptReference Path="~/_js/jquery.tipsy.js" />
+                                <asp:ScriptReference Path="~/_js/SchoolSearch.js" />
+                                <asp:ScriptReference Path="~/_js/popUp.js" />
+                                <asp:ScriptReference Path="~/_js/Imis.Lib.js" />
+                                <asp:ScriptReference Path="~/_js/DxExtensions.js" />
+                                <asp:ScriptReference Path="~/_js/StudentPractice.js" />
+                                <asp:ScriptReference Path="~/_js/Init.js" />
+                            </Scripts>
+                        </CompositeScript>
+                        <Services>
+                            <asp:ServiceReference Path="~/PortalServices/Services.asmx" />
+                        </Services>
+                    </asp:ScriptManager>
+                    <asp:ContentPlaceHolder ID="cphMain" runat="server" />
+                </fieldset>
+            </form>
+        </div>
+        <div id="footer">
+            <table style="margin: 0 auto 0 auto;">
+                <tr>
+                    <td>
+                        <a href="http://minedu.gov.gr/" target="_blank">
+                            <img src="/_img/minedu_logo_4.png" alt="Υπουργείο Παιδείας, Έρευνας και Θρησκευμάτων" height="60" /></a>
+                    </td>
+                    <td>
+                        <a href="http://www.grnet.gr/" target="_blank">
+                            <img src="/_img/grnet_logo.png" alt="ΕΔΕΤ" /></a>
+                    </td>
+                    <td>
+                        <a href="http://www.edulll.gr" target="_blank">
+                            <img src="/_img/edulll_logo.png" alt="Εκπαίδευση και Δια Βίου Μάθηση" /></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="validation">
+            <a href="http://validator.w3.org/check/referer" target="_blank">
+                <img src="/_img/valid-xhtml10-blue.png" alt="Valid XHTML 1.0" /></a>
+            <a href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/" target="_blank">
+                <img src="/_img/wcag2AA-blue.png" alt="23, April 2012
+                                                       Web Content Accessibility Guidelines 2.0 at http://www.w3.org/TR/2008/REC-WCAG20-20081211/
+                                                       Conformance level satisfied: Level AA
+                                                       Web pages: http://atlas.minedu.gov.gr/*, http://submit-atlas.minedu.gov.gr" /></a>
+        </div>
+
+        <asp:PlaceHolder ID="phGoogleAnalytics" runat="server">
+            <script type="text/javascript">
+
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+                
+                ga('create', '<%= StudentPractice.Portal.Config.GoogleAnalyticsUserID %>', 'grnet.gr');
+                ga('send', 'pageview');
+
+            </script>
+        </asp:PlaceHolder>
+
+    </div>
+</body>
+</html>

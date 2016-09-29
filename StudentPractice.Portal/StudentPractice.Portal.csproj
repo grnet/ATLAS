@@ -1,0 +1,2783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4323955-EB9E-46C6-82BA-AA53DDCD4E38}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentPractice.Portal</RootNamespace>
+    <AssemblyName>StudentPractice.Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Ifestion|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\HelpDesk.Portal.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.123, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\packages\AjaxControlToolkit.7.0123\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac, Version=2.4.5.724, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\Autofac\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration, Version=2.4.5.724, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\Autofac\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Web, Version=2.4.5.724, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\Autofac\Autofac.Integration.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="BotDetect, Version=3.0.9.0, Culture=neutral, PublicKeyToken=74616036388b765f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\BotDetect.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\DevExpress\12.2\DevExpress.Data.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v12.2.Core, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\DevExpress\12.2\DevExpress.Printing.v12.2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\DevExpress\12.2\DevExpress.Utils.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\DevExpress\12.2\DevExpress.Web.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\DevExpress\12.2\DevExpress.XtraPrinting.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\libraries\packages\AjaxControlToolkit.7.0123\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Imis.Domain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\Imis\net35\Release\Imis.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Imis.Domain.EF, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\Imis\net40\Release\Imis.Domain.EF.dll</HintPath>
+    </Reference>
+    <Reference Include="Imis.Web.Administration, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\Imis\net35\Release\Imis.Web.Administration.dll</HintPath>
+    </Reference>
+    <Reference Include="Imis.Web.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\Imis\net35\Release\Imis.Web.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\packages\log4net.2.0.0\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=101.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\..\libraries\packages\AjaxControlToolkit.7.0123\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Stateless, Version=2.4.0.1, Culture=neutral, PublicKeyToken=93038f0927583c9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\packages\Stateless.2.4.0\lib\Stateless.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebFormsMvp, Version=1.2.0.0, Culture=neutral, PublicKeyToken=537f18701145dff0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\WebFormsMvp.dll</HintPath>
+    </Reference>
+    <Reference Include="WebFormsMvp.Autofac, Version=1.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\WebFormsMvp.Autofac.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Terms.aspx" />
+    <Content Include="DefaultEN.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Secure\Admin\AddAdminUser.aspx" />
+    <Content Include="Secure\Admin\EditAdminUser.aspx" />
+    <Content Include="Secure\Admin\GenerateSamplePositions.aspx" />
+    <Content Include="Secure\Admin\MassCancelGroups.aspx" />
+    <Content Include="Secure\Admin\RefreshCache.aspx" />
+    <Content Include="Secure\Admin\AdminUsers.aspx" />
+    <Content Include="App_Data\SMSs.xml" />
+    <Content Include="Browse\ServiceProxy.js" />
+    <Content Include="Browse\ServiceTest.aspx" />
+    <Content Include="ColourExplanation.aspx" />
+    <Content Include="Common\ChangePassword.aspx" />
+    <Content Include="Common\ProviderRegistration.aspx" />
+    <Content Include="Common\SchoolSelectPopup.aspx" />
+    <Content Include="Common\OfficeRegistration.aspx" />
+    <Content Include="Common\VerifyEmail.aspx" />
+    <Content Include="Secure\Admin\SendCustomMassEmail.aspx" />
+    <Content Include="Secure\Common\Questionnaire.aspx" />
+    <Content Include="Secure\Helpdesk\SearchAndRegisterStudents.aspx" />
+    <Content Include="Secure\Helpdesk\ViewPositionDetails.aspx" />
+    <Content Include="Secure\Helpdesk\SearchPositions.aspx" />
+    <Content Include="Secure\InternshipOffices\Evaluation.aspx" />
+    <Content Include="Secure\InternshipOffices\StudentPositions.aspx" />
+    <Content Include="Secure\InternshipOffices\SearchStudents.aspx" />
+    <Content Include="Secure\InternshipOffices\FinishedPositionPhysicalObject.aspx" />
+    <Content Include="Secure\InternshipOffices\FinishedPositionDetails.aspx" />
+    <Content Include="Secure\InternshipOffices\FinishedPositionStudent.aspx" />
+    <Content Include="Secure\InternshipOffices\FinishedPositionProvider.aspx" />
+    <Content Include="Secure\InternshipProviders\Evaluation.aspx" />
+    <Content Include="Secure\InternshipProviders\ViewCompletedPosition.aspx" />
+    <Content Include="Secure\Students\ViewAssignedPositionDetails.aspx" />
+    <Content Include="Secure\Students\ViewPositionCert.aspx" />
+    <Content Include="UserControls\Exporters\InternshipPositionGroupsExporter.ascx" />
+    <Content Include="UserControls\Exporters\InternshipPositionsExporter.ascx" />
+    <Content Include="UserControls\FinishedInternshipPositionControls\InputControls\InternshipPositionProviderSelect.ascx" />
+    <Content Include="UserControls\FinishedInternshipPositionControls\InputControls\FinishedPositionGroupInput.ascx" />
+    <Content Include="UserControls\GenericControls\AcademicPositionRulesPopup.ascx" />
+    <Content Include="UserControls\GenericControls\AcademicPositionRulesPopup.js" />
+    <Content Include="UserControls\GenericControls\AddressInfoInput.ascx" />
+    <Content Include="UserControls\GenericControls\LanguageBar.ascx" />
+    <Content Include="UserControls\GenericControls\CyprusAddressInfoInput.ascx" />
+    <Content Include="UserControls\GenericControls\ForeignAddressInfoInput.ascx" />
+    <Content Include="UserControls\GenericControls\GreekAddressInfoInput.ascx" />
+    <Content Include="UserControls\GenericControls\MemoEdit.ascx" />
+    <Content Include="UserControls\GenericControls\MemoEdit.js" />
+    <Content Include="EmailVerificationInfo.aspx" />
+    <Content Include="Secure\Helpdesk\AddHelpdeskUser.aspx" />
+    <Content Include="Secure\Helpdesk\BlockedPositions.aspx" />
+    <Content Include="Secure\Helpdesk\ServiceLogs.aspx" />
+    <Content Include="Secure\Helpdesk\EditAcademic.aspx" />
+    <Content Include="Secure\Helpdesk\EditHelpdeskUser.aspx" />
+    <Content Include="Secure\Helpdesk\EditIncidentReportHandler.aspx" />
+    <Content Include="Secure\Helpdesk\EditLastIncidentReportPost.aspx" />
+    <Content Include="Secure\Helpdesk\EditOffice.aspx" />
+    <Content Include="Secure\Helpdesk\EditOfficeAcademics.aspx" />
+    <Content Include="Secure\Helpdesk\EditProvider.aspx" />
+    <Content Include="Secure\Helpdesk\HelpdeskUsers.aspx" />
+    <Content Include="Secure\Helpdesk\SearchAcademics.aspx" />
+    <Content Include="Secure\Helpdesk\SearchOffices.aspx" />
+    <Content Include="Secure\Helpdesk\SearchOfficeStudents.aspx" />
+    <Content Include="Secure\Helpdesk\SearchPositionGroups.aspx" />
+    <Content Include="Secure\Helpdesk\SearchProviders.aspx" />
+    <Content Include="Secure\Helpdesk\SearchStudents.aspx" />
+    <Content Include="Secure\Helpdesk\SearchSupervisorReports.aspx" />
+    <Content Include="Secure\Helpdesk\TransferPositions.aspx" />
+    <Content Include="Secure\Helpdesk\UserControls\IncidentReportFilters.ascx" />
+    <Content Include="Secure\Helpdesk\VerifyOffice.aspx" />
+    <Content Include="Secure\Helpdesk\VerifyProvider.aspx" />
+    <Content Include="Secure\Helpdesk\ViewAccountDetails.aspx" />
+    <Content Include="Secure\Helpdesk\UserControls\IncidentReportHandlerInput.ascx" />
+    <Content Include="Secure\Helpdesk\ViewOfficeAcademics.aspx" />
+    <Content Include="Secure\Helpdesk\ViewOfficeUsers.aspx" />
+    <Content Include="Secure\Helpdesk\ViewPosition.aspx" />
+    <Content Include="Secure\Helpdesk\ViewProviderUsers.aspx" />
+    <Content Include="Secure\Helpdesk\ViewVerificationLogs.aspx" />
+    <Content Include="Secure\Helpdesk\WithdrawPositions.aspx" />
+    <Content Include="Secure\Helpdesk\UserControls\IncidentReportsGridview.ascx" />
+    <Content Include="Secure\Reports\Default.aspx" />
+    <Content Include="Secure\Reports\InternshipOffices.aspx" />
+    <Content Include="Secure\Reports\InternshipOfficeCounters.aspx" />
+    <Content Include="Secure\Reports\InternshipPositionPopup.aspx" />
+    <Content Include="Secure\Reports\InternshipPositionGroups.aspx" />
+    <Content Include="Secure\Reports\InternshipPositions.aspx" />
+    <Content Include="Secure\Reports\InternshipProviders.aspx" />
+    <Content Include="Secure\Reports\StatisticsByDay.aspx" />
+    <Content Include="Secure\Reports\StatisticsByOffice.aspx" />
+    <Content Include="Secure\Reports\StatisticsByProvider.aspx" />
+    <Content Include="Secure\Reports\UserControls\InternshipPositionDetailsGridView.ascx" />
+    <Content Include="Secure\Reports\ViewOfficeAcademics.aspx" />
+    <Content Include="Secure\Common\ContactForm.aspx" />
+    <Content Include="Secure\Common\ContactHistory.aspx" />
+    <Content Include="Secure\Common\HelpdeskContact.aspx" />
+    <Content Include="Secure\InternshipOffices\AddImplementationData.aspx" />
+    <Content Include="Secure\InternshipOffices\AddOfficeUser.aspx" />
+    <Content Include="Secure\InternshipOffices\AssignPosition.aspx" />
+    <Content Include="Secure\InternshipOffices\CompletePosition.aspx" />
+    <Content Include="Secure\InternshipOffices\Default.aspx" />
+    <Content Include="Secure\InternshipOffices\EditImplementationData.aspx" />
+    <Content Include="Secure\InternshipOffices\EditOfficeUser.aspx" />
+    <Content Include="Secure\InternshipOffices\ChangeAssignedStudent.aspx" />
+    <Content Include="Secure\InternshipOffices\OfficeAcademicsAuthorization.aspx" />
+    <Content Include="Secure\InternshipOffices\OfficeDetails.aspx" />
+    <Content Include="Secure\InternshipOffices\OfficeUsers.aspx" />
+    <Content Include="Secure\InternshipOffices\PreAssignPosition.aspx" />
+    <Content Include="Secure\InternshipOffices\SearchPositions.aspx" />
+    <Content Include="Secure\InternshipOffices\SelectedPositions.aspx" />
+    <Content Include="Secure\InternshipOffices\SelectOfficeAcademics.aspx" />
+    <Content Include="Secure\InternshipOffices\ViewPosition.aspx" />
+    <Content Include="Secure\InternshipOffices\ViewPositionGroup.aspx" />
+    <Content Include="Secure\InternshipProviders\AddAcademics.aspx" />
+    <Content Include="Secure\InternshipProviders\AddProviderUser.aspx" />
+    <Content Include="Secure\InternshipProviders\Default.aspx" />
+    <Content Include="Secure\InternshipProviders\EditPreAssignedPosition.aspx" />
+    <Content Include="Secure\InternshipProviders\EditProviderUser.aspx" />
+    <Content Include="Secure\InternshipProviders\InternshipPositionExample.aspx" />
+    <Content Include="Secure\InternshipProviders\InternshipPositions.aspx" />
+    <Content Include="Secure\InternshipProviders\PositionAcademics.aspx" />
+    <Content Include="Secure\InternshipProviders\PositionDetails.aspx" />
+    <Content Include="Secure\InternshipProviders\PositionPhysicalObject.aspx" />
+    <Content Include="Secure\InternshipProviders\PositionPreview.aspx" />
+    <Content Include="Secure\InternshipProviders\ProviderDetails.aspx" />
+    <Content Include="Secure\InternshipProviders\ProviderUsers.aspx" />
+    <Content Include="Secure\InternshipProviders\SelectAcademics.aspx" />
+    <Content Include="Secure\InternshipProviders\SelectedPositions.aspx" />
+    <Content Include="Secure\Common\SelectPhysicalObjects.aspx" />
+    <Content Include="Secure\InternshipProviders\ViewOfficeAcademics.aspx" />
+    <Content Include="Secure\InternshipProviders\ViewPosition.aspx" />
+    <Content Include="Secure\Students\ContactInfoDetails.aspx" />
+    <Content Include="Secure\Students\SearchPositions.aspx" />
+    <Content Include="Secure\Students\StudentDetails.aspx" />
+    <Content Include="Secure\Students\Default.aspx" />
+    <Content Include="Secure\Students\AssignedPositions.aspx" />
+    <Content Include="Secure\Students\ViewPosition.aspx" />
+    <Content Include="Secure\UserControls\HelpdeskContactHistory.ascx" />
+    <Content Include="Shib\Default.aspx" />
+    <Content Include="Shib\ReturnedShibbolethFields.aspx" />
+    <Content Include="TestShibLogin.aspx" />
+    <Content Include="UserControls\GenericControls\IdentityControl.ascx" />
+    <Content Include="UserControls\GenericControls\IdentityControl.js" />
+    <Content Include="UserControls\GenericControls\SearchAndRegisterStudent.ascx" />
+    <Content Include="UserControls\HelpdeskControls\InputControls\HelpdeskUserInput.ascx" />
+    <Content Include="UserControls\HelpdeskControls\InputControls\VerificationCommentsInput.ascx" />
+    <Content Include="UserControls\InternshipOfficeControls\InputControls\AssignStudent.ascx" />
+    <Content Include="UserControls\InternshipOfficeControls\InputControls\OfficeUserInput.ascx" />
+    <Content Include="UserControls\InternshipOfficeControls\ViewControls\OfficeAcademicsGridView.ascx" />
+    <Content Include="UserControls\InternshipOfficeControls\ViewControls\OfficeView.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\InputControls\CompletionInput.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\InputControls\ImplementationInput.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\InputControls\PhysicalObjectsInput.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\InputControls\PositionGroupInput.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\ViewControls\CompletionView.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\ViewControls\HandledStudentsGridView.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\ViewControls\ImplementationView.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\ViewControls\PositionGroupView.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\ViewControls\PositionView.ascx" />
+    <Content Include="UserControls\InternshipPositionControls\ViewControls\PreAssignmentView.ascx" />
+    <Content Include="UserControls\InternshipProviderControls\InputControls\ProviderInput.ascx" />
+    <Content Include="UserControls\InternshipProviderControls\InputControls\ProviderRegisterUserInput.ascx" />
+    <Content Include="UserControls\InternshipProviderControls\InputControls\ProviderUserInput.ascx" />
+    <Content Include="UserControls\InternshipProviderControls\ViewControls\ProviderUserView.ascx" />
+    <Content Include="UserControls\InternshipProviderControls\ViewControls\ProviderView.ascx" />
+    <Content Include="UserControls\QuestionnaireControls\InputControls\QuestionnaireInput.ascx" />
+    <Content Include="UserControls\QuestionnaireControls\InputControls\QuestionnaireQuestionInput.ascx" />
+    <Content Include="UserControls\StudentControls\InputControls\ContactInfoDetailsInput.ascx" />
+    <Content Include="UserControls\InternshipOfficeControls\InputControls\OfficeRegisterUserInput.ascx" />
+    <Content Include="UserControls\GenericControls\SchoolInput.ascx" />
+    <Content Include="UserControls\InternshipOfficeControls\InputControls\OfficeInput.ascx" />
+    <Content Include="UserControls\StudentControls\InputControls\StudentInput.ascx" />
+    <Content Include="UserControls\GenericControls\EmailForm.ascx" />
+    <Content Include="UserControls\StudentControls\ViewControls\StudentView.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="_css\jquery.tipsy.css" />
+    <Content Include="_img\example_FYPAEN.png" />
+    <Content Include="_img\jquery\animated-overlay.gif" />
+    <Content Include="_img\jquery\ui-bg_flat_0_ffffff_40x100.png" />
+    <Content Include="_img\jquery\ui-bg_flat_75_5D7B9D_40x100.png" />
+    <Content Include="_img\jquery\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="_img\jquery\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="_img\jquery\ui-icons_333333_256x240.png" />
+    <Content Include="_img\minedu_logo_3.png" />
+    <Content Include="_img\minedu_logo_4.png" />
+    <Content Include="_js\Init.js" />
+    <Content Include="_js\jquery.tipsy.js" />
+    <Content Include="_css\style-browse.css" />
+    <Content Include="_css\style-common.css" />
+    <Content Include="_css\style-popup-public.css" />
+    <Content Include="_css\style-secure.css" />
+    <Content Include="_img\atlas_logo.png" />
+    <Content Include="_img\close.png" />
+    <Content Include="_img\contrast_low.png" />
+    <Content Include="_img\edulll_logo.png" />
+    <Content Include="_img\errorGray.gif" />
+    <Content Include="_img\example_FYPA.jpg" />
+    <Content Include="_img\flag_eng.png" />
+    <Content Include="_img\flag_gr.png" />
+    <Content Include="_img\grnet_logo.png" />
+    <Content Include="_img\iconApproveApplication.png" />
+    <Content Include="_img\iconClone.png" />
+    <Content Include="_img\iconColourExplanation.png" />
+    <Content Include="_img\iconPendingApplication.png" />
+    <Content Include="_img\iconPostgraduatePrograms.png" />
+    <Content Include="_img\iconRejectApplication.png" />
+    <Content Include="_img\iconUsers.png" />
+    <Content Include="_img\info.png" />
+    <Content Include="_img\Jcrop.gif" />
+    <Content Include="_img\login-big.png" />
+    <Content Include="_css\wizard.css" />
+    <Content Include="_img\0.png" />
+    <Content Include="_img\background.png" />
+    <Content Include="_img\bc_bg.png" />
+    <Content Include="_img\bc_separator.png" />
+    <Content Include="_img\button-left.png" />
+    <Content Include="_img\button-right.png" />
+    <Content Include="_img\button.png" />
+    <Content Include="_img\button_glas1.png" />
+    <Content Include="_img\checkbox.png" />
+    <Content Include="_img\help.png" />
+    <Content Include="_img\home.png" />
+    <Content Include="_img\iconLogout.png" />
+    <Content Include="_img\iconPdf.gif" />
+    <Content Include="_img\iconReorder.gif" />
+    <Content Include="_img\information.png" />
+    <Content Include="_img\input-left.png" />
+    <Content Include="_img\input-right.png" />
+    <Content Include="_img\input.png" />
+    <Content Include="_img\minedu_logo_2.jpg" />
+    <Content Include="_img\minedu_logo_2.png" />
+    <Content Include="_img\navBtn.gif" />
+    <Content Include="_img\navCurrentBtn.gif" />
+    <Content Include="_img\navDoneBtn.gif" />
+    <Content Include="_img\navLastDoneBtn.gif" />
+    <Content Include="_img\phone.png" />
+    <Content Include="_img\radio.png" />
+    <Content Include="_img\register-big.png" />
+    <Content Include="_img\Register.png" />
+    <Content Include="_img\sampleBarCode.png" />
+    <Content Include="_img\select-left.png" />
+    <Content Include="_img\select-right.png" />
+    <Content Include="_img\textarea-bl.png" />
+    <Content Include="_img\textarea-br.png" />
+    <Content Include="_img\textarea-l-off.png" />
+    <Content Include="_img\textarea-l-over.png" />
+    <Content Include="_img\textarea-r-off.png" />
+    <Content Include="_img\textarea-r-over.png" />
+    <Content Include="_img\textarea-tl.png" />
+    <Content Include="_img\textarea-tr.png" />
+    <Content Include="_img\valid-xhtml10-blue.png" />
+    <Content Include="_img\warning.png" />
+    <Content Include="_img\watermark.png" />
+    <Content Include="_img\wcag2AA-blue.png" />
+    <Content Include="_img\loading.gif" />
+    <Content Include="_img\viewport_background.gif" />
+    <Content Include="_img\zoom_in.png" />
+    <Content Include="_img\zoom_out.png" />
+    <Content Include="_js\ASPxScriptIntelliSense.js" />
+    <Content Include="_js\Resources.js" />
+    <Content Include="_js\StudentPractice.js" />
+    <Content Include="_js\DxExtensions.js" />
+    <Content Include="_js\Imis.Lib.js" />
+    <Content Include="_js\jquery-1.9.1.min.js" />
+    <Content Include="_js\jquery-migrate-1.1.1.min.js" />
+    <Content Include="_js\jquery-ui-1.10.1.custom.min.js" />
+    <Content Include="_js\jquery-ui-datepickerRegional.js" />
+    <Content Include="_js\jquery.printElement.js" />
+    <Content Include="_js\UserContactDetails.js" />
+    <Content Include="_js\SchoolSearch.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\AddAcademics.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddAcademics.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\AddAcademics.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddAcademics.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Botshield.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Botshield.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Botshield.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Botshield.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommonPages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonPages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CommonPages.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonPages.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmailVerificationInfo.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailVerificationInfo.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EmailVerificationInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmailVerificationInfo.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Evaluation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Evaluation.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Evaluation.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Evaluation.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PositionInput.en-US.designer.cs">
+      <DependentUpon>PositionInput.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditPreAssignedPosition.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditPreAssignedPosition.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\EditPreAssignedPosition.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditPreAssignedPosition.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\HelpdeskContact.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HelpdeskContact.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\HelpdeskContact.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HelpdeskContact.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PositionGroupInput.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PositionGroupInput.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PositionGroupInput.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PositionGroupInput.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PositionPages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PositionPages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PositionPages.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PositionPages.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PositionWizard.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PositionWizard.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PositionWizard.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PositionWizard.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PrimaryMenu.en-US1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrimaryMenu.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PrimaryMenu1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrimaryMenu.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProviderUser.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProviderUser.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProviderUser.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProviderUser.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ChangePassword.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangePassword.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ChangePassword.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangePassword.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ColourExplanation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ColourExplanation.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ColourExplanation.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ColourExplanation.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Filter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Filter.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Filter.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Filter.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalProvider.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalProvider.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\GlobalProvider.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalProvider.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Grid.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Grid.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Grid.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Grid.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\InternshipPositions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternshipPositions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\InternshipPositions.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternshipPositions.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\LoginBar.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginBar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\LoginBar.en-US.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginBar.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProviderDetails.en-US.designer.cs">
+      <DependentUpon>ProviderDetails.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Default.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Default.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Default.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Default.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\JavaScriptResource.en-US.designer.cs">
+      <DependentUpon>JavaScriptResource.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\JavaScriptResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JavaScriptResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProviderDetails.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProviderDetails.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProviderInput.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProviderInput.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProviderLiterals.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProviderLiterals.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProviderLiterals.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProviderLiterals.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RegistrantionConditions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrantionConditions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RegistrantionConditions.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrantionConditions.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RegistrationInput.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationInput.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SelectedPositions.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SelectedPositions.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\SelectedPositions.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SelectedPositions.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Student.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Student.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Student.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Student.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Terms.aspx.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Terms.aspx.designer.cs">
+      <DependentUpon>Terms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BaseHtmlExporter.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultEN.aspx.cs">
+      <DependentUpon>DefaultEN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultEN.aspx.designer.cs">
+      <DependentUpon>DefaultEN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RedirectFromPortal.ashx.cs">
+      <DependentUpon>RedirectFromPortal.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\AddAdminUser.aspx.cs">
+      <DependentUpon>AddAdminUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\AddAdminUser.aspx.designer.cs">
+      <DependentUpon>AddAdminUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\EditAdminUser.aspx.cs">
+      <DependentUpon>EditAdminUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\EditAdminUser.aspx.designer.cs">
+      <DependentUpon>EditAdminUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\GenerateSamplePositions.aspx.cs">
+      <DependentUpon>GenerateSamplePositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\GenerateSamplePositions.aspx.designer.cs">
+      <DependentUpon>GenerateSamplePositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\MassCancelGroups.aspx.cs">
+      <DependentUpon>MassCancelGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\MassCancelGroups.aspx.designer.cs">
+      <DependentUpon>MassCancelGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\RefreshCache.aspx.cs">
+      <DependentUpon>RefreshCache.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\RefreshCache.aspx.designer.cs">
+      <DependentUpon>RefreshCache.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\AdminUsers.aspx.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\AdminUsers.aspx.designer.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\CreateIncidentType.aspx.cs">
+      <DependentUpon>CreateIncidentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\CreateIncidentType.aspx.designer.cs">
+      <DependentUpon>CreateIncidentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\EditIncidentType.aspx.cs">
+      <DependentUpon>EditIncidentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\EditIncidentType.aspx.designer.cs">
+      <DependentUpon>EditIncidentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\IncidentTypeManagement.aspx.cs">
+      <DependentUpon>IncidentTypeManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\IncidentTypeManagement.aspx.designer.cs">
+      <DependentUpon>IncidentTypeManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\SendCustomMassEmail.aspx.cs">
+      <DependentUpon>SendCustomMassEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\SendCustomMassEmail.aspx.designer.cs">
+      <DependentUpon>SendCustomMassEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\UserControls\IncidentTypeInput.ascx.cs">
+      <DependentUpon>IncidentTypeInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\UserControls\IncidentTypeInput.ascx.designer.cs">
+      <DependentUpon>IncidentTypeInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OfficeInput.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OfficeInput.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\PositionInput.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PositionInput.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\ProviderInput.en-US.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProviderInput.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RegistrationInput.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegistrationInput.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\BackOffice.Master.cs">
+      <DependentUpon>BackOffice.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\BackOffice.Master.designer.cs">
+      <DependentUpon>BackOffice.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\Browse.Master.cs">
+      <DependentUpon>Browse.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Browse\Browse.Master.designer.cs">
+      <DependentUpon>Browse.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\ServiceTest.aspx.cs">
+      <DependentUpon>ServiceTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Browse\ServiceTest.aspx.designer.cs">
+      <DependentUpon>ServiceTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ColourExplanation.aspx.cs">
+      <DependentUpon>ColourExplanation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ColourExplanation.aspx.designer.cs">
+      <DependentUpon>ColourExplanation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AccessDenied.aspx.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AccessDenied.aspx.designer.cs">
+      <DependentUpon>AccessDenied.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Browse\ContactForm.aspx.cs">
+      <DependentUpon>ContactForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Browse\ContactForm.aspx.designer.cs">
+      <DependentUpon>ContactForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AlterPassword.aspx.cs">
+      <DependentUpon>AlterPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\AlterPassword.aspx.designer.cs">
+      <DependentUpon>AlterPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ProviderRegistration.aspx.cs">
+      <DependentUpon>ProviderRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ProviderRegistration.aspx.designer.cs">
+      <DependentUpon>ProviderRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SchoolSelectPopup.aspx.cs">
+      <DependentUpon>SchoolSelectPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SchoolSelectPopup.aspx.designer.cs">
+      <DependentUpon>SchoolSelectPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GeneralError.aspx.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\GeneralError.aspx.designer.cs">
+      <DependentUpon>GeneralError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Msg.aspx.cs">
+      <DependentUpon>Msg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Msg.aspx.designer.cs">
+      <DependentUpon>Msg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PageNotFound.aspx.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\PageNotFound.aspx.designer.cs">
+      <DependentUpon>PageNotFound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\OfficeRegistration.aspx.cs">
+      <DependentUpon>OfficeRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\OfficeRegistration.aspx.designer.cs">
+      <DependentUpon>OfficeRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\VerifyEmail.aspx.cs">
+      <DependentUpon>VerifyEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\VerifyEmail.aspx.designer.cs">
+      <DependentUpon>VerifyEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AFMInput.cs" />
+    <Compile Include="Controls\ApplicationUser.cs" />
+    <Compile Include="Controls\BaseEntityUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BasePortalPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseScriptControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\BotShield.cs" />
+    <Compile Include="InternalServices\InternalServiceLogger.cs" />
+    <Compile Include="InternalServices\InternalServiceRequest.cs" />
+    <Compile Include="InternalServices\InternalServiceResponse.cs" />
+    <Compile Include="InternalServices\StudentPractiseInternalServices.cs" />
+    <Compile Include="Secure\Common\Questionnaire.aspx.cs">
+      <DependentUpon>Questionnaire.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Common\Questionnaire.aspx.designer.cs">
+      <DependentUpon>Questionnaire.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchAndRegisterStudents.aspx.cs">
+      <DependentUpon>SearchAndRegisterStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchAndRegisterStudents.aspx.designer.cs">
+      <DependentUpon>SearchAndRegisterStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewPositionDetails.aspx.cs">
+      <DependentUpon>ViewPositionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewPositionDetails.aspx.designer.cs">
+      <DependentUpon>ViewPositionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchPositions.aspx.cs">
+      <DependentUpon>SearchPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchPositions.aspx.designer.cs">
+      <DependentUpon>SearchPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\Evaluation.aspx.cs">
+      <DependentUpon>Evaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\Evaluation.aspx.designer.cs">
+      <DependentUpon>Evaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\StudentPositions.aspx.cs">
+      <DependentUpon>StudentPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\StudentPositions.aspx.designer.cs">
+      <DependentUpon>StudentPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\SearchStudents.aspx.cs">
+      <DependentUpon>SearchStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\SearchStudents.aspx.designer.cs">
+      <DependentUpon>SearchStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\FinishedPositionPhysicalObject.aspx.cs">
+      <DependentUpon>FinishedPositionPhysicalObject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\FinishedPositionPhysicalObject.aspx.designer.cs">
+      <DependentUpon>FinishedPositionPhysicalObject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\FinishedPositionDetails.aspx.cs">
+      <DependentUpon>FinishedPositionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\FinishedPositionDetails.aspx.designer.cs">
+      <DependentUpon>FinishedPositionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\FinishedPositionStudent.aspx.cs">
+      <DependentUpon>FinishedPositionStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\FinishedPositionStudent.aspx.designer.cs">
+      <DependentUpon>FinishedPositionStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\FinishedPositionProvider.aspx.cs">
+      <DependentUpon>FinishedPositionProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\FinishedPositionProvider.aspx.designer.cs">
+      <DependentUpon>FinishedPositionProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\Evaluation.aspx.cs">
+      <DependentUpon>Evaluation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\Evaluation.aspx.designer.cs">
+      <DependentUpon>Evaluation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ViewCompletedPosition.aspx.cs">
+      <DependentUpon>ViewCompletedPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ViewCompletedPosition.aspx.designer.cs">
+      <DependentUpon>ViewCompletedPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Students\ViewAssignedPositionDetails.aspx.cs">
+      <DependentUpon>ViewAssignedPositionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Students\ViewAssignedPositionDetails.aspx.designer.cs">
+      <DependentUpon>ViewAssignedPositionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Students\ViewPositionCert.aspx.cs">
+      <DependentUpon>ViewPositionCert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Students\ViewPositionCert.aspx.designer.cs">
+      <DependentUpon>ViewPositionCert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Exporters\InternshipPositionGroupsExporter.ascx.cs">
+      <DependentUpon>InternshipPositionGroupsExporter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Exporters\InternshipPositionGroupsExporter.ascx.designer.cs">
+      <DependentUpon>InternshipPositionGroupsExporter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Exporters\InternshipPositionsExporter.ascx.cs">
+      <DependentUpon>InternshipPositionsExporter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Exporters\InternshipPositionsExporter.ascx.designer.cs">
+      <DependentUpon>InternshipPositionsExporter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FinishedInternshipPositionControls\InputControls\InternshipPositionProviderSelect.ascx.cs">
+      <DependentUpon>InternshipPositionProviderSelect.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\FinishedInternshipPositionControls\InputControls\InternshipPositionProviderSelect.ascx.designer.cs">
+      <DependentUpon>InternshipPositionProviderSelect.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\FinishedInternshipPositionControls\InputControls\FinishedPositionGroupInput.ascx.cs">
+      <DependentUpon>FinishedPositionGroupInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\FinishedInternshipPositionControls\InputControls\FinishedPositionGroupInput.ascx.designer.cs">
+      <DependentUpon>FinishedPositionGroupInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\AcademicPositionRulesPopup.ascx.cs">
+      <DependentUpon>AcademicPositionRulesPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\AcademicPositionRulesPopup.ascx.designer.cs">
+      <DependentUpon>AcademicPositionRulesPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\AddressInfoInput.ascx.cs">
+      <DependentUpon>AddressInfoInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\AddressInfoInput.ascx.designer.cs">
+      <DependentUpon>AddressInfoInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\LanguageBar.ascx.cs">
+      <DependentUpon>LanguageBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\LanguageBar.ascx.designer.cs">
+      <DependentUpon>LanguageBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\CyprusAddressInfoInput.ascx.cs">
+      <DependentUpon>CyprusAddressInfoInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\CyprusAddressInfoInput.ascx.designer.cs">
+      <DependentUpon>CyprusAddressInfoInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\ForeignAddressInfoInput.ascx.cs">
+      <DependentUpon>ForeignAddressInfoInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\ForeignAddressInfoInput.ascx.designer.cs">
+      <DependentUpon>ForeignAddressInfoInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\GreekAddressInfoInput.ascx.cs">
+      <DependentUpon>GreekAddressInfoInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\GreekAddressInfoInput.ascx.designer.cs">
+      <DependentUpon>GreekAddressInfoInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\MemoEdit.ascx.cs">
+      <DependentUpon>MemoEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\MemoEdit.ascx.designer.cs">
+      <DependentUpon>MemoEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSources\Academics.cs" />
+    <Compile Include="DataSources\BlockedPositionGroups.cs" />
+    <Compile Include="DataSources\BaseDataSource.cs" />
+    <Compile Include="DataSources\HelpdeskUsers.cs" />
+    <Compile Include="DataSources\PhysicalObjects.cs" />
+    <Compile Include="DataSources\PositionGroups.cs" />
+    <Compile Include="DataSources\Positions.cs" />
+    <Compile Include="DataSources\Providers.cs" />
+    <Compile Include="DataSources\ReportDataSources.cs" />
+    <Compile Include="DataSources\Offices.cs" />
+    <Compile Include="DataSources\StudentPracticeApiLog.cs" />
+    <Compile Include="DataSources\Students.cs" />
+    <Compile Include="DataSources\VerificationLogs.cs" />
+    <Compile Include="EmailVerificationInfo.aspx.cs">
+      <DependentUpon>EmailVerificationInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmailVerificationInfo.aspx.designer.cs">
+      <DependentUpon>EmailVerificationInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\AddHelpdeskUser.aspx.cs">
+      <DependentUpon>AddHelpdeskUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\AddHelpdeskUser.aspx.designer.cs">
+      <DependentUpon>AddHelpdeskUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\BlockedPositions.aspx.cs">
+      <DependentUpon>BlockedPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\BlockedPositions.aspx.designer.cs">
+      <DependentUpon>BlockedPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ServiceLogs.aspx.cs">
+      <DependentUpon>ServiceLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ServiceLogs.aspx.designer.cs">
+      <DependentUpon>ServiceLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditAcademic.aspx.cs">
+      <DependentUpon>EditAcademic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditAcademic.aspx.designer.cs">
+      <DependentUpon>EditAcademic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditHelpdeskUser.aspx.cs">
+      <DependentUpon>EditHelpdeskUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditHelpdeskUser.aspx.designer.cs">
+      <DependentUpon>EditHelpdeskUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditIncidentReportHandler.aspx.cs">
+      <DependentUpon>EditIncidentReportHandler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditIncidentReportHandler.aspx.designer.cs">
+      <DependentUpon>EditIncidentReportHandler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditLastIncidentReportPost.aspx.cs">
+      <DependentUpon>EditLastIncidentReportPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditLastIncidentReportPost.aspx.designer.cs">
+      <DependentUpon>EditLastIncidentReportPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditOffice.aspx.cs">
+      <DependentUpon>EditOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditOffice.aspx.designer.cs">
+      <DependentUpon>EditOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditOfficeAcademics.aspx.cs">
+      <DependentUpon>EditOfficeAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditOfficeAcademics.aspx.designer.cs">
+      <DependentUpon>EditOfficeAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditProvider.aspx.cs">
+      <DependentUpon>EditProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditProvider.aspx.designer.cs">
+      <DependentUpon>EditProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\HelpdeskUsers.aspx.cs">
+      <DependentUpon>HelpdeskUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\HelpdeskUsers.aspx.designer.cs">
+      <DependentUpon>HelpdeskUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchAcademics.aspx.cs">
+      <DependentUpon>SearchAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchAcademics.aspx.designer.cs">
+      <DependentUpon>SearchAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchOffices.aspx.cs">
+      <DependentUpon>SearchOffices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchOffices.aspx.designer.cs">
+      <DependentUpon>SearchOffices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchOfficeStudents.aspx.cs">
+      <DependentUpon>SearchOfficeStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchOfficeStudents.aspx.designer.cs">
+      <DependentUpon>SearchOfficeStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchPositionGroups.aspx.cs">
+      <DependentUpon>SearchPositionGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchPositionGroups.aspx.designer.cs">
+      <DependentUpon>SearchPositionGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchProviders.aspx.cs">
+      <DependentUpon>SearchProviders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchProviders.aspx.designer.cs">
+      <DependentUpon>SearchProviders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchStudents.aspx.cs">
+      <DependentUpon>SearchStudents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchStudents.aspx.designer.cs">
+      <DependentUpon>SearchStudents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchSupervisorReports.aspx.cs">
+      <DependentUpon>SearchSupervisorReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchSupervisorReports.aspx.designer.cs">
+      <DependentUpon>SearchSupervisorReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\TransferPositions.aspx.cs">
+      <DependentUpon>TransferPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\TransferPositions.aspx.designer.cs">
+      <DependentUpon>TransferPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportFilters.ascx.cs">
+      <DependentUpon>IncidentReportFilters.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportFilters.ascx.designer.cs">
+      <DependentUpon>IncidentReportFilters.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\VerifyOffice.aspx.cs">
+      <DependentUpon>VerifyOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\VerifyOffice.aspx.designer.cs">
+      <DependentUpon>VerifyOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\VerifyProvider.aspx.cs">
+      <DependentUpon>VerifyProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\VerifyProvider.aspx.designer.cs">
+      <DependentUpon>VerifyProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewAccountDetails.aspx.cs">
+      <DependentUpon>ViewAccountDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewAccountDetails.aspx.designer.cs">
+      <DependentUpon>ViewAccountDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportHandlerInput.ascx.cs">
+      <DependentUpon>IncidentReportHandlerInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportHandlerInput.ascx.designer.cs">
+      <DependentUpon>IncidentReportHandlerInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSources\IncidentReportPosts.cs" />
+    <Compile Include="DataSources\IncidentReports.cs" />
+    <Compile Include="DataSources\IncidentTypes.cs" />
+    <Compile Include="DataSources\Reporters.cs" />
+    <Compile Include="DataSources\SubSystems.cs" />
+    <Compile Include="DataSources\Users.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\AddIncidentReportPost.aspx.cs">
+      <DependentUpon>AddIncidentReportPost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\AddIncidentReportPost.aspx.designer.cs">
+      <DependentUpon>AddIncidentReportPost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\CreateSubSystem.aspx.cs">
+      <DependentUpon>CreateSubSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\CreateSubSystem.aspx.designer.cs">
+      <DependentUpon>CreateSubSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditIncidentReport.aspx.cs">
+      <DependentUpon>EditIncidentReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditIncidentReport.aspx.designer.cs">
+      <DependentUpon>EditIncidentReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditReporter.aspx.cs">
+      <DependentUpon>EditReporter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\EditReporter.aspx.designer.cs">
+      <DependentUpon>EditReporter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\EditSubSystem.aspx.cs">
+      <DependentUpon>EditSubSystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\EditSubSystem.aspx.designer.cs">
+      <DependentUpon>EditSubSystem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\OnlineReports.aspx.cs">
+      <DependentUpon>OnlineReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\OnlineReports.aspx.designer.cs">
+      <DependentUpon>OnlineReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ReportIncident.aspx.cs">
+      <DependentUpon>ReportIncident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ReportIncident.aspx.designer.cs">
+      <DependentUpon>ReportIncident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchIncidentReports.aspx.cs">
+      <DependentUpon>SearchIncidentReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchIncidentReports.aspx.designer.cs">
+      <DependentUpon>SearchIncidentReports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchReporters.aspx.cs">
+      <DependentUpon>SearchReporters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\SearchReporters.aspx.designer.cs">
+      <DependentUpon>SearchReporters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\SubSystemManagement.aspx.cs">
+      <DependentUpon>SubSystemManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\SubSystemManagement.aspx.designer.cs">
+      <DependentUpon>SubSystemManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportInput.ascx.cs">
+      <DependentUpon>IncidentReportInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportInput.ascx.designer.cs">
+      <DependentUpon>IncidentReportInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportPostInput.ascx.cs">
+      <DependentUpon>IncidentReportPostInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportPostInput.ascx.designer.cs">
+      <DependentUpon>IncidentReportPostInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportPostsView.ascx.cs">
+      <DependentUpon>IncidentReportPostsView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportPostsView.ascx.designer.cs">
+      <DependentUpon>IncidentReportPostsView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportsGridview.ascx.cs">
+      <DependentUpon>IncidentReportsGridview.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportsGridview.ascx.designer.cs">
+      <DependentUpon>IncidentReportsGridview.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportsGridview.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IncidentReportsGridview.tt</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportView.ascx.cs">
+      <DependentUpon>IncidentReportView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\IncidentReportView.ascx.designer.cs">
+      <DependentUpon>IncidentReportView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\ReporterInput.ascx.cs">
+      <DependentUpon>ReporterInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\UserControls\ReporterInput.ascx.designer.cs">
+      <DependentUpon>ReporterInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Admin\UserControls\SubSystemInput.ascx.cs">
+      <DependentUpon>SubSystemInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Admin\UserControls\SubSystemInput.ascx.designer.cs">
+      <DependentUpon>SubSystemInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewIncident.aspx.cs">
+      <DependentUpon>ViewIncident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewIncident.aspx.designer.cs">
+      <DependentUpon>ViewIncident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewOfficeAcademics.aspx.cs">
+      <DependentUpon>ViewOfficeAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewOfficeAcademics.aspx.designer.cs">
+      <DependentUpon>ViewOfficeAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewOfficeUsers.aspx.cs">
+      <DependentUpon>ViewOfficeUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewOfficeUsers.aspx.designer.cs">
+      <DependentUpon>ViewOfficeUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewPosition.aspx.cs">
+      <DependentUpon>ViewPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewPosition.aspx.designer.cs">
+      <DependentUpon>ViewPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewProviderUsers.aspx.cs">
+      <DependentUpon>ViewProviderUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewProviderUsers.aspx.designer.cs">
+      <DependentUpon>ViewProviderUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewVerificationLogs.aspx.cs">
+      <DependentUpon>ViewVerificationLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\ViewVerificationLogs.aspx.designer.cs">
+      <DependentUpon>ViewVerificationLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\WithdrawPositions.aspx.cs">
+      <DependentUpon>WithdrawPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Helpdesk\WithdrawPositions.aspx.designer.cs">
+      <DependentUpon>WithdrawPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PopUp.Master.cs">
+      <DependentUpon>PopUp.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUp.Master.designer.cs">
+      <DependentUpon>PopUp.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PopUpPublic.Master.cs">
+      <DependentUpon>PopUpPublic.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUpPublic.Master.designer.cs">
+      <DependentUpon>PopUpPublic.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Portal.Master.cs">
+      <DependentUpon>Portal.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Portal.Master.designer.cs">
+      <DependentUpon>Portal.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PortalServices\Services.asmx.cs">
+      <DependentUpon>Services.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Secure\Reports\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipOffices.aspx.cs">
+      <DependentUpon>InternshipOffices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipOffices.aspx.designer.cs">
+      <DependentUpon>InternshipOffices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipOfficeCounters.aspx.cs">
+      <DependentUpon>InternshipOfficeCounters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipOfficeCounters.aspx.designer.cs">
+      <DependentUpon>InternshipOfficeCounters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipPositionPopup.aspx.cs">
+      <DependentUpon>InternshipPositionPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipPositionPopup.aspx.designer.cs">
+      <DependentUpon>InternshipPositionPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipPositionGroups.aspx.cs">
+      <DependentUpon>InternshipPositionGroups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipPositionGroups.aspx.designer.cs">
+      <DependentUpon>InternshipPositionGroups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipPositions.aspx.cs">
+      <DependentUpon>InternshipPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipPositions.aspx.designer.cs">
+      <DependentUpon>InternshipPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipProviders.aspx.cs">
+      <DependentUpon>InternshipProviders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\InternshipProviders.aspx.designer.cs">
+      <DependentUpon>InternshipProviders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\StatisticsByDay.aspx.cs">
+      <DependentUpon>StatisticsByDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\StatisticsByDay.aspx.designer.cs">
+      <DependentUpon>StatisticsByDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\StatisticsByOffice.aspx.cs">
+      <DependentUpon>StatisticsByOffice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\StatisticsByOffice.aspx.designer.cs">
+      <DependentUpon>StatisticsByOffice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\StatisticsByProvider.aspx.cs">
+      <DependentUpon>StatisticsByProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\StatisticsByProvider.aspx.designer.cs">
+      <DependentUpon>StatisticsByProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\UserControls\InternshipPositionDetailsGridView.ascx.cs">
+      <DependentUpon>InternshipPositionDetailsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\UserControls\InternshipPositionDetailsGridView.ascx.designer.cs">
+      <DependentUpon>InternshipPositionDetailsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Reports\ViewOfficeAcademics.aspx.cs">
+      <DependentUpon>ViewOfficeAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Reports\ViewOfficeAcademics.aspx.designer.cs">
+      <DependentUpon>ViewOfficeAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Common\ContactForm.aspx.cs">
+      <DependentUpon>ContactForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Common\ContactForm.aspx.designer.cs">
+      <DependentUpon>ContactForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Common\ContactHistory.aspx.cs">
+      <DependentUpon>ContactHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Common\ContactHistory.aspx.designer.cs">
+      <DependentUpon>ContactHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Common\HelpdeskContact.aspx.cs">
+      <DependentUpon>HelpdeskContact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Common\HelpdeskContact.aspx.designer.cs">
+      <DependentUpon>HelpdeskContact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\AddImplementationData.aspx.cs">
+      <DependentUpon>AddImplementationData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\AddImplementationData.aspx.designer.cs">
+      <DependentUpon>AddImplementationData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\AddOfficeUser.aspx.cs">
+      <DependentUpon>AddOfficeUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\AddOfficeUser.aspx.designer.cs">
+      <DependentUpon>AddOfficeUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\AssignPosition.aspx.cs">
+      <DependentUpon>AssignPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\AssignPosition.aspx.designer.cs">
+      <DependentUpon>AssignPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\CompletePosition.aspx.cs">
+      <DependentUpon>CompletePosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\CompletePosition.aspx.designer.cs">
+      <DependentUpon>CompletePosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\EditImplementationData.aspx.cs">
+      <DependentUpon>EditImplementationData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\EditImplementationData.aspx.designer.cs">
+      <DependentUpon>EditImplementationData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\EditOfficeUser.aspx.cs">
+      <DependentUpon>EditOfficeUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\EditOfficeUser.aspx.designer.cs">
+      <DependentUpon>EditOfficeUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\ChangeAssignedStudent.aspx.cs">
+      <DependentUpon>ChangeAssignedStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\ChangeAssignedStudent.aspx.designer.cs">
+      <DependentUpon>ChangeAssignedStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\GenerateOfficeCertificationPDF.ashx.cs">
+      <DependentUpon>GenerateOfficeCertificationPDF.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\OfficeAcademicsAuthorization.aspx.cs">
+      <DependentUpon>OfficeAcademicsAuthorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\OfficeAcademicsAuthorization.aspx.designer.cs">
+      <DependentUpon>OfficeAcademicsAuthorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\OfficeDetails.aspx.cs">
+      <DependentUpon>OfficeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\OfficeDetails.aspx.designer.cs">
+      <DependentUpon>OfficeDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\OfficeUsers.aspx.cs">
+      <DependentUpon>OfficeUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\OfficeUsers.aspx.designer.cs">
+      <DependentUpon>OfficeUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\PreAssignPosition.aspx.cs">
+      <DependentUpon>PreAssignPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\PreAssignPosition.aspx.designer.cs">
+      <DependentUpon>PreAssignPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\SearchPositions.aspx.cs">
+      <DependentUpon>SearchPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\SearchPositions.aspx.designer.cs">
+      <DependentUpon>SearchPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\SelectedPositions.aspx.cs">
+      <DependentUpon>SelectedPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\SelectedPositions.aspx.designer.cs">
+      <DependentUpon>SelectedPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\SelectOfficeAcademics.aspx.cs">
+      <DependentUpon>SelectOfficeAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\SelectOfficeAcademics.aspx.designer.cs">
+      <DependentUpon>SelectOfficeAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\ViewPosition.aspx.cs">
+      <DependentUpon>ViewPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\ViewPosition.aspx.designer.cs">
+      <DependentUpon>ViewPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\ViewPositionGroup.aspx.cs">
+      <DependentUpon>ViewPositionGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipOffices\ViewPositionGroup.aspx.designer.cs">
+      <DependentUpon>ViewPositionGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\AddAcademics.aspx.cs">
+      <DependentUpon>AddAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\AddAcademics.aspx.designer.cs">
+      <DependentUpon>AddAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\AddProviderUser.aspx.cs">
+      <DependentUpon>AddProviderUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\AddProviderUser.aspx.designer.cs">
+      <DependentUpon>AddProviderUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\EditPreAssignedPosition.aspx.cs">
+      <DependentUpon>EditPreAssignedPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\EditPreAssignedPosition.aspx.designer.cs">
+      <DependentUpon>EditPreAssignedPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\EditProviderUser.aspx.cs">
+      <DependentUpon>EditProviderUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\EditProviderUser.aspx.designer.cs">
+      <DependentUpon>EditProviderUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\GenerateProviderCertificationPDF.ashx.cs">
+      <DependentUpon>GenerateProviderCertificationPDF.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\InternshipPositionExample.aspx.cs">
+      <DependentUpon>InternshipPositionExample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\InternshipPositionExample.aspx.designer.cs">
+      <DependentUpon>InternshipPositionExample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\InternshipPositions.aspx.cs">
+      <DependentUpon>InternshipPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\InternshipPositions.aspx.designer.cs">
+      <DependentUpon>InternshipPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\PositionAcademics.aspx.cs">
+      <DependentUpon>PositionAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\PositionAcademics.aspx.designer.cs">
+      <DependentUpon>PositionAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\PositionDetails.aspx.cs">
+      <DependentUpon>PositionDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\PositionDetails.aspx.designer.cs">
+      <DependentUpon>PositionDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\PositionPhysicalObject.aspx.cs">
+      <DependentUpon>PositionPhysicalObject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\PositionPhysicalObject.aspx.designer.cs">
+      <DependentUpon>PositionPhysicalObject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\PositionPreview.aspx.cs">
+      <DependentUpon>PositionPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\PositionPreview.aspx.designer.cs">
+      <DependentUpon>PositionPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ProviderDetails.aspx.cs">
+      <DependentUpon>ProviderDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ProviderDetails.aspx.designer.cs">
+      <DependentUpon>ProviderDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ProviderUsers.aspx.cs">
+      <DependentUpon>ProviderUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ProviderUsers.aspx.designer.cs">
+      <DependentUpon>ProviderUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\SelectAcademics.aspx.cs">
+      <DependentUpon>SelectAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\SelectAcademics.aspx.designer.cs">
+      <DependentUpon>SelectAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\SelectedPositions.aspx.cs">
+      <DependentUpon>SelectedPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\SelectedPositions.aspx.designer.cs">
+      <DependentUpon>SelectedPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Common\SelectPhysicalObjects.aspx.cs">
+      <DependentUpon>SelectPhysicalObjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Common\SelectPhysicalObjects.aspx.designer.cs">
+      <DependentUpon>SelectPhysicalObjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ViewOfficeAcademics.aspx.cs">
+      <DependentUpon>ViewOfficeAcademics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ViewOfficeAcademics.aspx.designer.cs">
+      <DependentUpon>ViewOfficeAcademics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ViewPosition.aspx.cs">
+      <DependentUpon>ViewPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\InternshipProviders\ViewPosition.aspx.designer.cs">
+      <DependentUpon>ViewPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\SecurePages.Master.cs">
+      <DependentUpon>SecurePages.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\SecurePages.Master.designer.cs">
+      <DependentUpon>SecurePages.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Students\ContactInfoDetails.aspx.cs">
+      <DependentUpon>ContactInfoDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Students\ContactInfoDetails.aspx.designer.cs">
+      <DependentUpon>ContactInfoDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Students\SearchPositions.aspx.cs">
+      <DependentUpon>SearchPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Students\SearchPositions.aspx.designer.cs">
+      <DependentUpon>SearchPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Students\StudentDetails.aspx.cs">
+      <DependentUpon>StudentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Students\StudentDetails.aspx.designer.cs">
+      <DependentUpon>StudentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Students\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Students\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Students\AssignedPositions.aspx.cs">
+      <DependentUpon>AssignedPositions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Students\AssignedPositions.aspx.designer.cs">
+      <DependentUpon>AssignedPositions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\Students\ViewPosition.aspx.cs">
+      <DependentUpon>ViewPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\Students\ViewPosition.aspx.designer.cs">
+      <DependentUpon>ViewPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\UserControls\HelpdeskContactHistory.ascx.cs">
+      <DependentUpon>HelpdeskContactHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\UserControls\HelpdeskContactHistory.ascx.designer.cs">
+      <DependentUpon>HelpdeskContactHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shib\ReturnedShibbolethFields.aspx.cs">
+      <DependentUpon>ReturnedShibbolethFields.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shib\ReturnedShibbolethFields.aspx.designer.cs">
+      <DependentUpon>ReturnedShibbolethFields.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\IdentityControl.ascx.cs">
+      <DependentUpon>IdentityControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\IdentityControl.ascx.designer.cs">
+      <DependentUpon>IdentityControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\SearchAndRegisterStudent.ascx.cs">
+      <DependentUpon>SearchAndRegisterStudent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\SearchAndRegisterStudent.ascx.designer.cs">
+      <DependentUpon>SearchAndRegisterStudent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HelpdeskControls\InputControls\HelpdeskUserInput.ascx.cs">
+      <DependentUpon>HelpdeskUserInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HelpdeskControls\InputControls\HelpdeskUserInput.ascx.designer.cs">
+      <DependentUpon>HelpdeskUserInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shib\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shib\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestShibLogin.aspx.cs">
+      <DependentUpon>TestShibLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestShibLogin.aspx.designer.cs">
+      <DependentUpon>TestShibLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\ChangePassword.ascx.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\ChangePassword.ascx.designer.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Secure\UserControls\HelpdeskContactFormInput.ascx.cs">
+      <DependentUpon>HelpdeskContactFormInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Secure\UserControls\HelpdeskContactFormInput.ascx.designer.cs">
+      <DependentUpon>HelpdeskContactFormInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HelpdeskControls\InputControls\VerificationCommentsInput.ascx.cs">
+      <DependentUpon>VerificationCommentsInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\HelpdeskControls\InputControls\VerificationCommentsInput.ascx.designer.cs">
+      <DependentUpon>VerificationCommentsInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\InputControls\AssignStudent.ascx.cs">
+      <DependentUpon>AssignStudent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\InputControls\AssignStudent.ascx.designer.cs">
+      <DependentUpon>AssignStudent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\InputControls\OfficeUserInput.ascx.cs">
+      <DependentUpon>OfficeUserInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\InputControls\OfficeUserInput.ascx.designer.cs">
+      <DependentUpon>OfficeUserInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\ViewControls\OfficeAcademicsGridView.ascx.cs">
+      <DependentUpon>OfficeAcademicsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\ViewControls\OfficeAcademicsGridView.ascx.designer.cs">
+      <DependentUpon>OfficeAcademicsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\ViewControls\OfficeView.ascx.cs">
+      <DependentUpon>OfficeView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\ViewControls\OfficeView.ascx.designer.cs">
+      <DependentUpon>OfficeView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\InputControls\CompletionInput.ascx.cs">
+      <DependentUpon>CompletionInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\InputControls\CompletionInput.ascx.designer.cs">
+      <DependentUpon>CompletionInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\InputControls\ImplementationInput.ascx.cs">
+      <DependentUpon>ImplementationInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\InputControls\ImplementationInput.ascx.designer.cs">
+      <DependentUpon>ImplementationInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\InputControls\PhysicalObjectsInput.ascx.cs">
+      <DependentUpon>PhysicalObjectsInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\InputControls\PhysicalObjectsInput.ascx.designer.cs">
+      <DependentUpon>PhysicalObjectsInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\InputControls\PositionGroupInput.ascx.cs">
+      <DependentUpon>PositionGroupInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\InputControls\PositionGroupInput.ascx.designer.cs">
+      <DependentUpon>PositionGroupInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\CompletionView.ascx.cs">
+      <DependentUpon>CompletionView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\CompletionView.ascx.designer.cs">
+      <DependentUpon>CompletionView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\HandledStudentsGridView.ascx.cs">
+      <DependentUpon>HandledStudentsGridView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\HandledStudentsGridView.ascx.designer.cs">
+      <DependentUpon>HandledStudentsGridView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\ImplementationView.ascx.cs">
+      <DependentUpon>ImplementationView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\ImplementationView.ascx.designer.cs">
+      <DependentUpon>ImplementationView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\PositionGroupView.ascx.cs">
+      <DependentUpon>PositionGroupView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\PositionGroupView.ascx.designer.cs">
+      <DependentUpon>PositionGroupView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\PositionView.ascx.cs">
+      <DependentUpon>PositionView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\PositionView.ascx.designer.cs">
+      <DependentUpon>PositionView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\PreAssignmentView.ascx.cs">
+      <DependentUpon>PreAssignmentView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipPositionControls\ViewControls\PreAssignmentView.ascx.designer.cs">
+      <DependentUpon>PreAssignmentView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\InputControls\ProviderInput.ascx.cs">
+      <DependentUpon>ProviderInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\InputControls\ProviderInput.ascx.designer.cs">
+      <DependentUpon>ProviderInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\InputControls\ProviderRegisterUserInput.ascx.cs">
+      <DependentUpon>ProviderRegisterUserInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\InputControls\ProviderRegisterUserInput.ascx.designer.cs">
+      <DependentUpon>ProviderRegisterUserInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\InputControls\ProviderUserInput.ascx.cs">
+      <DependentUpon>ProviderUserInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\InputControls\ProviderUserInput.ascx.designer.cs">
+      <DependentUpon>ProviderUserInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\ViewControls\ProviderUserView.ascx.cs">
+      <DependentUpon>ProviderUserView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\ViewControls\ProviderUserView.ascx.designer.cs">
+      <DependentUpon>ProviderUserView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\ViewControls\ProviderView.ascx.cs">
+      <DependentUpon>ProviderView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipProviderControls\ViewControls\ProviderView.ascx.designer.cs">
+      <DependentUpon>ProviderView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\QuestionnaireControls\InputControls\QuestionnaireInput.ascx.cs">
+      <DependentUpon>QuestionnaireInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\QuestionnaireControls\InputControls\QuestionnaireInput.ascx.designer.cs">
+      <DependentUpon>QuestionnaireInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\QuestionnaireControls\InputControls\QuestionnaireQuestionInput.ascx.cs">
+      <DependentUpon>QuestionnaireQuestionInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\QuestionnaireControls\InputControls\QuestionnaireQuestionInput.ascx.designer.cs">
+      <DependentUpon>QuestionnaireQuestionInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StudentControls\InputControls\ContactInfoDetailsInput.ascx.cs">
+      <DependentUpon>ContactInfoDetailsInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\StudentControls\InputControls\ContactInfoDetailsInput.ascx.designer.cs">
+      <DependentUpon>ContactInfoDetailsInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\InputControls\OfficeRegisterUserInput.ascx.cs">
+      <DependentUpon>OfficeRegisterUserInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\InputControls\OfficeRegisterUserInput.ascx.designer.cs">
+      <DependentUpon>OfficeRegisterUserInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\SchoolInput.ascx.cs">
+      <DependentUpon>SchoolInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\SchoolInput.ascx.designer.cs">
+      <DependentUpon>SchoolInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\InputControls\OfficeInput.ascx.cs">
+      <DependentUpon>OfficeInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\InternshipOfficeControls\InputControls\OfficeInput.ascx.designer.cs">
+      <DependentUpon>OfficeInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StudentControls\InputControls\StudentInput.ascx.cs">
+      <DependentUpon>StudentInput.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\StudentControls\InputControls\StudentInput.ascx.designer.cs">
+      <DependentUpon>StudentInput.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\EmailForm.ascx.cs">
+      <DependentUpon>EmailForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\EmailForm.ascx.designer.cs">
+      <DependentUpon>EmailForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\FlashMessage.ascx.cs">
+      <DependentUpon>FlashMessage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\FlashMessage.ascx.designer.cs">
+      <DependentUpon>FlashMessage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\LoginBar.ascx.cs">
+      <DependentUpon>LoginBar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\GenericControls\LoginBar.ascx.designer.cs">
+      <DependentUpon>LoginBar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\StudentControls\ViewControls\StudentView.ascx.cs">
+      <DependentUpon>StudentView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\StudentControls\ViewControls\StudentView.ascx.designer.cs">
+      <DependentUpon>StudentView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\CacheManager.cs" />
+    <Compile Include="Utils\Config.cs" />
+    <Compile Include="Utils\Extensions\GridViewExtensions.cs" />
+    <Compile Include="Utils\Extensions.cs" />
+    <Compile Include="Utils\Extensions\ControlExtensions.cs" />
+    <Compile Include="Utils\Extensions\GeneralExtensions.cs" />
+    <Compile Include="Utils\HtmlHelper.cs" />
+    <Compile Include="Utils\UI.cs" />
+    <Compile Include="Utils\WorkerActions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\Helpdesk\Default.aspx" />
+    <Content Include="_css\style-backoffice.css" />
+    <Content Include="_css\style-popup.css" />
+    <Content Include="_css\main.css" />
+    <Content Include="_img\error.gif" />
+    <Content Include="_img\iconAccept.png" />
+    <Content Include="_img\iconAcceptAll.png" />
+    <Content Include="_img\iconAdd.png" />
+    <Content Include="_img\iconAddNewItem.png" />
+    <Content Include="_img\iconBack.png" />
+    <Content Include="_img\iconCalendar.png" />
+    <Content Include="_img\iconCancel.png" />
+    <Content Include="_img\iconCellphone.png" />
+    <Content Include="_img\iconCollapse.jpg" />
+    <Content Include="_img\iconComment.png" />
+    <Content Include="_img\iconDelete.png" />
+    <Content Include="_img\iconDeleteCellphone.png" />
+    <Content Include="_img\iconEdit.png" />
+    <Content Include="_img\iconEmail.png" />
+    <Content Include="_img\iconEmailEdit.png" />
+    <Content Include="_img\iconEmailSend.png" />
+    <Content Include="_img\iconExcel.png" />
+    <Content Include="_img\iconExpand.jpg" />
+    <Content Include="_img\iconHelp.png" />
+    <Content Include="_img\iconHistory.png" />
+    <Content Include="_img\iconInformation.png" />
+    <Content Include="_img\iconLock.png" />
+    <Content Include="_img\iconNext.png" />
+    <Content Include="_img\iconNo.png" />
+    <Content Include="_img\iconPasswordEdit.png" />
+    <Content Include="_img\iconPrevious.png" />
+    <Content Include="_img\iconPrint.png" />
+    <Content Include="_img\iconQuestionnaire.png" />
+    <Content Include="_img\iconReject.png" />
+    <Content Include="_img\iconRemoveSchool.png" />
+    <Content Include="_img\iconReportEdit.png" />
+    <Content Include="_img\iconSave.png" />
+    <Content Include="_img\iconSaveComment.png" />
+    <Content Include="_img\iconSearch.png" />
+    <Content Include="_img\iconSelectSchool.png" />
+    <Content Include="_img\iconUndo.png" />
+    <Content Include="_img\iconUnlock.png" />
+    <Content Include="_img\iconView.png" />
+    <Content Include="_img\iconYes.png" />
+    <Content Include="_img\login.png" />
+    <Content Include="_img\login_cell1_bottom_left.png" />
+    <Content Include="_img\login_cell1_bottom_right.png" />
+    <Content Include="_img\login_cell1_top_left.png" />
+    <Content Include="_img\login_cell1_top_right.png" />
+    <Content Include="_img\login_cell2_bottom_left.png" />
+    <Content Include="_img\login_cell2_bottom_right.png" />
+    <Content Include="_img\login_cell2_top_left.png" />
+    <Content Include="_img\login_cell2_top_right.png" />
+    <Content Include="_img\login_cell3_bottom_left.png" />
+    <Content Include="_img\login_cell3_bottom_right.png" />
+    <Content Include="_img\login_cell3_top_left.png" />
+    <Content Include="_img\login_cell3_top_right.png" />
+    <Content Include="_img\progress.gif" />
+    <Content Include="_img\TriStateCheckBoxBG.gif" />
+    <Content Include="_img\TriStateCheckBoxBG_ReadOnly.gif" />
+    <Content Include="_img\wz-filereport.png" />
+    <Content Include="_js\popUp.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\Helpdesk\helpdesk.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Secure\Helpdesk\SearchIncidentReports.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Default\Default.skin" />
+    <Content Include="Common\GeneralError.aspx" />
+    <Content Include="Common\PageNotFound.aspx" />
+    <Content Include="Default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\AccessDenied.aspx" />
+    <Content Include="Secure\Helpdesk\ReportIncident.aspx" />
+    <Content Include="Portal.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\Helpdesk\AddIncidentReportPost.aspx" />
+    <Content Include="Secure\Admin\CreateSubSystem.aspx" />
+    <Content Include="Secure\Helpdesk\EditReporter.aspx" />
+    <Content Include="Secure\Admin\EditSubSystem.aspx" />
+    <Content Include="Secure\Helpdesk\SearchReporters.aspx" />
+    <Content Include="Secure\Admin\SubSystemManagement.aspx" />
+    <Content Include="Secure\Helpdesk\UserControls\IncidentReportInput.ascx" />
+    <Content Include="Secure\Helpdesk\UserControls\IncidentReportPostInput.ascx" />
+    <Content Include="Secure\Helpdesk\UserControls\IncidentReportPostsView.ascx" />
+    <Content Include="Secure\Helpdesk\UserControls\IncidentReportView.ascx" />
+    <Content Include="Secure\Helpdesk\UserControls\ReporterInput.ascx" />
+    <Content Include="Secure\Admin\UserControls\SubSystemInput.ascx" />
+    <Content Include="Secure\Helpdesk\ViewIncident.aspx" />
+    <Content Include="PopUp.Master" />
+    <Content Include="_img\iconPending.png" />
+    <Content Include="_img\iconUserComment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\Admin\admin.sitemap" />
+    <Content Include="Secure\Admin\CreateIncidentType.aspx" />
+    <Content Include="Secure\Admin\Default.aspx" />
+    <Content Include="Secure\Admin\EditIncidentType.aspx" />
+    <Content Include="Secure\Admin\IncidentTypeManagement.aspx" />
+    <Content Include="Secure\Admin\UserControls\IncidentTypeInput.ascx" />
+    <Content Include="App_Data\Mails.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\RegistrationInput.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RegistrationInput.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OfficeInput.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OfficeInput.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\ProviderInput.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProviderInput.en-US.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\PositionInput.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PositionInput.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\ProviderLiterals.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProviderLiterals.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ProviderLiterals.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProviderLiterals.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ProviderInput.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProviderInput.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RegistrationInput.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RegistrationInput.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\JavaScriptResource.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>JavaScriptResource.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\JavaScriptResource.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>JavaScriptResource.en-US.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Default.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Default.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Default.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Default.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ProviderDetails.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProviderDetails.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ProviderDetails.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProviderDetails.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\InternshipPositions.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>InternshipPositions.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\GlobalProvider.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalProvider.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\GlobalProvider.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>GlobalProvider.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\LoginBar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>LoginBar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\ChangePassword.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ChangePassword.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ChangePassword.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ChangePassword.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ColourExplanation.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ColourExplanation.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ColourExplanation.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ColourExplanation.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Filter.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Filter.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Filter.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Filter.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Grid.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Grid.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Grid.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Grid.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\SelectedPositions.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SelectedPositions.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\SelectedPositions.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>SelectedPositions.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\AddAcademics.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AddAcademics.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\AddAcademics.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>AddAcademics.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ProviderUser.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProviderUser.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\ProviderUser.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>ProviderUser.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PositionWizard.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PositionWizard.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PositionWizard.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PositionWizard.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PositionPages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PositionPages.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PositionPages.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PositionPages.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\HelpdeskContact.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>HelpdeskContact.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\HelpdeskContact.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>HelpdeskContact.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PositionGroupInput.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PositionGroupInput.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PositionGroupInput.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PositionGroupInput.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RegistrantionConditions.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RegistrantionConditions.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RegistrantionConditions.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RegistrantionConditions.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EditPreAssignedPosition.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditPreAssignedPosition.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EditPreAssignedPosition.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EditPreAssignedPosition.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PositionInput.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PositionInput.en-US.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\PrimaryMenu.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PrimaryMenu.en-US1.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\PrimaryMenu.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>PrimaryMenu1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\CommonPages.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CommonPages.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\CommonPages.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CommonPages.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Botshield.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Botshield.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Botshield.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Botshield.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EmailVerificationInfo.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmailVerificationInfo.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Evaluation.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Evaluation.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\Evaluation.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Evaluation.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Student.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Student.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Student.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Student.en-US.designer.cs</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="Controls\BotShield.js" />
+    <Content Include="_rdlc\OfficeCertification.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_rdlc\ProviderCertification.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_rdlc\DepartmentCertification.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_rdlc\MultipleDepartmentCertification.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="_rdlc\ProviderCertificationEN.rdlc">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Msg.aspx" />
+    <Content Include="PortalServices\Services.asmx" />
+    <Content Include="UserControls\GenericControls\ChangePassword.ascx" />
+    <Content Include="UserControls\GenericControls\FlashMessage.ascx" />
+    <Content Include="UserControls\GenericControls\LoginBar.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\Helpdesk\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\ForgotPassword.aspx" />
+    <Content Include="_img\square-gray-left.gif" />
+    <Content Include="_img\square-gray-right.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\Admin\Web.config" />
+    <Content Include="Browse\ContactForm.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Browse\Browse.Master" />
+    <Content Include="Common\AlterPassword.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Secure\Helpdesk\EditIncidentReport.aspx" />
+    <Content Include="Secure\Helpdesk\OnlineReports.aspx" />
+    <Content Include="Secure\UserControls\HelpdeskContactFormInput.ascx" />
+    <Content Include="_css\jquery-ui.css" />
+    <Content Include="_img\iconUserEdit.png" />
+    <Content Include="_img\iconViewDetails.png" />
+    <Content Include="_img\s.gif" />
+    <Content Include="_img\jquery\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="_img\jquery\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="_img\jquery\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="_img\jquery\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="_img\jquery\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="_img\jquery\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="_img\jquery\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="_img\jquery\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="_img\jquery\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="_img\jquery\ui-bg_glass_75_5d7b9d_1x400.png" />
+    <Content Include="_img\jquery\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="_img\jquery\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="_img\jquery\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="_img\jquery\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="_img\jquery\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="_img\jquery\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="_img\jquery\ui-icons_222222_256x240.png" />
+    <Content Include="_img\jquery\ui-icons_228ef1_256x240.png" />
+    <Content Include="_img\jquery\ui-icons_2e83ff_256x240.png" />
+    <Content Include="_img\jquery\ui-icons_454545_256x240.png" />
+    <Content Include="_img\jquery\ui-icons_888888_256x240.png" />
+    <Content Include="_img\jquery\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="_img\jquery\ui-icons_ef8c08_256x240.png" />
+    <Content Include="_img\jquery\ui-icons_ffd27a_256x240.png" />
+    <Content Include="_img\jquery\ui-icons_ffffff_256x240.png" />
+    <Content Include="_js\jquery-impromptu.1.8.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\Reports\Reports.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\Reports\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Secure\BackOffice.Master" />
+    <Content Include="App_GlobalResources\InternshipPositions.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InternshipPositions.en-US.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\LoginBar.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LoginBar.en-US.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\EmailVerificationInfo.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>EmailVerificationInfo.en-US.Designer.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\WebDeploy.pubxml" />
+    <None Include="Properties\PublishProfiles\FilePublish.pubxml" />
+    <Content Include="Secure\Common\Web.config" />
+    <None Include="Properties\PublishProfiles\WinPlatform.pubxml" />
+    <Content Include="RedirectFromPortal.ashx" />
+    <None Include="Secure\Helpdesk\UserControls\IncidentReportsGridview.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IncidentReportsGridview.cs</LastGenOutput>
+    </None>
+    <Content Include="Secure\Students\Web.config" />
+    <Content Include="Secure\InternshipOffices\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="PopUpPublic.Master" />
+    <Content Include="Secure\InternshipOffices\GenerateOfficeCertificationPDF.ashx" />
+    <Content Include="Secure\InternshipProviders\Web.config" />
+    <Content Include="Secure\InternshipProviders\GenerateProviderCertificationPDF.ashx" />
+    <Content Include="Secure\SecurePages.Master" />
+    <Content Include="Secure\SecurePages.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\StudentPractice.BusinessModel\StudentPractice.BusinessModel.csproj">
+      <Project>{E60CD68B-F266-4100-8FC0-341CFFFCBCAA}</Project>
+      <Name>StudentPractice.BusinessModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentPractice.Mails\StudentPractice.Mails.csproj">
+      <Project>{A8C38D1E-2D7F-4495-9F93-B056D987350F}</Project>
+      <Name>StudentPractice.Mails</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentPractice.Queue\StudentPractice.Queue.csproj">
+      <Project>{5042eb31-141a-46b7-934d-c48347beb7cd}</Project>
+      <Name>StudentPractice.Queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentPractice.Utils\StudentPractice.Utils.csproj">
+      <Project>{1EE42D77-3448-4B86-B5F7-B85EABC6847B}</Project>
+      <Name>StudentPractice.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentPractice.Web.Api\StudentPractice.Web.Api.csproj">
+      <Project>{6a7f0ad7-f4f6-4dcb-b3a4-8a773c524b82}</Project>
+      <Name>StudentPractice.Web.Api</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

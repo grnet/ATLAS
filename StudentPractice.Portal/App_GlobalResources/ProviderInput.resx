@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddAlternateContactPerson" xml:space="preserve">
+    <value>Για την εισαγωγή Αναπληρωτή Υπεύθυνου πατήστε εδώ</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Οδός - Αριθμός</value>
+  </data>
+  <data name="AddressValidation" xml:space="preserve">
+    <value>Το πεδίο 'Οδός - Αριθμός' είναι υποχρεωτικό</value>
+  </data>
+  <data name="AFM" xml:space="preserve">
+    <value>Α.Φ.Μ.</value>
+  </data>
+  <data name="AFMInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Α.Φ.Μ.' δεν είναι έγκυρο</value>
+  </data>
+  <data name="AFMTooltip" xml:space="preserve">
+    <value>Το ΑΦΜ του Φορέα Υποδοχής&lt;br /&gt;[Γίνεται έλεγχος εγκυρότητας του ΑΦΜ]</value>
+  </data>
+  <data name="AFMValidation" xml:space="preserve">
+    <value>Το πεδίο 'Α.Φ.Μ.' είναι υποχρεωτικό</value>
+  </data>
+  <data name="AlternateContactEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="AlternateContactEmailInvalid" xml:space="preserve">
+    <value>Το E-mail του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας δεν είναι έγκυρο</value>
+  </data>
+  <data name="AlternateContactEmailTooltip" xml:space="preserve">
+    <value>Το e-mail του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας&lt;br /&gt;[έγκυρο e-mail, π.χ. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="AlternateContactEmailValidation" xml:space="preserve">
+    <value>Το πεδίο 'E-mail Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="AlternateContactMobilePhone" xml:space="preserve">
+    <value>Τηλέφωνο (κινητό)</value>
+  </data>
+  <data name="AlternateContactMobilePhoneInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (κινητό) του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' πρέπει να ξεκινάει από 69 και να αποτελείται από ακριβώς 10 ψηφία</value>
+  </data>
+  <data name="AlternateContactMobilePhoneTooltip" xml:space="preserve">
+    <value>Το κινητό τηλέφωνο του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας&lt;br /&gt;[πρέπει να ξεκινάει από 69 και να αποτελείται από 10 αριθμητικούς χαρακτήρες, χωρίς κενό]</value>
+  </data>
+  <data name="AlternateContactMobilePhoneValidation" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (κινητό) του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="AlternateContactName" xml:space="preserve">
+    <value>Ονοματεπώνυμο</value>
+  </data>
+  <data name="AlternateContactNameTooltip" xml:space="preserve">
+    <value>Το Ον/μο του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας&lt;br /&gt;[ελεύθερο κείμενο, μέχρι 100 χαρακτήρες]</value>
+  </data>
+  <data name="AlternateContactNameValidation" xml:space="preserve">
+    <value>Το πεδίο 'Ονοματεπώνυμο Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="AlternateContactPersonDetailsHeader" xml:space="preserve">
+    <value>Στοιχεία Αναπληρωτή Υπευθύνου του Φορέα για το σύστημα Άτλας</value>
+  </data>
+  <data name="AlternateContactPhone" xml:space="preserve">
+    <value>Τηλέφωνο (σταθερό)</value>
+  </data>
+  <data name="AlternateContactPhoneInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (σταθερό) του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' πρέπει να ξεκινάει από 2 και να αποτελείται από ακριβώς 10 ψηφία</value>
+  </data>
+  <data name="AlternateContactPhoneTooltip" xml:space="preserve">
+    <value>Το σταθερό τηλέφωνο του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας&lt;br /&gt;[πρέπει να ξεκινάει από 2 και να αποτελείται από 10 αριθμητικούς χαρακτήρες, χωρίς κενό]</value>
+  </data>
+  <data name="AlternateContactPhoneValidation" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (σταθερό) του Αναπληρωτή Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="AlternatePhoneValidationMessage" xml:space="preserve">
+    <value>Πρέπει να αποτελείται από τουλάχιστον 3 αριθμούς ή και το προαιρετικό '+' στην αρχή</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Πόλη</value>
+  </data>
+  <data name="CityValidation" xml:space="preserve">
+    <value>Το πεδίο 'Πόλη' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="ContactEmailInvalid" xml:space="preserve">
+    <value>Το E-mail του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας δεν είναι έγκυρο</value>
+  </data>
+  <data name="ContactEmailTooltip" xml:space="preserve">
+    <value>Το e-mail του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας&lt;br /&gt;[έγκυρο e-mail, π.χ. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="ContactEmailValidation" xml:space="preserve">
+    <value>Το πεδίο 'E-mail Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ContactMobilePhone" xml:space="preserve">
+    <value>Τηλέφωνο (κινητό)</value>
+  </data>
+  <data name="ContactMobilePhoneInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (κινητό) του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' πρέπει να ξεκινάει από 69 και να αποτελείται από ακριβώς 10 ψηφία</value>
+  </data>
+  <data name="ContactMobilePhoneTooltip" xml:space="preserve">
+    <value>Το κινητό τηλέφωνο του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας&lt;br /&gt;[πρέπει να ξεκινάει από 69 και να αποτελείται από 10 αριθμητικούς χαρακτήρες, χωρίς κενό]</value>
+  </data>
+  <data name="ContactMobilePhoneValidation" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (κινητό) του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Ονοματεπώνυμο</value>
+  </data>
+  <data name="ContactNameTooltip" xml:space="preserve">
+    <value>Το Ον/μο του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας&lt;br /&gt;[ελεύθερο κείμενο, μέχρι 100 χαρακτήρες]</value>
+  </data>
+  <data name="ContactNameValidation" xml:space="preserve">
+    <value>Το πεδίο 'Ονοματεπώνυμο Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ContactPersonDetailsHeader" xml:space="preserve">
+    <value>Στοιχεία Υπευθύνου του Φορέα για το σύστημα Άτλας</value>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>Τηλέφωνο (σταθερό)</value>
+  </data>
+  <data name="ContactPhoneInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (σταθερό) του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' πρέπει να ξεκινάει από 2 και να αποτελείται από ακριβώς 10 ψηφία</value>
+  </data>
+  <data name="ContactPhoneTooltip" xml:space="preserve">
+    <value>Το σταθερό τηλέφωνο του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας&lt;br /&gt;[πρέπει να ξεκινάει από 2 και να αποτελείται από 10 αριθμητικούς χαρακτήρες, χωρίς κενό]</value>
+  </data>
+  <data name="ContactPhoneValidation" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (σταθερό) του Υπευθύνου του Φορέα για το πρόγραμμα Άτλας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Χώρα</value>
+  </data>
+  <data name="CountryValidation" xml:space="preserve">
+    <value>Το πεδίο 'Χώρα' είναι υποχρεωτικό</value>
+  </data>
+  <data name="DOY" xml:space="preserve">
+    <value>Δ.Ο.Υ.</value>
+  </data>
+  <data name="DOYValidation" xml:space="preserve">
+    <value>Το πεδίο 'Δ.Ο.Υ.' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ForeignAddressDetailsHeader" xml:space="preserve">
+    <value>Στοιχεία Διεύθυνσης Έδρας Φορέα Υποδοχής Πρακτικής Άσκησης</value>
+  </data>
+  <data name="LegalPersonDetailsHeader" xml:space="preserve">
+    <value>Στοιχεία Νομίμου Εκπροσώπου του Φορέα Υποδοχής Πρακτικής Άσκησης</value>
+  </data>
+  <data name="LegalPersonEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="LegalPersonEmailInvalid" xml:space="preserve">
+    <value>Το E-mail του Νομίμου Εκπροσώπου δεν είναι έγκυρο</value>
+  </data>
+  <data name="LegalPersonEmailTooltip" xml:space="preserve">
+    <value>Το e-mail του Νομίμου Εκπροσώπου του Φορέα Υποδοχής&lt;br /&gt;[έγκυρο e-mail, π.χ. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="LegalPersonEmailValidation" xml:space="preserve">
+    <value>Το πεδίο 'E-mail Νομίμου Εκπροσώπου' είναι υποχρεωτικό</value>
+  </data>
+  <data name="LegalPersonName" xml:space="preserve">
+    <value>Ονοματεπώνυμο</value>
+  </data>
+  <data name="LegalPersonNameTooltip" xml:space="preserve">
+    <value>Το Ον/μο του Νομίμου Εκπροσώπου του Φορέα Υποδοχής&lt;br /&gt;[ελεύθερο κείμενο, μέχρι 100 χαρακτήρες]</value>
+  </data>
+  <data name="LegalPersonNameValidation" xml:space="preserve">
+    <value>Το πεδίο 'Ονοματεπώνυμο Νομίμου Εκπροσώπου' είναι υποχρεωτικό</value>
+  </data>
+  <data name="LegalPersonPhone" xml:space="preserve">
+    <value>Τηλέφωνο</value>
+  </data>
+  <data name="LegalPersonPhoneInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο Νομίμου Εκπροσώπου' πρέπει να αποτελείται από ακριβώς 10 ψηφία και να ξεκινάει από 2 αν πρόκειται για σταθερό ή από 69 αν πρόκειται για κινητό.</value>
+  </data>
+  <data name="LegalPersonPhoneTooltip" xml:space="preserve">
+    <value>Το τηλέφωνο του Νομίμου Εκπροσώπου του Φορέα Υποδοχής&lt;br /&gt;[πρέπει να αποτελείται από ακριβώς 10 αριθμητικούς χαρακτήρες και να ξεκινάει από 2 (αν πρόκειται για σταθερό) ή από 69 (αν πρόκειται για κινητό)</value>
+  </data>
+  <data name="LegalPersonPhoneValidation" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο Νομίμου Εκπροσώπου' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Επωνυμία</value>
+  </data>
+  <data name="NameTooltip" xml:space="preserve">
+    <value>Η πλήρης επωνυμία του Φορέα Υποδοχής&lt;br /&gt;[ελεύθερο κείμενο, μέχρι 500 χαρακτήρες]</value>
+  </data>
+  <data name="NameValidation" xml:space="preserve">
+    <value>Το πεδίο 'Επωνυμία' είναι υποχρεωτικό</value>
+  </data>
+  <data name="PrimaryActivityHeader" xml:space="preserve">
+    <value>Πεδίο δραστηριότητας</value>
+  </data>
+  <data name="PrimaryActivityValidation" xml:space="preserve">
+    <value>Το πεδίο 'Πεδίο δραστηριότητας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ProviderDetailsHeader" xml:space="preserve">
+    <value>Στοιχεία Φορέα Υποδοχής Πρακτικής Άσκησης</value>
+  </data>
+  <data name="ProviderEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="ProviderEmailInvalid" xml:space="preserve">
+    <value>Το E-mail του Φορέα δεν είναι έγκυρο</value>
+  </data>
+  <data name="ProviderEmailTooltip" xml:space="preserve">
+    <value>Το e-mail επικοινωνίας με το Φορέα Υποδοχής&lt;br /&gt;[έγκυρο e-mail, π.χ. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="ProviderEmailValidation" xml:space="preserve">
+    <value>Το πεδίο 'E-mail' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ProviderFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="ProviderFaxTooltip" xml:space="preserve">
+    <value>Το Fax επικοινωνίας με το Φορέα Υποδοχής&lt;br /&gt;[πρέπει να ξεκινάει από 2 και να αποτελείται από 10 αριθμητικούς χαρακτήρες, χωρίς κενό]</value>
+  </data>
+  <data name="ProviderFaxValidation" xml:space="preserve">
+    <value>Το πεδίο 'Fax' πρέπει να ξεκινάει από 2 και να αποτελείται από ακριβώς 10 ψηφία</value>
+  </data>
+  <data name="ProviderIdIssueDate" xml:space="preserve">
+    <value>Ημ/νία Έκδοσης</value>
+  </data>
+  <data name="ProviderIdIssueDateCustom" xml:space="preserve">
+    <value>Η Ημ/νία Έκδοσης Εγγράφου Πιστοποίησης πρέπει να είναι προγενέστερη της σημερινής</value>
+  </data>
+  <data name="ProviderIdIssueDateInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Ημ/νία Έκδοσης Εγγράφου Πιστοποίησης' δεν είναι έγκυρο</value>
+  </data>
+  <data name="ProviderIdIssueDateValidation" xml:space="preserve">
+    <value>Το πεδίο 'Ημ/νία Έκδοσης Εγγράφου Πιστοποίησης' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ProviderIdIssuer" xml:space="preserve">
+    <value>Αρχή Έκδοσης</value>
+  </data>
+  <data name="ProviderIdIssuerValidation" xml:space="preserve">
+    <value>Το πεδίο 'Αρχή Έκδοσης Εγγράφου Πιστοποίησης' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ProviderIdNumber" xml:space="preserve">
+    <value>Αριθμός Εγγράφου Πιστοποίησης</value>
+  </data>
+  <data name="ProviderIdNumberValidation" xml:space="preserve">
+    <value>Το πεδίο 'Αριθμός Εγγράφου Πιστοποίησης' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ProviderIdType" xml:space="preserve">
+    <value>Τύπος Εγγράφου Πιστοποίησης</value>
+  </data>
+  <data name="ProviderMobilePhone" xml:space="preserve">
+    <value>Το κινητό τηλέφωνο επικοινωνίας με το Φορέα Υποδοχής&lt;br /&gt;[πρέπει να ξεκινάει από 69 και να αποτελείται από 10 αριθμητικούς χαρακτήρες, χωρίς κενό]</value>
+  </data>
+  <data name="ProviderNumberOfEmployees" xml:space="preserve">
+    <value>Αριθμός απασχολούμενων</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesAnalytical" xml:space="preserve">
+    <value>Ο αριθμός απασχολούμενων του Φορέα Υποδοχής σε ισοδύναμα πλήρους απασχόλησης σε ετήσια βάση.&lt;br/&gt;&lt;br/&gt;Σε περίπτωση εργαζοµένων εποχιακής πλήρους απασχόλησης, υπολογίζεται το ισοδύναµο σε ετήσια βάση&lt;br/&gt;π.χ.: 4 εργαζόµενοι µε 6 µήνες πλήρους απασχόλησης = 2 εργαζόµενοι&lt;br/&gt;&lt;br/&gt;Σε περίπτωση μερικής απασχόλησης, υπολογίζεται το ισοδύναμο πλήρους απασχόλησης σε ετήσια βάση&lt;br/&gt;π.χ.: 4 εργαζόμενοι με 6 μήνες μερικής απασχόλησης (50%) = 1 εργαζόμενος&lt;br /&gt;&lt;br/&gt;[μόνο ψηφία χωρίς τελείες, π.χ. 60]</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Αριθμός απασχολούμενων' πρέπει να αποτελείται μόνο από ψηφία</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesTooltip" xml:space="preserve">
+    <value>Ο αριθμός απασχολούμενων του Φορέα Υποδοχής σε ισοδύναμα πλήρους απασχόλησης σε ετήσια βάση.&lt;br /&gt;[μόνο ψηφία χωρίς τελείες, π.χ. 60]</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesValidation" xml:space="preserve">
+    <value>Το πεδίο 'Αριθμός απασχολούμενων' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesZero" xml:space="preserve">
+    <value>Το πεδίο 'Αριθμός απασχολούμενων' πρέπει να είναι μεγαλύτερο από το 0</value>
+  </data>
+  <data name="ProviderPhone" xml:space="preserve">
+    <value>Τηλέφωνο (σταθερό)</value>
+  </data>
+  <data name="ProviderPhoneInvalid" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (σταθερό)' πρέπει να ξεκινάει από 2 ή 800 ή 801 και να αποτελείται από ακριβώς 10 ψηφία ή να είναι πενταψήφιο ή τετραψήφιο νούμερο</value>
+  </data>
+  <data name="ProviderPhoneTooltip" xml:space="preserve">
+    <value>Το σταθερό τηλέφωνο επικοινωνίας με το Φορέα Υποδοχής&lt;br /&gt;[πρέπει να ξεκινάει από 2 ή 800 ή 801 και να αποτελείται από 10 αριθμητικούς χαρακτήρες ή να είναι πενταψήφιο ή τετραψήφιο νούμερο, χωρίς κενά]</value>
+  </data>
+  <data name="ProviderPhoneValidation" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο (σταθερό)' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ProviderTypeHeader" xml:space="preserve">
+    <value>Είδος φορέα</value>
+  </data>
+  <data name="ProviderTypeValidation" xml:space="preserve">
+    <value>Το πεδίο 'Είδος φορέα' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ProviderURL" xml:space="preserve">
+    <value>Ιστοσελίδα</value>
+  </data>
+  <data name="ProviderURLTooltip" xml:space="preserve">
+    <value>Το URL της ιστοσελίδα του Φορέα Υποδοχής&lt;br /&gt;[έγκυρη διεύθυνση ιστοσελίδας, π.χ. http://www.mypage.gr ]</value>
+  </data>
+  <data name="SelectDOY" xml:space="preserve">
+    <value>-- επιλέξτε Δ.Ο.Υ. --</value>
+  </data>
+  <data name="SelectPrimaryActivity" xml:space="preserve">
+    <value>-- επιλέξτε πεδίο δραστηριότητας --</value>
+  </data>
+  <data name="SelectProviderType" xml:space="preserve">
+    <value>-- επιλέξτε είδος φορέα --</value>
+  </data>
+  <data name="TradeName" xml:space="preserve">
+    <value>Διακριτικός Τίτλος</value>
+  </data>
+  <data name="TradeNameTooltip" xml:space="preserve">
+    <value>Ο διακριτικός τίτλος του Φορέα Υποδοχής&lt;br /&gt;[ελεύθερο κείμενο, μέχρι 500 χαρακτήρες]</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Τ.Κ.</value>
+  </data>
+  <data name="ZipCodeValidation" xml:space="preserve">
+    <value>Το πεδίο 'Τ.Κ.' είναι υποχρεωτικό</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>-- επιλέξτε χώρα --</value>
+  </data>
+  <data name="ProviderUrlInvalid" xml:space="preserve">
+    <value>Το URL της ιστοσελίδα του Φορέα Υποδοχής δεν είναι έγκυρο</value>
+  </data>
+  <data name="AlternateProviderPhoneInvalid" xml:space="preserve">
+    <value>Το σταθερό τηλέφωνο επικοινωνίας με το Φορέα Υποδοχής πρέπει να αποτελείται από τουλάχιστον 3 αριθμούς ή και το προαιρετικό '+' στην αρχή</value>
+  </data>
+  <data name="ZipCodeRegex" xml:space="preserve">
+    <value>Ο Τ.Κ. πρέπει να αποτελείται από ακριβώς 5 ψηφία</value>
+  </data>
+</root>

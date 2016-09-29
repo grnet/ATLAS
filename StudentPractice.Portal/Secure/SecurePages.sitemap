@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Secure" title="Default" roles="Student, OfficeUser, MasterOffice, ProviderUser, MasterProvider">
+
+    <!-- Office Pages -->
+    <siteMapNode url="~/Secure/InternshipOffices/Default.aspx" title="Κεντρική Σελίδα" roles="OfficeUser, MasterOffice" />
+    <siteMapNode url="~/Secure/InternshipOffices/OfficeDetails.aspx" title="Στοιχεία Γραφείου" roles="OfficeUser, MasterOffice" />
+    <siteMapNode url="~/Secure/InternshipOffices/SearchPositions.aspx" title="Αναζήτηση Θέσεων" roles="OfficeUser, MasterOffice" />
+    <siteMapNode url="~/Secure/InternshipOffices/SelectedPositions.aspx" title="Επιλεγμένες Θέσεις" roles="OfficeUser, MasterOffice" />
+    <siteMapNode url="~/Secure/InternshipOffices/SearchStudents.aspx" title="Φοιτητές" roles="OfficeUser, MasterOffice" />
+    <siteMapNode url="~/Secure/InternshipOffices/Evaluation.aspx" title="Αξιολόγηση" roles="OfficeUser, MasterOffice" />
+    <siteMapNode url="~/Secure/InternshipOffices/OfficeUsers.aspx" title="Χρήστες Γραφείου" roles="MasterOffice" />
+
+    <!-- Provider Pages -->
+    <siteMapNode url="~/Secure/InternshipProviders/Default.aspx" title="Κεντρική Σελίδα" titleEN="Home Page" roles="ProviderUser, MasterProvider" />
+    <siteMapNode url="~/Secure/InternshipProviders/ProviderDetails.aspx" title="Στοιχεία Φορέα" titleEN="Provider Details" roles="ProviderUser, MasterProvider" />
+    <siteMapNode url="~/Secure/InternshipProviders/InternshipPositions.aspx" title="Θέσεις Πρακτικής Άσκησης" titleEN="Internship Positions" roles="ProviderUser, MasterProvider" />
+    <siteMapNode url="~/Secure/InternshipProviders/SelectedPositions.aspx" title="Επιλεγμένες Θέσεις" titleEN="Selected Internship Positions" roles="ProviderUser, MasterProvider" />
+    <siteMapNode url="~/Secure/InternshipProviders/Evaluation.aspx" title="Αξιολόγηση" titleEN="Evaluation" roles="ProviderUser, MasterProvider" />
+    <siteMapNode url="~/Secure/InternshipProviders/ProviderUsers.aspx" title="Παραρτήματα Φορέα" titleEN="Provider Branches" roles="MasterProvider" />
+
+    <!--Student Pages -->
+    <siteMapNode url="~/Secure/Students/Default.aspx" title="Κεντρική Σελίδα" roles="Student" />
+    <siteMapNode url="~/Secure/Students/StudentDetails.aspx" title="Στοιχεία Φοιτητή" roles="Student" />
+    <siteMapNode url="~/Secure/Students/SearchPositions.aspx" title="Αναζήτηση Θέσεων" roles="Student" />
+    <siteMapNode url="~/Secure/Students/AssignedPositions.aspx" title="Θέσεις Πρακτικής Άσκησης" roles="Student" />
+
+    <!-- Common Pages -->
+    <siteMapNode url="~/Secure/Common/HelpdeskContact.aspx" title="Επικοινωνία με Γραφείο Αρωγής" titleEN="Helpdesk Support"  roles="Student, OfficeUser, MasterOffice, ProviderUser, MasterProvider" />
+
+  </siteMapNode>
+</siteMap>

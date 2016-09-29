@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BackOffice.master.cs" Inherits="StudentPractice.Portal.BackOffice" %>
+
+<%@ Register Assembly="DevExpress.Web.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxPopupControl" TagPrefix="dxpc" %>
+<%@ Register Assembly="DevExpress.Web.v12.2, Version=12.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dxm" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="expires" content="-1" />
+    <title>Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ</title>
+    <asp:PlaceHolder runat="server">
+        <meta name="version" content="<%= StudentPractice.Portal.Global.VersionNumber %>" />
+        <%= StudentPractice.Portal.Html.Css("~/_css/style-backoffice.css") %>
+        <%= StudentPractice.Portal.Html.Css("~/_css/main.css") %>
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="sm">
+            <CompositeScript>
+                <Scripts>
+                    <asp:ScriptReference Path="~/_js/jquery-1.9.1.min.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-migrate-1.1.1.min.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-ui-1.10.1.custom.min.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-ui-datepickerRegional.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-impromptu.1.8.js" />
+                    <asp:ScriptReference Path="~/_js/jquery.printElement.js" />
+                    <asp:ScriptReference Path="~/_js/SchoolSearch.js" />
+                    <asp:ScriptReference Path="~/_js/popUp.js" />
+                    <asp:ScriptReference Path="~/_js/Imis.Lib.js" />
+                    <asp:ScriptReference Path="~/_js/DxExtensions.js" />
+                    <asp:ScriptReference Path="~/_js/Resources.js" />
+                    <asp:ScriptReference Path="~/_js/StudentPractice.js" />
+                </Scripts>
+            </CompositeScript>
+            <Services>
+                <asp:ServiceReference Path="~/PortalServices/Services.asmx" />
+            </Services>
+        </asp:ScriptManager>
+        <div>
+            <div id="boHeader">
+
+                <div id="boTitle">
+                    Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ
+                </div>
+
+                <div id="boUserServices">
+                    <asp:LoginName ID="LoginName" runat="server" FormatString="Έχετε συνδεθεί ως: <b>[{0}]</b>" />
+                    <asp:LoginStatus ID="LoginStatus" runat="server" LogoutText="Αποσύνδεση" LoginText="Σύνδεση" OnLoggingOut="LoginStatus_LoggingOut" CssClass="icon-btn bg-logout" />
+                    <a id="lnkChangePassword" runat="server" class="icon-btn bg-passwordEdit" href="javascript:void(0);">Αλλαγή Κωδικού Πρόσβασης</a>
+                    <asp:LoginView ID="LoginView" runat="server">
+                        <LoggedInTemplate>
+                            <script type="text/javascript">
+                                $('.logout').click(function () {
+                                    Sys.Services.AuthenticationService.logout('/');
+                                    return false;
+                                });
+                            </script>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+
+            </div>
+
+            <div class="menuDiv">
+                <dxm:ASPxMenu runat="server" DataSourceID="smdsAdmin" Border-BorderStyle="None" />
+            </div>
+
+            <div class="menuDiv">
+                <dxm:ASPxMenu runat="server" DataSourceID="smdsHelpdesk" Border-BorderStyle="None" />
+            </div>
+
+            <div class="menuDiv">
+                <dxm:ASPxMenu runat="server" DataSourceID="smdsReports" Border-BorderStyle="None" />
+            </div>
+
+            <asp:SiteMapDataSource ID="smdsAdmin" runat="server" ShowStartingNode="false" SiteMapProvider="admin" />
+            <asp:SiteMapDataSource ID="smdsHelpdesk" runat="server" ShowStartingNode="false" SiteMapProvider="Helpdesk" />
+            <asp:SiteMapDataSource ID="smdsReports" runat="server" ShowStartingNode="false" SiteMapProvider="Reports" />
+
+            <dx:ASPxPopupControl runat="server" ID="dxpcPopup" AllowDragging="true" Height="300"
+                Width="700" Modal="true" PopupHorizontalAlign="WindowCenter" ClientInstanceName="devExPopup"
+                PopupVerticalAlign="WindowCenter" CloseAction="CloseButton">
+                <ClientSideEvents CloseUp="function(s,e){popUp.hide();}" />
+            </dx:ASPxPopupControl>
+
+            <div id="mainContent">
+                <div id="boMain">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

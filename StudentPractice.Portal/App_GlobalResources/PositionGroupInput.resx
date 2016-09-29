@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Academics" xml:space="preserve">
+    <value>Σχολές/Τμήματα για τα οποία είναι προσβάσιμη η θέση</value>
+  </data>
+  <data name="AcademicsAll" xml:space="preserve">
+    <value>Η θέση είναι προσβάσιμη από φοιτητές όλων των Σχολών/Τμημάτων.</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Πόλη:</value>
+  </data>
+  <data name="CityRequired" xml:space="preserve">
+    <value>Το πεδίο 'Πόλη' είναι υποχρεωτικό</value>
+  </data>
+  <data name="CompletionComments" xml:space="preserve">
+    <value>Παρατηρήσεις:</value>
+  </data>
+  <data name="CompletionEndDate" xml:space="preserve">
+    <value>Ημ/νία λήξης πρακτικής:</value>
+  </data>
+  <data name="CompletionHeader" xml:space="preserve">
+    <value>Στοιχεία Ολοκλήρωσης Πρακτικής Άσκησης</value>
+  </data>
+  <data name="CompletionStartDate" xml:space="preserve">
+    <value>Ημ/νία έναρξης πρακτικής:</value>
+  </data>
+  <data name="CompletionVerdict" xml:space="preserve">
+    <value>Αποτέλεσμα ολοκλήρωσης:</value>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>Τηλέφωνο επικοινωνίας:</value>
+  </data>
+  <data name="ContactPhoneFrRegex" xml:space="preserve">
+    <value>Πρέπει να αποτελείται από τουλάχιστον 3 αριθμούς ή και το προαιρετικό '+' στην αρχή</value>
+  </data>
+  <data name="ContactPhoneGrRegex" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο επικοινωνίας' πρέπει να αποτελείται από ακριβώς 10 ψηφία και να ξεκινάει από 2 αν πρόκειται για σταθερό ή από 69 αν πρόκειται για κινητό.</value>
+  </data>
+  <data name="ContactPhoneRequired" xml:space="preserve">
+    <value>Το πεδίο 'Τηλέφωνο επικοινωνίας' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Χώρα:</value>
+  </data>
+  <data name="CountryRequired" xml:space="preserve">
+    <value>Το πεδίο 'Χώρα' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Τμήμα:</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Περιγραφή:</value>
+  </data>
+  <data name="DescriptionRequired" xml:space="preserve">
+    <value>Το πεδίο 'Περιγραφή' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Διάρκεια Πρακτικής Άσκησης:</value>
+  </data>
+  <data name="DurationRange" xml:space="preserve">
+    <value>Το πεδίο 'Διάρκεια Πρακτικής Άσκησης' πρέπει να έχει τιμή μεταξύ 1 και 99</value>
+  </data>
+  <data name="DurationRequired" xml:space="preserve">
+    <value>Το πεδίο 'Διάρκεια Πρακτικής Άσκησης' είναι υποχρεωτικό</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Ημ/νία εκτέλεσης (έως):</value>
+  </data>
+  <data name="EndDateCompare" xml:space="preserve">
+    <value>Το πεδίο 'Ημ/νία εκτέλεσης (έως)' δεν είναι έγκυρο</value>
+  </data>
+  <data name="EndDateCustom" xml:space="preserve">
+    <value>Η 'Ημ/νία εκτέλεσης (έως)' πρέπει να είναι μεταγενέστερη της σημερινής και της ημερομηνίας εκτέλεσης (από)</value>
+  </data>
+  <data name="EndDateRequired" xml:space="preserve">
+    <value>Το πεδίο 'Ημ/νία εκτέλεσης (έως)' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Example" xml:space="preserve">
+    <value>Παράδειγμα Συμπληρωμένης Θέσης</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>Γενικά Στοιχεία Θέσης</value>
+  </data>
+  <data name="ImplementationHeader" xml:space="preserve">
+    <value>Στοιχεία Εκτέλεσης Πρακτικής Άσκησης</value>
+  </data>
+  <data name="Kali_CityCy" xml:space="preserve">
+    <value>Δήμος:</value>
+  </data>
+  <data name="Kali_CityCyPrompt" xml:space="preserve">
+    <value>-- επιλέξτε δήμο --</value>
+  </data>
+  <data name="Kali_CityCyRequired" xml:space="preserve">
+    <value>Το πεδίο 'Δήμος' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Kali_CityGr" xml:space="preserve">
+    <value>Καλλικρατικός Δήμος:</value>
+  </data>
+  <data name="Kali_CityGrPrompt" xml:space="preserve">
+    <value>-- επιλέξτε καλλικρατικό δήμο --</value>
+  </data>
+  <data name="Kali_CityGrRequired" xml:space="preserve">
+    <value>Το πεδίο 'Καλλικρατικός Δήμος' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Παρακαλω περιμένετε</value>
+  </data>
+  <data name="PhysicanObject" xml:space="preserve">
+    <value>Αντικείμενο Θέσης</value>
+  </data>
+  <data name="PositionAssignedAt" xml:space="preserve">
+    <value>Ημ/νία αντιστοίχισης:</value>
+  </data>
+  <data name="PositionCompleted" xml:space="preserve">
+    <value>Η πρακτική ολοκληρώθηκε επιτυχώς</value>
+  </data>
+  <data name="PositionCount" xml:space="preserve">
+    <value>Αριθμός διαθέσιμων θέσεων:</value>
+  </data>
+  <data name="PositionCountRange" xml:space="preserve">
+    <value>Το πεδίο 'Αριθμός διαθέσιμων θέσεων' πρέπει να έχει τιμή μεταξύ 1 και 99</value>
+  </data>
+  <data name="PositionCountRequired" xml:space="preserve">
+    <value>Το πεδίο 'Αριθμός διαθέσιμων θέσεων' είναι υποχρεωτικό</value>
+  </data>
+  <data name="PositionNotCompleted" xml:space="preserve">
+    <value>Η πρακτική ΔΕΝ ολοκληρώθηκε</value>
+  </data>
+  <data name="PositionStatus" xml:space="preserve">
+    <value>Κατάσταση θέσης:</value>
+  </data>
+  <data name="PositionType" xml:space="preserve">
+    <value>Είδος θέσης:</value>
+  </data>
+  <data name="PositionTypeRequired" xml:space="preserve">
+    <value>Το πεδίο 'Είδος θέσης' είναι υποχρεωτικό</value>
+  </data>
+  <data name="PositionType_ddl" xml:space="preserve">
+    <value>-- επιλέξτε είδος θέσης --</value>
+  </data>
+  <data name="PreAssignedAt" xml:space="preserve">
+    <value>Ημ/νία προδέσμευσης:</value>
+  </data>
+  <data name="PreassignedPositions" xml:space="preserve">
+    <value>Προδεσμευμένες θέσεις:</value>
+  </data>
+  <data name="PreAssignmentHeader" xml:space="preserve">
+    <value>Στοιχεία Προδέσμευσης</value>
+  </data>
+  <data name="PredictedEndDate" xml:space="preserve">
+    <value>Προβλεπόμενη ημ/νία λήξης:</value>
+  </data>
+  <data name="PredictedStartDate" xml:space="preserve">
+    <value>Προβλεπόμενη ημ/νία έναρξης:</value>
+  </data>
+  <data name="PrefectureCy" xml:space="preserve">
+    <value>Επαρχία:</value>
+  </data>
+  <data name="PrefectureCyPrompt" xml:space="preserve">
+    <value>-- επιλέξτε επαρχία --</value>
+  </data>
+  <data name="PrefectureCyRequired" xml:space="preserve">
+    <value>Το πεδίο 'Επαρχία' είναι υποχρεωτικό</value>
+  </data>
+  <data name="PrefectureGr" xml:space="preserve">
+    <value>Περιφερειακή Ενότητα:</value>
+  </data>
+  <data name="PrefectureGrPrompt" xml:space="preserve">
+    <value>-- επιλέξτε περιφερειακή ενότητα --</value>
+  </data>
+  <data name="PrefectureGrRequired" xml:space="preserve">
+    <value>Το πεδίο 'Περιφερειακή Ενότητα' είναι υποχρεωτικό</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Ημ/νία εκτέλεσης (από):</value>
+  </data>
+  <data name="StartDateCompare" xml:space="preserve">
+    <value>Το πεδίο 'Ημ/νία εκτέλεσης (από)' δεν είναι έγκυρο</value>
+  </data>
+  <data name="StartDateCustom" xml:space="preserve">
+    <value>Το διάστημα δυνατής εκτέλεσης (Ημ/νία εκτέλεσης από / έως) είναι μικρότερο από τη διάρκεια πρακτικής άσκησης που δηλώσατε</value>
+  </data>
+  <data name="StartDateRequired" xml:space="preserve">
+    <value>Το πεδίο 'Ημ/νία εκτέλεσης (από)' είναι υποχρεωτικό</value>
+  </data>
+  <data name="Supervisor" xml:space="preserve">
+    <value>Ον/μο Επόπτη:</value>
+  </data>
+  <data name="SupervisorEmail" xml:space="preserve">
+    <value>E-mail Επόπτη:</value>
+  </data>
+  <data name="SupervisorEmailRegex" xml:space="preserve">
+    <value>Το πεδίο 'E-mail Επόπτη' δεν είναι έγκυρο</value>
+  </data>
+  <data name="TimeLimit" xml:space="preserve">
+    <value>Διαθέσιμη χρονική περίοδος για την εκτέλεση της ΠΑ:</value>
+  </data>
+  <data name="TimeLimitWith" xml:space="preserve">
+    <value>Με χρονικό περιορισμό</value>
+  </data>
+  <data name="TimeLimitWithout" xml:space="preserve">
+    <value>Χωρίς χρονικό περιορισμό</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Τίτλος:</value>
+  </data>
+  <data name="TitleRequired" xml:space="preserve">
+    <value>Το πεδίο 'Τίτλος' είναι υποχρεωτικό</value>
+  </data>
+  <data name="TotalPositions" xml:space="preserve">
+    <value>Συνολικός αριθμός θέσεων:</value>
+  </data>
+  <data name="FundingType" xml:space="preserve">
+    <value>Τρόπος Χρηματοδότησης:</value>
+  </data>
+</root>

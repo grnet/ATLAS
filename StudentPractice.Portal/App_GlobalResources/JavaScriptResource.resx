@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Botshield_Validation" xml:space="preserve">
+    <value>Το μήκος των χαρακτήρων πρέπει να είναι ακριβώς </value>
+  </data>
+  <data name="Datepicker_Regional" xml:space="preserve">
+    <value>el</value>
+  </data>
+  <data name="Global_Cancel" xml:space="preserve">
+    <value>Ακύρωση</value>
+  </data>
+  <data name="Global_No" xml:space="preserve">
+    <value>Όχι</value>
+  </data>
+  <data name="Imis_Lib_DisableGreekKeyPress" xml:space="preserve">
+    <value>Παρακαλώ χρησιμοποιήστε μόνο λατινικούς χαρακτήρες.</value>
+  </data>
+  <data name="Imis_Lib_NoGreekCharacters" xml:space="preserve">
+    <value>Επιτρέπονται μόνο λατινικοί χαρακτήρες χωρίς κενά!</value>
+  </data>
+  <data name="InternshipPositions_Cancel" xml:space="preserve">
+    <value>Επιλέξατε να αποσύρετε προδεσμευμένη θέση πρακτικής άσκησης.\n\nΕάν αποσύρετε τη θέση, οι επιπλέον θέσεις του συγκεκριμένου group που δεν έχουν ακόμα προδεσμευτεί ή τυχόν προδεσμευμένες θέσεις που θα απελευθερωθούν από τα Γραφεία Πρακτικής δε θα είναι πλέον διαθέσιμες.\n\nΤονίζεται ότι ΔΕΝ είναι δυνατή η επαναφορά της θέσης μετά την Απόσυρση.\n\nΕίστε σίγουροι ότι θέλετε να αποσύρετε τη θέση;</value>
+  </data>
+  <data name="InternshipPositions_Clone" xml:space="preserve">
+    <value>Πατώντας το κουμπί Κλωνοποίηση θα δημιουργηθεί μια πανομοιότυπη θέση Πρακτικής Άσκησης την οποία μπορείτε στη συνέχεια να επεξεργαστείτε.\n\nΣε περίπτωση που δεν πρόκειται να τροποποιήσετε κανένα στοιχείο της θέσης που θα δημιουργηθεί σας προτρέπουμε να πατήσετε Ακύρωση και να αλλάξετε τον αριθμό των διαθέσιμων θέσεων της ήδη υπάρχουσας θέσης.\n\nΕίστε σίγουροι ότι θέλετε να κλωνοποιήσετε τη συγκεκριμένη θέση Πρακτικής Άσκησης;</value>
+  </data>
+  <data name="InternshipPositions_Delete" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να διαγράψετε τη συγκεκριμένη θέση πρακτικής άσκησης;</value>
+  </data>
+  <data name="MemoEdit_Info" xml:space="preserve">
+    <value>Μέγιστο μέγεθος {0} χαρακτήρες, έχετε ήδη εισάγει {1}</value>
+  </data>
+  <data name="MemoEdit_UpdateCounter" xml:space="preserve">
+    <value>Η επικόλληση του κειμένου δε θα ολοκληρωθεί, διότι το κείμενο που προσπαθείτε να εισάγετε υπερβαίνει το επιτρεπόμενο όριο χαρακτήρων.</value>
+  </data>
+  <data name="OfficeUsers_Delete" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να διαγράψετε το συγκρεκριμένο χρήστη;</value>
+  </data>
+  <data name="OfficeUsers_Lock" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να απενεργοποιήσετε το συγκρεκριμένο χρήστη;</value>
+  </data>
+  <data name="OfficeUsers_Unlock" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να επανενεργοποιήσετε το συγκρεκριμένο χρήστη;</value>
+  </data>
+  <data name="ProviderInput_ProviderIdNumber" xml:space="preserve">
+    <value>Αριθμός Ταυτότητας</value>
+  </data>
+  <data name="ProviderInput_ProviderPassNumber" xml:space="preserve">
+    <value>Αριθμός Διαβατηρίου</value>
+  </data>
+  <data name="SelectedPositions_DeleteAssignment" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να αφαιρέσετε τον αντιστοιχισμένο φοιτητή;</value>
+  </data>
+  <data name="SelectedPositions_DeleteAssignment2" xml:space="preserve">
+    <value>Πατώντας το κουμπί Διαγραφή Αντιστοίχισης διαγράφεται η αντιστοίχιση της θέσης με το φοιτητή και αποδεσμεύεται η θέση.\n\nΣε περίπτωση που θέλετε η θέση να παραμείνει δεσμευμένη και να αλλάξετε τον αντιστοιχισμένο φοιτητή θα πρέπει να επιλέξετε Ακύρωση και από την Επεξεργασία θέσης να επιλέξετε Αλλαγή Επιλεγμένου Φοιτητή.\n\nΕίστε σίγουροι ότι θέλετε να αφαιρέσετε τον αντιστοιχισμένο φοιτητή;</value>
+  </data>
+  <data name="SelectedPositions_DeleteFinishedPosition" xml:space="preserve">
+    <value>Πατώντας το κουμπί Διαγραφή Θέσης διαγράφεται η επιλεγμένη ολοκληρωμένη θέση, χωρίς δυνατότητα επαναφοράς.\n\nΕίστε σίγουροι ότι θέλετε να διαγράψετε την ολοκληρωμένη θέση;</value>
+  </data>
+  <data name="SelectedPositions_RollbackCancellation" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να επαναφέρετε τη θέση σε κατάσταση "Υπό διενέργεια";</value>
+  </data>
+  <data name="SelectedPositions_RollbackCompletion" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να επαναφέρετε τη θέση σε κατάσταση "Υπό διενέργεια";</value>
+  </data>
+  <data name="SelectedPositions_RollbackPreassignment" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να αποδεσμεύσετε τη θέση;</value>
+  </data>
+  <data name="SelectedPositions_RollbackPreassignment2" xml:space="preserve">
+    <value>Πατώντας το κουμπί Αποδέσμευση ακυρώνεται η προδέσμευση της θέσης και η θέση παύει να είναι διαθέσιμη προς επιλογή από το Ίδρυμά σας.\n\nΕίστε σίγουροι ότι θέλετε να αποδεσμεύσετε τη θέση;</value>
+  </data>
+  <data name="StudentPractice_DeleteBlocked" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να αφαιρέσετε τη συγκεκριμένη ποινή;</value>
+  </data>
+  <data name="StudentPractice_Error" xml:space="preserve">
+    <value>Προέκυψε ένα σφάλμα κατά την εκτέλεση της ενέργειας! Παρακαλώ προσπαθήστε ξανά.</value>
+  </data>
+  <data name="StudentPractice_HelpDeskUsers" xml:space="preserve">
+    <value>Δεν μπορείτε να διαγράψετε το συγκεκριμένο χρήστη, γιατί έχει ήδη απαντήσει σε συμβάντα.\n\nΑν θέλετε ο χρήστης να μην έχει πλέον πρόσβαση στην εφαρμογή μπορείτε να τον απενεργοποιήσετε πατώντας το εικονίδιο με το λουκετάκι κάτω από τη στήλη "Επεξεργασία Χρήστη"</value>
+  </data>
+  <data name="StudentPractice_OfficeUsers" xml:space="preserve">
+    <value>Δεν μπορείτε να διαγράψετε το συγκεκριμένο χρήστη, γιατί έχει στο παρελθόν κάνει ενέργειες στην εφαρμογή.\n\nΑν θέλετε ο χρήστης να μην έχει πλέον πρόσβαση στην εφαρμογή μπορείτε να τον απενεργοποιήσετε πατώντας το εικονίδιο με το λουκέτο κάτω από τη στήλη "Επεξεργασία Χρήστη"</value>
+  </data>
+  <data name="StudentPractice_ProviderUsers" xml:space="preserve">
+    <value>Δεν μπορείτε να διαγράψετε το συγκεκριμένο χρήστη, γιατί έχει στο παρελθόν κάνει ενέργειες στην εφαρμογή.\n\nΑν θέλετε ο χρήστης να μην έχει πλέον πρόσβαση στην εφαρμογή μπορείτε να τον απενεργοποιήσετε πατώντας το εικονίδιο με το λουκετάκι κάτω από τη στήλη "Επεξεργασία Χρήστη"</value>
+  </data>
+  <data name="StudentPractice_Revoke" xml:space="preserve">
+    <value>Επιλέξατε να αποσύρετε προδεσμευμένη θέση πρακτικής άσκησης.\n\nΕάν αποσύρετε τη θέση, οι επιπλέον θέσεις του συγκεκριμένου group που δεν έχουν ακόμα προδεσμευτεί ή τυχόν προδεσμευμένες θέσεις που θα απελευθερωθούν από τα Γραφεία Πρακτικής δε θα είναι πλέον διαθέσιμες.\n\nΕίστε σίγουροι ότι θέλετε να αποσύρετε τη θέση;</value>
+  </data>
+  <data name="StudentPractice_Rollback" xml:space="preserve">
+    <value>Επιλέξατε να επαναφέρετε προδεσμευμένη θέση πρακτικής άσκησης.\n\nΕάν επαναφέρετε τη θέση, οι επιπλέον θέσεις του συγκεκριμένου group που δεν έχουν ακόμα προδεσμευτεί ή τυχόν προδεσμευμένες θέσεις που θα απελευθερωθούν από τα Γραφεία Πρακτικής θα είναι πλέον διαθέσιμες.\n\nΕίστε σίγουροι ότι θέλετε να επαναφέρετε τη θέση;</value>
+  </data>
+  <data name="StudentPractice_RollbackPublish" xml:space="preserve">
+    <value>Επιλέξατε να επαναφέρετε προδεσμευμένη θέση πρακτικής άσκησης.\n\nΓκρουπ θα επανέλθει σε κατάσταση "Δημοσιευμένο" και όλες οι ακυρωμένες Θέσεις του θα επανέλθουν σε κατάσταση "Ελεύθερες"\n\nΕίστε σίγουροι ότι θέλετε να επαναφέρετε τη θέση;</value>
+  </data>
+  <data name="StudentPractice_UndeleteGroup" xml:space="preserve">
+    <value>Είστε σίγουροι ότι θέλετε να επαναφέρετε τη θέση;</value>
+  </data>
+  <data name="StudentPractice_vgEditOffice" xml:space="preserve">
+    <value>Θέλετε σίγουρα να αλλάξετε τα στοιχεία του γραφείου;</value>
+  </data>
+  <data name="StudentPractice_vgEditProvider" xml:space="preserve">
+    <value>Θέλετε σίγουρα να αλλάξετε τα στοιχεία του φορέα;</value>
+  </data>
+  <data name="UserContactDetails_EmailChange" xml:space="preserve">
+    <value>Αλλαγή Email</value>
+  </data>
+  <data name="UserContactDetails_EmailInUse" xml:space="preserve">
+    <value>Το email {email} χρησιμοποιείται και δεν μπορεί να πραγματοποιηθεί η αλλαγή.</value>
+  </data>
+  <data name="UserContactDetails_EmailInvalid" xml:space="preserve">
+    <value>To Email {newEmail} δεν είναι έγκυρο</value>
+  </data>
+  <data name="UserContactDetails_EmailNew" xml:space="preserve">
+    <value>Νέο Email</value>
+  </data>
+  <data name="UserContactDetails_ErrorMessage" xml:space="preserve">
+    <value>Προκλήθηκε σφάλμα. Παρακαλούμε δοκιμάστε ξανά αργότερα.</value>
+  </data>
+  <data name="UserContactDetails_MobileChange" xml:space="preserve">
+    <value>Αλλαγή Κινητού</value>
+  </data>
+  <data name="UserContactDetails_MobileInvalid" xml:space="preserve">
+    <value>To Κινητό {newMobilePhone} δεν είναι έγκυρο</value>
+  </data>
+  <data name="UserContactDetails_MobileLimit" xml:space="preserve">
+    <value>Έχετε ξεπεράσει τον μέγιστο επιτρεπόμενο αριθμό επαναποστολών του SMS Πιστοποίησης. Παρακαλούμε επικοινωνήστε με το Γραφείο Αρωγής Χρηστών.</value>
+  </data>
+  <data name="UserContactDetails_MobileNew" xml:space="preserve">
+    <value>Νέο Κινητό</value>
+  </data>
+  <data name="UserContactDetails_MobileSuccess" xml:space="preserve">
+    <value>Η αλλαγή του κινητού ολοκληρώθηκε επιτυχώς</value>
+  </data>
+  <data name="UserContactDetails_SuccessMessage" xml:space="preserve">
+    <value>Η αλλαγή ολοκληρώθηκε επιτυχώς και σας στάλθηκε ένα e-mail πιστοποίησης στη διεύθυνση που δηλώσατε</value>
+  </data>
+</root>

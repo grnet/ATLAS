@@ -1,0 +1,273 @@
+﻿body {
+    color: #716162;
+    background-color: #9dacb5;
+    font-family: Verdana, Tahoma, Arial, Sans-Serif;
+    font-size: 0.75em;
+    padding: .417em;
+    margin: 0;
+}
+
+a, a:link, a:visited, a:hover, a:active, a:focus {
+    color: #0087ef;
+    text-decoration: none;
+}
+
+    a.icon-btn {
+        background: #027FCF;
+        border: 1px solid #2FB4FA;
+        color: #fff;
+        display: inline-block;
+        padding: .25em .5em;
+        margin-top: 1em;
+    }
+
+        a.icon-btn:hover, a.icon-btn:focus {
+            background: #2FB4FA;
+            -moz-border-bottom-colors: none;
+            -moz-border-image: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            -moz-transition: box-shadow 1s ease,border-color .75s linear;
+            -webkit-transition: box-shadow 1s ease,border-color .75s linear;
+            -o-transition: box-shadow 1s ease,border-color .75s linear;
+            -ms-transition: box-shadow 1s ease,border-color .75s linear;
+            transition: box-shadow 1s ease,border-color .75s linear;
+            border-color: #7F9DB9 #9DBBD7 #9DBBD7 #7F9DB9;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 0 .25em rgba(0, 0, 0, 0.25) inset;
+            -webkit-box-shadow: 0 0 .25em rgba(0, 0, 0, 0.25) inset;
+            display: inline-block;
+            padding: .25em .5em;
+            margin-top: 1em;
+        }
+
+.dv {
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    margin-top: .5em;
+}
+
+    .dv td {
+        background-color: #fff;
+    }
+
+    .dv th {
+        text-align: left;
+        font-weight: bold;
+        font-size: .9em;
+        padding: .667em;
+        width: 21em;
+        background-color: #eeeeee;
+        border: 1px solid #aaa;
+        border-collapse: collapse;
+    }
+
+        .dv th.header {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.167em;
+            background-color: #5D7B9D;
+            color: #fff;
+            padding: .417em 0 .417em .667em;
+        }
+
+        .dv th.popupHeader {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.167em;
+            border: .3px solid #aaa;
+            border-collapse: collapse;
+            background-color: #ddd;
+            color: #444;
+            padding: .5em;
+        }
+
+    .dv td.notRequired {
+        text-align: left;
+        font-size: .9em;
+        padding: .667em;
+        width: 21em;
+        background-color: #eeeeee;
+        border: 1px solid #aaa;
+        border-collapse: collapse;
+    }
+
+    .dv tr.row-separator td, .dv tr.row-separator th {
+        border-top: .4px solid #AAA;
+    }
+
+    .dv > tbody > tr > td, .dv > tr > td {
+        padding: 4px 7px 4px 7px;
+        border: 1px solid #aaa;
+        border-collapse: collapse;
+        vertical-align: middle;
+        width: 59.167em;
+    }
+
+    .dv input, select, textarea {
+        -moz-border-bottom-colors: none;
+        -moz-border-image: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        border-color: #aaa #999 #aaa #999;
+        border-style: solid;
+        border-width: 1px;
+        padding: .167em .25em;
+        margin-left: .417em;
+    }
+
+        .dv input:focus, select:focus, textarea:focus {
+            -moz-border-bottom-colors: none;
+            -moz-border-image: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            -moz-transition: box-shadow 1s ease,border-color .75s linear;
+            -webkit-transition: box-shadow 1s ease,border-color .75s linear;
+            -o-transition: box-shadow 1s ease,border-color .75s linear;
+            -ms-transition: box-shadow 1s ease,border-color .75s linear;
+            transition: box-shadow 1s ease,border-color .75s linear;
+            border-color: #7F9DB9 #9DBBD7 #9DBBD7 #7F9DB9;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.25) inset;
+            -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.25) inset;
+            padding: .167em .25em;
+            margin-left: .417em;
+        }
+
+    .dv label {
+        font-size: 1em;
+        color: #716162;
+    }
+
+    .dv #lblStudentshipType {
+        color: #0988D5;
+        font-weight: bold;
+        padding-left: .25em;
+    }
+
+.validation-summary {
+    color: #f00;
+    line-height: 1.5em;
+    margin-top: 1em;
+}
+
+/*** PopupControl ***/
+.info {
+    background: #EEEEEE url('../_img/info.png') no-repeat left center;
+    font-size: .917em;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+/*** Validator Callout ***/
+.customCalloutStyle div, .customCalloutStyle td {
+    background: #EEEEEE;
+    color: #716162;
+}
+
+.customCalloutStyle .ajax__validatorcallout_popup_table {
+    display: none;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.customCalloutStyle .ajax__validatorcallout_popup_table_row {
+    vertical-align: top;
+    height: 100%;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.customCalloutStyle .ajax__validatorcallout_callout_cell {
+    width: 40px;
+    height: 100%;
+    text-align: right;
+    vertical-align: top;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.customCalloutStyle .ajax__validatorcallout_callout_table {
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.customCalloutStyle .ajax__validatorcallout_callout_table_row {
+    background-color: transparent;
+    padding: 0px;
+}
+
+.customCalloutStyle .ajax__validatorcallout_callout_arrow_cell {
+    padding: 8px 0px 0px 0px;
+    text-align: right;
+    vertical-align: top;
+    font-size: 1px;
+    border: none;
+    background-color: transparent;
+}
+
+    .customCalloutStyle .ajax__validatorcallout_callout_arrow_cell .ajax__validatorcallout_innerdiv {
+        font-size: 1px;
+        position: relative;
+        left: 1px;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+        width: 15px;
+        background-color: transparent;
+        padding: 0px;
+    }
+
+        .customCalloutStyle .ajax__validatorcallout_callout_arrow_cell .ajax__validatorcallout_innerdiv div {
+            height: 1px;
+            overflow: hidden;
+            border-top: none;
+            border-bottom: none;
+            border-right: none;
+            padding: 0px;
+            margin-left: auto;
+        }
+
+.customCalloutStyle .ajax__validatorcallout_error_message_cell {
+    font-size: .917em;
+    padding: 10px;
+    border-right: none;
+    border-left: none;
+    width: 100%;
+}
+
+.customCalloutStyle .ajax__validatorcallout_icon_cell {
+    width: 20px;
+    padding: 5px;
+    border-right: none;
+}
+
+.customCalloutStyle .ajax__validatorcallout_close_button_cell {
+    vertical-align: top;
+    padding: 0px;
+    text-align: right;
+    border-left: none;
+}
+
+    .customCalloutStyle .ajax__validatorcallout_close_button_cell .ajax__validatorcallout_innerdiv {
+        border: none;
+        text-align: center;
+        width: 5%;
+        padding: 1px;
+        cursor: pointer;
+    }
+
+.firstListItem {
+    padding: .3em 0;
+    margin: 0 0 .417em 2.5em;
+    list-style: disc;
+}

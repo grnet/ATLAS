@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AnswerDatetime" xml:space="preserve">
+    <value>Answer Date</value>
+  </data>
+  <data name="ContactHistory" xml:space="preserve">
+    <value>Contact History</value>
+  </data>
+  <data name="Form_Email" xml:space="preserve">
+    <value>E-mail:</value>
+  </data>
+  <data name="Form_EmailRegex" xml:space="preserve">
+    <value>E-mail is not valid</value>
+  </data>
+  <data name="Form_EmailRequired" xml:space="preserve">
+    <value>Field 'E-mail' is required</value>
+  </data>
+  <data name="Form_Name" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="Form_NameRequired" xml:space="preserve">
+    <value>Field 'Name' is required</value>
+  </data>
+  <data name="Form_Phone" xml:space="preserve">
+    <value>Contact Phone:</value>
+  </data>
+  <data name="Form_PhoneRegex" xml:space="preserve">
+    <value>^\+?[0-9]{3}-?[0-9]{0,20}$</value>
+  </data>
+  <data name="Form_PhoneRequired" xml:space="preserve">
+    <value>Field 'Contact Phone' is required</value>
+  </data>
+  <data name="Form_Reporter" xml:space="preserve">
+    <value>User Type:</value>
+  </data>
+  <data name="Form_ReporterRequired" xml:space="preserve">
+    <value>Field 'User Type' is required</value>
+  </data>
+  <data name="Form_ReportType" xml:space="preserve">
+    <value>Incident Type:</value>
+  </data>
+  <data name="Form_ReportTypeLoading" xml:space="preserve">
+    <value>Please Wait</value>
+  </data>
+  <data name="Form_ReportTypePrompt" xml:space="preserve">
+    <value>-- please select type of report --</value>
+  </data>
+  <data name="Form_ReportTypeRequired" xml:space="preserve">
+    <value>Field 'Incident Type' is required</value>
+  </data>
+  <data name="Form_Text" xml:space="preserve">
+    <value>Text:</value>
+  </data>
+  <data name="Form_TextRequired" xml:space="preserve">
+    <value>Field 'Text' is required</value>
+  </data>
+  <data name="HelpdeskQuestion" xml:space="preserve">
+    <value>Question to Helpdesk</value>
+  </data>
+  <data name="History_Header" xml:space="preserve">
+    <value>Incident Report Text</value>
+  </data>
+  <data name="History_MessagesSent" xml:space="preserve">
+    <value>Messages been sent</value>
+  </data>
+  <data name="NewQuestion" xml:space="preserve">
+    <value>New question to Helpdesk</value>
+  </data>
+  <data name="Reminder" xml:space="preserve">
+    <value>You can contact the Helpdesk by phone at +302152157860 (Monday-Friday, 09:00 to 17:00 (GMT +2.0))</value>
+  </data>
+  <data name="Form_DepartmentPrompt" xml:space="preserve">
+    <value>-- select department --</value>
+  </data>
+  <data name="Form_Department" xml:space="preserve">
+    <value>Department:</value>
+  </data>
+  <data name="Form_DepartmentRequired" xml:space="preserve">
+    <value>Field 'Department' is required</value>
+  </data>
+  <data name="Form_Institution" xml:space="preserve">
+    <value>Institution:</value>
+  </data>
+  <data name="Form_InstitutionPrompt" xml:space="preserve">
+    <value>-- select institution --</value>
+  </data>
+  <data name="Form_InstitutionRequired" xml:space="preserve">
+    <value>Field 'Institution' is required</value>
+  </data>
+  <data name="Form_ReporterPrompt" xml:space="preserve">
+    <value>-- select user type --</value>
+  </data>
+  <data name="Form_PhoneMaxLength" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="Form_PhoneRegexErrorMessage" xml:space="preserve">
+    <value>Contact Phone must be at least 3 digits and can start with the optional special character '+'</value>
+  </data>
+  <data name="HelpdeskContactInfo" xml:space="preserve">
+    <value>Alternatively, you can contact Helpdesk at &lt;em&gt;+30 215 2157860&lt;/em&gt; (Monday - Friday, 09:00-17:00 GMT+2).</value>
+  </data>
+  <data name="SentIncidentReportConfirmation" xml:space="preserve">
+    <value>&lt;p style='margin-top: 20px;'&gt;
+                Thank you for your feedback.
+                &lt;br /&gt;
+                &lt;br /&gt;
+                A confirmation mail has been sent in the email address you have registered (&lt;b&gt;{0}&lt;/b&gt;). You will receive a reply in the same email address soon.
+                &lt;br /&gt;
+                &lt;br /&gt;
+                If you did not receive the confirmation e-mail (for example, because you mistyped your e-mail address) you may resend your feedback or contact Helpdesk at &lt;em&gt;+30 215 2157860&lt;/em&gt; (Monday - Friday, 09:00-17:00 GMT+2).
+            &lt;/p&gt;</value>
+  </data>
+  <data name="SubmitButtonLabel" xml:space="preserve">
+    <value>Send</value>
+  </data>
+</root>

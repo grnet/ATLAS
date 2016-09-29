@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E60CD68B-F266-4100-8FC0-341CFFFCBCAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StudentPractice.BusinessModel</RootNamespace>
+    <AssemblyName>StudentPractice.BusinessModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>http://localhost/HelpDesk.BusinessModel/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Ifestion|AnyCPU'">
+    <OutputPath>bin\Ifestion\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\HelpDesk.BusinessModel.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Imis.Domain, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libraries\Imis\net35\Imis.Domain.dll</HintPath>
+    </Reference>
+    <Reference Include="Imis.Domain.EF">
+      <HintPath>..\..\libraries\Imis\net40\Release\Imis.Domain.EF.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\..\libraries\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Stateless">
+      <HintPath>..\..\libraries\packages\Stateless.2.4.0\lib\Stateless.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auth\AuthenticationService.cs" />
+    <Compile Include="Auth\StudentPracticePrincipal.cs" />
+    <Compile Include="Auth\UserTicketData.cs" />
+    <Compile Include="Caching\StudentPracticeCacheManager.cs" />
+    <Compile Include="Classes\BusinessHelper.cs" />
+    <Compile Include="Classes\ChangeSet.cs" />
+    <Compile Include="Classes\Config.cs" />
+    <Compile Include="Classes\DOY.cs" />
+    <Compile Include="Classes\EduPerson.cs" />
+    <Compile Include="Classes\Extensions.cs" />
+    <Compile Include="Classes\GenericQueueData.cs" />
+    <Compile Include="Classes\IdentificationDetails.cs" />
+    <Compile Include="Classes\LanguageService.cs" />
+    <Compile Include="Classes\PossibleAnswers.cs" />
+    <Compile Include="Classes\PropertyChange.cs" />
+    <Compile Include="Classes\QueueWorker.cs" />
+    <Compile Include="Classes\Serializer.cs" />
+    <Compile Include="Classes\ShibDetails.cs" />
+    <Compile Include="Classes\StudentDetailsFromAcademicID.cs" />
+    <Compile Include="Classes\TransferDocument.cs" />
+    <Compile Include="Constants.cs" />
+    <Compile Include="Entities\Academic.cs" />
+    <Compile Include="Entities\BlockedPositionGroup.cs" />
+    <Compile Include="Entities\Country.cs" />
+    <Compile Include="Entities\IncidentType.cs" />
+    <Compile Include="Entities\Institution.cs" />
+    <Compile Include="Entities\InternshipPosition.cs" />
+    <Compile Include="Entities\InternshipPositionGroup.cs" />
+    <Compile Include="Entities\InternshipPositionGroupLog.cs" />
+    <Compile Include="Entities\InternshipPositionLog.cs" />
+    <Compile Include="Entities\MassMessage.cs" />
+    <Compile Include="Entities\FacultyMember.cs" />
+    <Compile Include="Entities\InternshipProvider.cs" />
+    <Compile Include="Entities\InternshipOffice.cs" />
+    <Compile Include="Entities\Other.cs" />
+    <Compile Include="Entities\PhysicalObject.cs" />
+    <Compile Include="Entities\PrimaryActivity.cs" />
+    <Compile Include="Entities\Questionnaire.cs" />
+    <Compile Include="Entities\QuestionnaireQuestion.cs" />
+    <Compile Include="Entities\QueueEntry.cs" />
+    <Compile Include="Entities\SubmittedQuestionnaire.cs" />
+    <Compile Include="Entities\VerificationInfo.cs" />
+    <Compile Include="Enums\enAcademicIDApplicationStatus.cs" />
+    <Compile Include="Enums\enFundingType.cs" />
+    <Compile Include="Enums\enLanguage.cs" />
+    <Compile Include="Enums\enPositionCreationType.cs" />
+    <Compile Include="Enums\enBlockingReason.cs" />
+    <Compile Include="Enums\enCancellationReason.cs" />
+    <Compile Include="Enums\enCertifierType.cs" />
+    <Compile Include="Enums\enEmailType.cs" />
+    <Compile Include="Enums\enErrorCode.cs" />
+    <Compile Include="Enums\enIdentificationType.cs" />
+    <Compile Include="Enums\enInstitutionType.cs" />
+    <Compile Include="Enums\enOfficeType.cs" />
+    <Compile Include="Enums\enPositionGroupStatus.cs" />
+    <Compile Include="Enums\enPositionStatus.cs" />
+    <Compile Include="Enums\enPositionTransferResult.cs" />
+    <Compile Include="Enums\enPositionType.cs" />
+    <Compile Include="Enums\enProviderType.cs" />
+    <Compile Include="Enums\enQuestionnaireEntityType.cs" />
+    <Compile Include="Enums\enQuestionnaireType.cs" />
+    <Compile Include="Enums\enQuestionType.cs" />
+    <Compile Include="Enums\enQueueEntryType.cs" />
+    <Compile Include="Enums\enRegistrationType.cs" />
+    <Compile Include="Enums\enReporterDeclarationType.cs" />
+    <Compile Include="Enums\enServiceCaller.cs" />
+    <Compile Include="Enums\enVerificationStatus.cs" />
+    <Compile Include="Flow\enInternshipPositionGroupTriggers.cs" />
+    <Compile Include="Flow\enInternshipPositionTriggers.cs" />
+    <Compile Include="Flow\InternshipPositionGroupStateMachine.cs" />
+    <Compile Include="Flow\InternshipPositionGroupTriggerParams.cs" />
+    <Compile Include="Flow\InternshipPositionStateMachine.cs" />
+    <Compile Include="Flow\InternshipPositionTriggerParams.cs" />
+    <Compile Include="Interfaces\IEduPerson.cs" />
+    <Compile Include="Interfaces\IStudentInfo.cs" />
+    <Compile Include="Interfaces\ITrackable.cs" />
+    <Compile Include="Providers\StudentPracticeRoleProvider.cs" />
+    <Compile Include="Repositories\AcademicRepository.cs" />
+    <Compile Include="Repositories\AdminUserRepository.cs" />
+    <Compile Include="Repositories\BlockedPositionGroupRepository.cs" />
+    <Compile Include="Repositories\HelpdeskUserRepository.cs" />
+    <Compile Include="Repositories\InternshipPositionGroupRepository.cs" />
+    <Compile Include="Repositories\InternshipPositionLogRepository.cs" />
+    <Compile Include="Repositories\InternshipPositionRepository.cs" />
+    <Compile Include="Repositories\InternshipProviderRepository.cs" />
+    <Compile Include="Repositories\PhysicalObjectRepository.cs" />
+    <Compile Include="Repositories\PrimaryActivityRepository.cs" />
+    <Compile Include="Repositories\BaseRepository.cs" />
+    <Compile Include="Repositories\QueueEntryRepository.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
+    <Compile Include="Repositories\InternshipOfficeRepository.cs" />
+    <Compile Include="DBEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Entities\Dispatch.cs" />
+    <Compile Include="Entities\DBEntities.cs" />
+    <Compile Include="Entities\IncidentReport.cs" />
+    <Compile Include="Entities\IncidentReportPost.cs" />
+    <Compile Include="Entities\Reporter.cs" />
+    <Compile Include="Entities\ReporterIncidentType.cs" />
+    <Compile Include="Entities\SMS.cs" />
+    <Compile Include="Entities\Student.cs" />
+    <Compile Include="Entities\SubSystemReporterType.cs" />
+    <Compile Include="Enums\enCallType.cs" />
+    <Compile Include="Enums\enDispatchType.cs" />
+    <Compile Include="Enums\enHandlerStatus.cs" />
+    <Compile Include="Enums\enHandlerType.cs" />
+    <Compile Include="Enums\enReporterType.cs" />
+    <Compile Include="Enums\enReportStatus.cs" />
+    <Compile Include="Enums\enReportSubmissionType.cs" />
+    <Compile Include="Enums\enSMSStatus.cs" />
+    <Compile Include="Enums\enSMSType.cs" />
+    <Compile Include="Enums\EnumExtensions.cs" />
+    <Compile Include="Interfaces\IUserChangeTracking.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IncidentReportPostRepository.cs" />
+    <Compile Include="Repositories\IncidentReportRepository.cs" />
+    <Compile Include="Repositories\IncidentTypeRepository.cs" />
+    <Compile Include="Repositories\ReporterRepository.cs" />
+    <Compile Include="Repositories\StudentPracticeApiLogRepository.cs" />
+    <Compile Include="Repositories\StudentRepository.cs" />
+    <Compile Include="Repositories\SubmittedQuestionnaireRepository.cs" />
+    <Compile Include="Repositories\SubSystemRepository.cs" />
+    <Compile Include="Repositories\VerificationLogRepository.cs" />
+    <Compile Include="Resources\Labels.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Labels.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\LabelsEN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LabelsEN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Search\Criteria.cs" />
+    <Compile Include="Search\CriteriaField.cs" />
+    <Compile Include="Search\IncidentReportCriteria.cs" />
+    <Compile Include="Search\ReporterCriteria.cs" />
+    <Compile Include="Services\StudentCardNumberService.cs" />
+    <Compile Include="ServiceWorker.cs" />
+    <Compile Include="UnitOfWorkFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="DBEntities.edmx" />
+    <None Include="ClassDiagrams\BlockedPositions-diagram.cd" />
+    <None Include="ClassDiagrams\CompletePositionDependency-diagram.cd" />
+    <None Include="ClassDiagrams\Office-diagram.cd" />
+    <None Include="ClassDiagrams\Position-diagram.cd" />
+    <None Include="ClassDiagrams\PositionLogs-diagram.cd" />
+    <None Include="ClassDiagrams\PositionStudent-diagram.cd" />
+    <None Include="ClassDiagrams\Provider-diagram.cd" />
+    <None Include="DBEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DBEntities.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\HelpDeskEntities.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Labels.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Labels.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{B4F97281-0DBD-4835-9ED8-7DFB966E87FF}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\LabelsEN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LabelsEN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TransferDocuments.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StudentPractice.Queue\StudentPractice.Queue.csproj">
+      <Project>{5042eb31-141a-46b7-934d-c48347beb7cd}</Project>
+      <Name>StudentPractice.Queue</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StudentPractice.Utils\StudentPractice.Utils.csproj">
+      <Project>{1EE42D77-3448-4B86-B5F7-B85EABC6847B}</Project>
+      <Name>StudentPractice.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DOYs.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

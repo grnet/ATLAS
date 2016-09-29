@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Academics" xml:space="preserve">
+    <value>Schools/Departments for which the position is accessible</value>
+  </data>
+  <data name="AcademicsAll" xml:space="preserve">
+    <value>The position is accessible from students of all Schools/Departments.</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="CityRequired" xml:space="preserve">
+    <value>Field 'City' is required</value>
+  </data>
+  <data name="CompletionComments" xml:space="preserve">
+    <value>Comments:</value>
+  </data>
+  <data name="CompletionEndDate" xml:space="preserve">
+    <value>Internship End Date:</value>
+  </data>
+  <data name="CompletionHeader" xml:space="preserve">
+    <value>Completed Position</value>
+  </data>
+  <data name="CompletionStartDate" xml:space="preserve">
+    <value>Internship Start Date:</value>
+  </data>
+  <data name="CompletionVerdict" xml:space="preserve">
+    <value>Completion Results</value>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>Τelephone number:</value>
+  </data>
+  <data name="ContactPhoneFrRegex" xml:space="preserve">
+    <value>Telephone number must be at least 3 digits long or start with the special character '+'</value>
+  </data>
+  <data name="ContactPhoneGrRegex" xml:space="preserve">
+    <value>Field 'Telephone number' must be exactly ten digit number and should start from 2 for telephone  or 69 for mobile phone.</value>
+  </data>
+  <data name="ContactPhoneRequired" xml:space="preserve">
+    <value>Field 'Telephone number' is required</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country:</value>
+  </data>
+  <data name="CountryRequired" xml:space="preserve">
+    <value>Field 'Country' is required</value>
+  </data>
+  <data name="Department" xml:space="preserve">
+    <value>Department:</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="DescriptionRequired" xml:space="preserve">
+    <value>Field 'Description' is required</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Internship’s duration:</value>
+  </data>
+  <data name="DurationRange" xml:space="preserve">
+    <value>Field 'Internship’s duration' must be between 1 and 99</value>
+  </data>
+  <data name="DurationRequired" xml:space="preserve">
+    <value>Field 'Internship’s duration' is required</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Implementation End Date:</value>
+  </data>
+  <data name="EndDateCompare" xml:space="preserve">
+    <value>Field 'Implementation End Date' is not valid</value>
+  </data>
+  <data name="EndDateCustom" xml:space="preserve">
+    <value>'Implementation End Date' must be after 'Implementation Start Date'</value>
+  </data>
+  <data name="EndDateRequired" xml:space="preserve">
+    <value>Field 'Implementation End Date' is required</value>
+  </data>
+  <data name="Example" xml:space="preserve">
+    <value>Sample Position</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>General information</value>
+  </data>
+  <data name="ImplementationHeader" xml:space="preserve">
+    <value>Implementation Details</value>
+  </data>
+  <data name="Kali_CityCy" xml:space="preserve">
+    <value>Municipality:</value>
+  </data>
+  <data name="Kali_CityCyPrompt" xml:space="preserve">
+    <value>-- choose municipality --</value>
+  </data>
+  <data name="Kali_CityCyRequired" xml:space="preserve">
+    <value>Field 'Municipality' is required</value>
+  </data>
+  <data name="Kali_CityGr" xml:space="preserve">
+    <value>Callicrate Municipality:</value>
+  </data>
+  <data name="Kali_CityGrPrompt" xml:space="preserve">
+    <value>-- choose callicrate municipality --</value>
+  </data>
+  <data name="Kali_CityGrRequired" xml:space="preserve">
+    <value>Field 'Callicrate Municipality' is required</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Please wait</value>
+  </data>
+  <data name="PhysicanObject" xml:space="preserve">
+    <value>Position object:</value>
+  </data>
+  <data name="PositionAssignedAt" xml:space="preserve">
+    <value>Assigned At:</value>
+  </data>
+  <data name="PositionCompleted" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="PositionCount" xml:space="preserve">
+    <value>Number of available positions:</value>
+  </data>
+  <data name="PositionCountRange" xml:space="preserve">
+    <value>Field 'Number of available positions' must be between 1 and 99</value>
+  </data>
+  <data name="PositionCountRequired" xml:space="preserve">
+    <value>Field 'Number of available positions' is required</value>
+  </data>
+  <data name="PositionNotCompleted" xml:space="preserve">
+    <value>NOT Completed</value>
+  </data>
+  <data name="PositionStatus" xml:space="preserve">
+    <value>Position Status:</value>
+  </data>
+  <data name="PositionType" xml:space="preserve">
+    <value>Position type:</value>
+  </data>
+  <data name="PositionTypeRequired" xml:space="preserve">
+    <value>Field 'Position Type' is required</value>
+  </data>
+  <data name="PositionType_ddl" xml:space="preserve">
+    <value>-- choose position type --</value>
+  </data>
+  <data name="PreAssignedAt" xml:space="preserve">
+    <value>Reservation date:</value>
+  </data>
+  <data name="PreassignedPositions" xml:space="preserve">
+    <value>Reserved positions:</value>
+  </data>
+  <data name="PreAssignmentHeader" xml:space="preserve">
+    <value>Reservation details</value>
+  </data>
+  <data name="PredictedEndDate" xml:space="preserve">
+    <value>Predicted End Date:</value>
+  </data>
+  <data name="PredictedStartDate" xml:space="preserve">
+    <value>Predicted Start Date:</value>
+  </data>
+  <data name="PrefectureCy" xml:space="preserve">
+    <value>Region:</value>
+  </data>
+  <data name="PrefectureCyPrompt" xml:space="preserve">
+    <value>-- choose region --</value>
+  </data>
+  <data name="PrefectureCyRequired" xml:space="preserve">
+    <value>Field 'Region' is required</value>
+  </data>
+  <data name="PrefectureGr" xml:space="preserve">
+    <value>Region:</value>
+  </data>
+  <data name="PrefectureGrPrompt" xml:space="preserve">
+    <value>-- choose region --</value>
+  </data>
+  <data name="PrefectureGrRequired" xml:space="preserve">
+    <value>Field 'Region' is required</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Implementation Start Date:</value>
+  </data>
+  <data name="StartDateCompare" xml:space="preserve">
+    <value>Field 'Implementation Start Date' is not valid</value>
+  </data>
+  <data name="StartDateCustom" xml:space="preserve">
+    <value>The possible internship's implementation period (Start to End Date) is less than the intenrship's duration you registered</value>
+  </data>
+  <data name="StartDateRequired" xml:space="preserve">
+    <value>Field 'Implementation Start Date' is required</value>
+  </data>
+  <data name="Supervisor" xml:space="preserve">
+    <value>Supervisor’s full name:</value>
+  </data>
+  <data name="SupervisorEmail" xml:space="preserve">
+    <value>Supervisor’s e-mail:</value>
+  </data>
+  <data name="SupervisorEmailRegex" xml:space="preserve">
+    <value>Field 'Supervisor's Email' is required</value>
+  </data>
+  <data name="TimeLimit" xml:space="preserve">
+    <value>Available period for the implementation of the Internship:</value>
+  </data>
+  <data name="TimeLimitWith" xml:space="preserve">
+    <value>With time limit</value>
+  </data>
+  <data name="TimeLimitWithout" xml:space="preserve">
+    <value>Without time limit</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="TitleRequired" xml:space="preserve">
+    <value>Field 'Title' is required</value>
+  </data>
+  <data name="TotalPositions" xml:space="preserve">
+    <value>Total number of positions:</value>
+  </data>
+  <data name="FundingType" xml:space="preserve">
+    <value>Funding Type:</value>
+  </data>
+</root>

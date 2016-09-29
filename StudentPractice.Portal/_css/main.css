@@ -1,0 +1,743 @@
+﻿* {
+    font-family: Tahoma, Arial, Sans-Serif;
+    font-size: 13px;
+}
+
+/* START: Generic classes */
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.relative {
+    position: relative;
+}
+
+.leftText {
+    text-align: left;
+}
+
+.rightText {
+    text-align: right;
+}
+
+.centeredText {
+    text-align: center;
+}
+
+.justifiedText {
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.red-text {
+    color: red;
+}
+
+.brown-text {
+    color: #5C0002;
+}
+
+/* END: Generic classes */
+
+/* For tables */
+table legend {
+    padding: 0px 6px 0px 8px;
+    font-weight: bold;
+}
+
+table fieldset {
+    padding: 5px;
+}
+
+.dv {
+    font-family: Tahoma, Arial, Sans-Serif;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+    background-color: White;
+}
+
+    .dv th {
+        text-align: left;
+        font-weight: bold;
+        font-size: 11px;
+        background-color: #eeeeee;
+        padding: 7px;
+        border: 1px solid #aaa;
+        border-collapse: collapse;
+    }
+
+        .dv th.header {
+            text-align: left;
+            font-weight: bold;
+            font-size: 15px;
+            background-color: #5D7B9D;
+            color: white;
+            padding: 2px 0 2px 8px;
+        }
+
+        .dv th.popupHeader {
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #aaa;
+            border-collapse: collapse;
+            background-color: #ddd;
+            color: #444;
+            font-size: 11px;
+            padding: 6px;
+        }
+
+    .dv td.notRequired {
+        text-align: left;
+        border: 1px solid #aaa;
+        border-collapse: collapse;
+        background-color: #eeeeee;
+        font-size: 11px;
+        padding: 6px;
+    }
+
+    .dv tr.row-separator td, .dv tr.row-separator th {
+        border-top: 4px solid #AAA;
+    }
+
+    .dv > tbody > tr > td, .dv > tr > td {
+        font-family: Tahoma, Arial, Sans-Serif;
+        font-size: 12px;
+        padding: 4px 7px 4px 7px;
+        border: 1px solid #aaa;
+        border-collapse: collapse;
+        vertical-align: middle;
+    }
+
+.description {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border: 1px solid #636F21;
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.sub-description {
+    margin: 4px;
+    border: 1px dotted #8090A0;
+    background-color: #f6f6f6;
+    padding: 8px 12px 8px 12px;
+    font-size: 11px;
+    font-family: Tahoma, Arial, Sans-Serif;
+    text-align: justify;
+}
+
+/* For buttons with an image as bg */
+.imageButton {
+    color: #444;
+    border: 1px solid #708090;
+    padding: 3px 6px 4px 22px;
+    text-decoration: none;
+    font-family: Tahoma;
+    background-color: #dfdfdf;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* For link buttons with an image as bg */
+a.btn:link, a.btn:active, a.btn:visited, input.btn, input.btn:active, input.btn:visited {
+    color: #444;
+    border: 1px solid #708090;
+    padding: 3px 6px;
+    text-decoration: none;
+    font-family: Tahoma;
+    background-color: #dfdfdf;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+    a.btn:hover, input.btn:hover {
+        border: 1px solid #506070;
+        background-color: #efefef;
+        color: #555;
+    }
+
+
+a.icon-btn:link, a.icon-btn:active, a.icon-btn:visited {
+    color: #444;
+    border: 1px solid #708090;
+    padding: 3px 6px 4px 22px;
+    text-decoration: none;
+    background-color: #dfdfdf;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    display: inline-block;
+}
+
+a.icon-btn:hover {
+    color: #444;
+    border: 1px solid #708090;
+    padding: 3px 6px 4px 22px;
+    text-decoration: none;
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    display: inline-block;
+}
+
+
+a.icon-right-btn:link, a.icon-right-btn:active, a.icon-right-btn:visited {
+    color: #444;
+    border: 1px solid #708090;
+    padding: 3px 22px 4px 6px;
+    text-decoration: none;
+    background-color: #dfdfdf;
+    background-repeat: no-repeat;
+    background-position: right 3px center;
+    display: inline-block;
+}
+
+a.icon-right-btn:hover {
+    color: #444;
+    border: 1px solid #708090;
+    padding: 3px 22px 4px 6px;
+    text-decoration: none;
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    background-position: right 3px center;
+    display: inline-block;
+}
+
+
+.bg-save {
+    background-image: url(../_img/iconSave.png);
+}
+
+.bg-close {
+    background-image: url(../_img/iconCancel.png);
+}
+
+.bg-accept {
+    background-image: url(/_img/iconAccept.png);
+}
+
+.bg-acceptAll {
+    background-image: url(/_img/iconAcceptAll.png);
+}
+
+.bg-add {
+    background-image: url(/_img/iconAdd.png);
+}
+
+.bg-addNewItem {
+    background-image: url(/_img/iconAddNewItem.png);
+}
+
+.bg-back {
+    background-image: url(/_img/iconBack.png);
+}
+
+.bg-cancel {
+    background-image: url(/_img/iconCancel.png);
+}
+
+.bg-cellPhone {
+    background-image: url(/_img/iconCellphone.png);
+}
+
+.bg-colourExplanation {
+    background-image: url(/_img/iconColourExplanation.png);
+}
+
+.bg-delete {
+    background-image: url(/_img/iconDelete.png);
+}
+
+.bg-edit {
+    background-image: url(/_img/iconEdit.png);
+}
+
+.bg-email {
+    background-image: url(/_img/iconEmail.png);
+}
+
+.bg-emailEdit {
+    background-image: url(/_img/iconEmailEdit.png);
+}
+
+.bg-emailSend {
+    background-image: url(/_img/iconEmailSend.png);
+}
+
+.bg-excel {
+    background-image: url(/_img/iconExcel.png);
+}
+
+.bg-lock {
+    background-image: url(/_img/iconLock.png);
+}
+
+.bg-logout {
+    background-image: url(/_img/iconLogout.png);
+}
+
+.bg-next {
+    background-image: url(/_img/iconNext.png);
+}
+
+.bg-passwordEdit {
+    background-image: url(/_img/iconPasswordEdit.png);
+}
+
+.bg-pdf {
+    background-image: url(/_img/iconPdf.gif);
+}
+
+.bg-pending {
+    background-image: url(/_img/iconPending.png);
+}
+
+.bg-previous {
+    background-image: url(/_img/iconPrevious.png);
+}
+
+.bg-print {
+    background-image: url(/_img/iconPrint.png);
+}
+
+.bg-reject {
+    background-image: url(/_img/iconReject.png);
+}
+
+.bg-reportEdit {
+    background-image: url(/_img/iconReportEdit.png);
+}
+
+.bg-search {
+    background-image: url(/_img/iconSearch.png);
+}
+
+.bg-selectSchool {
+    background-image: url(/_img/iconSelectSchool.png);
+}
+
+.bg-view {
+    background-image: url(/_img/iconView.png);
+}
+
+.bg-viewDetails {
+    background-image: url(/_img/iconViewDetails.png);
+}
+
+.bg-undo {
+    background-image: url(/_img/iconUndo.png);
+}
+
+.bg-unlock {
+    background-image: url(/_img/iconUnlock.png);
+}
+
+.bg-userComment {
+    background-image: url(/_img/iconUserComment.png);
+}
+
+.bg-userEdit {
+    background-image: url(/_img/iconUserEdit.png);
+}
+
+.bg-info {
+    background-image: url(/_img/iconInformation.png);
+}
+
+
+.bg-loading {
+    background-image: url(/_img/progress.gif) !important;
+}
+
+a.hyperlink:link, a.hyperlink:active, a.hyperlink:visited {
+    font-weight: bold;
+    color: Blue;
+    text-decoration: underline;
+}
+
+div.information {
+    background: #CECECE none repeat scroll 0 0;
+    border: 1px solid #0E0E0E;
+    display: block;
+    padding: 2px;
+}
+
+div.reminder {
+    display: block;
+    margin-bottom: 8px;
+    background: #ffffcc;
+    border: 1px solid #F36F21;
+    padding: 5px 5px 5px 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+div.terms {
+    background: #DDDDDD none repeat scroll 0 0;
+    border: 1px solid #636F21;
+    display: block;
+    font-style: italic;
+    margin-bottom: 8px;
+    padding: 5px;
+    text-align: justify;
+}
+
+.capsLockWarning {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.tip {
+    padding: 8px;
+    background-color: #ffffcc;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 420px;
+}
+
+.fade {
+    border: solid 1px white;
+    display: block;
+    padding: 4px 4px 4px 20px;
+    background-image: url(/_img/iconInformation.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    font-weight: bold;
+}
+
+img {
+    border: none;
+}
+
+.error {
+    color: Red;
+}
+
+.modalPopup {
+    background-color: white;
+    border-top: 3px solid gray;
+    border-left: 3px solid gray;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 8px;
+    width: 450px;
+}
+
+.modalPopup-cp {
+    background-color: white;
+    border-top: 3px solid gray;
+    border-left: 3px solid gray;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 16px;
+    width: 500px;
+}
+
+.invisible {
+    width: 0px;
+    height: 0px;
+    display: none;
+    visibility: hidden;
+}
+
+.tristate-cbx {
+    background-image: url(/_img/TriStateCheckBoxBG.gif) !important;
+    background-repeat: no-repeat;
+}
+
+.tristate-cbx-selected {
+    background-position: 0px -21px !important;
+}
+
+.tristate-cbx-notselected {
+    background-position: 0px -43px !important;
+}
+
+.tristate-cbx-indeterminate {
+    background-position: 0px 1px !important;
+}
+
+.cbx-selected {
+    background-image: url(/_img/TriStateCheckBoxBG_ReadOnly.gif) !important;
+    background-repeat: no-repeat;
+    background-position: 0px -23px !important;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.cbx-notselected {
+    background-image: url(/_img/TriStateCheckBoxBG_ReadOnly.gif) !important;
+    background-repeat: no-repeat;
+    background-position: 0px -45px !important;
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.dvFieldHeader {
+    text-align: left;
+    font-weight: bold;
+    font-size: 11px !important;
+    background-color: #eeeeee;
+    padding: 7px;
+    border: 1px solid #aaa;
+    border-collapse: collapse;
+}
+
+.smallFonts {
+    font-size: 5px;
+}
+
+div.yes {
+    margin: 8px auto 8px auto;
+    background-image: url(/_img/iconYes.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-left: 56px;
+    padding-top: 10px;
+}
+
+
+div.no {
+    margin: 8px auto 8px auto;
+    background-image: url(/_img/iconNo.png );
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding-left: 56px;
+    padding-top: 10px;
+}
+
+div.info {
+    padding: 4px;
+    margin: 8px auto 8px auto;
+    border: 1px solid wheat;
+    background-color: LightGray;
+}
+
+.postContainer {
+    border-top: 1px solid #ccc;
+    padding: 7px 7px 2px 7px;
+    background-color: White;
+}
+
+.postInfo {
+    font-weight: bold;
+    font-size: 11px;
+    font-family: Tahoma;
+    padding: 1px;
+}
+
+.postText, td .postText {
+    line-height: 15px;
+    font-size: 11px;
+    padding: 5px 5px 10px 5px;
+    text-align: justify;
+}
+
+
+/*jqUery Popup*/
+.jqifade {
+    position: absolute;
+    background-color: #aaaaaa;
+}
+
+div.jqi {
+    width: 400px;
+    font-family: Trebuchet MS, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    position: absolute;
+    background-color: #ffffff;
+    font-size: 11px;
+    text-align: left;
+    border: solid 1px #eeeeee;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 7px;
+}
+
+    div.jqi .jqicontainer {
+        font-weight: bold;
+    }
+
+    div.jqi .jqiclose {
+        position: absolute;
+        top: 40px;
+        right: 123px;
+        width: 0px;
+        cursor: default;
+        color: #bbbbbb;
+        font-weight: bold;
+        display: none;
+    }
+
+    div.jqi .jqimessage {
+        padding: 10px;
+        line-height: 20px;
+        color: #444444;
+    }
+
+    div.jqi .jqibuttons {
+        text-align: right;
+        padding: 5px 0 5px 0;
+        border: solid 1px #eeeeee;
+        background-color: #f4f4f4;
+    }
+
+    div.jqi button {
+        padding: 3px 10px;
+        margin: 0 10px;
+        background-color: #EFEFEF;
+        border: 1px solid #506070;
+        color: #555555;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+        div.jqi button:hover {
+            background-color: #DFDFDF;
+        }
+
+        div.jqi button.jqidefaultbutton {
+            /*background-color: #8DC05B;*/
+            background-color: #ff9000;
+        }
+
+.jqiwarning .jqi .jqibuttons {
+    background-color: #ff9000;
+}
+
+input.tb, textarea.tb {
+    border: 1px solid #777;
+    padding: 2px 4px 2px 4px;
+}
+
+.focused {
+    border: 1px solid darkorange !important;
+    background-color: #fffddd !important;
+}
+
+.cmd-btn {
+    border: dashed 1px gray;
+    padding: 2px 0px 4px 0px;
+    outline: none;
+}
+
+    .cmd-btn:hover {
+        background-color: lightgray;
+    }
+
+.tb-disabled {
+    background-color: lightgray;
+}
+
+.btn-mask {
+    color: Gray;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    outline: none;
+}
+
+
+.tbl-student-choice tr {
+    border: 1px solid #DADADA;
+    background-color: #EFEFEF;
+    padding: 3px 5px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    width: 100px;
+    list-style-type: circle;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.tbl-student-choice td, th {
+    padding: 10px;
+}
+
+.jcrop-holder {
+    text-align: left;
+}
+
+.jcrop-vline, .jcrop-hline {
+    font-size: 0px;
+    position: absolute;
+    background: white url('../_img/Jcrop.gif') top left repeat;
+}
+
+.jcrop-vline {
+    height: 100%;
+    width: 1px !important;
+}
+
+.jcrop-hline {
+    width: 100%;
+    height: 1px !important;
+}
+
+.jcrop-vline.right {
+    right: 0px;
+}
+
+.jcrop-hline.bottom {
+    bottom: 0px;
+}
+
+.jcrop-handle {
+    font-size: 1px;
+    width: 7px !important;
+    height: 7px !important;
+    border: 1px #eee solid;
+    background-color: #333;
+}
+
+.jcrop-tracker {
+    width: 100%;
+    height: 100%;
+}
+
+.custom .jcrop-vline,
+.custom .jcrop-hline {
+    background: yellow;
+}
+
+.custom .jcrop-handle {
+    border-color: black;
+    background-color: #C7BB00;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.rulesPreviewArea {
+    table-layout: fixed;
+    border: 1px solid black;
+    padding: 3px;
+    margin-bottom: 4px;
+    padding: 5px;
+    white-space: pre-line;
+    word-wrap: break-word;
+    text-wrap: normal;
+    width: 710px;
+}

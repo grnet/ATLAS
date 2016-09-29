@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Provider1" xml:space="preserve">
+    <value>Κάθε συμμετέχων φορέας υποδοχής πρακτικής άσκησης (στο εξής «ΦΥΠΑ») οφείλει να διαβάσει προσεκτικά τους όρους αυτούς πριν από τη συμμετοχή του στο πρόγραμμα «Άτλας – Σύστημα Κεντρικής Υποστήριξης Πρακτικής Άσκησης Φοιτητών ΑΕΙ» (στο εξής «Άτλας»). Η συμμετοχή του κάθε ΦΥΠΑ στο πρόγραμμα «Άτλας» συνεπάγεται την ρητή και ανεπιφύλακτη αποδοχή των παρόντων όρων.</value>
+  </data>
+  <data name="Provider2" xml:space="preserve">
+    <value>Ο συμμετέχων ΦΥΠΑ στο πρόγραμμα «Άτλας» δηλώνει και αποδέχεται ρητά και χωρίς καμία επιφύλαξη, ότι κάθε δραστηριότητά του στο Πληροφοριακό Σύστημα του Έργου θα υπακούει στους παρόντες όρους και προϋποθέσεις και στην εκάστοτε ισχύουσα νομοθεσία.</value>
+  </data>
+  <data name="Provider3" xml:space="preserve">
+    <value>Η Βεβαίωση Συμμετοχής που υπογράφει ο νόμιμος εκπρόσωπος του ΦΥΠΑ κατά την εγγραφή του στο πρόγραμμα «Άτλας» επέχει θέση Υπεύθυνης Δήλωσης του Ν. 1599/1986.</value>
+  </data>
+  <data name="Provider4" xml:space="preserve">
+    <value>Με τη Βεβαίωση Συμμετοχής, ο συμμετέχων ΦΥΠΑ, εξουσιοδοτεί νομίμως ένα φυσικό πρόσωπο, το οποίο καθίσταται υπεύθυνο για το πρόγραμμα «Άτλας» και το οποίο αποδέχεται αυτοδικαίως τους όρους και τις προϋποθέσεις συμμετοχής του Προγράμματος και υποχρεώνεται να συμμορφώνεται µε αυτούς. Κάθε πράξη ή παράλειψη του εξουσιοδοτημένου φυσικού προσώπου θεωρείται πράξη ή παράλειψη του ΦΥΠΑ, ο οποίος και ευθύνεται εξ ολοκλήρου.</value>
+  </data>
+  <data name="Provider5" xml:space="preserve">
+    <value>Ο συμμετέχων ΦΥΠΑ υποχρεούται να αναδέχεται και να αναλαμβάνει οποιαδήποτε αξίωση προβληθεί κατά της Ε∆ΕΤ Α.Ε. και να απαλλάσσει την Ε∆ΕΤ Α.Ε. και τους διευθυντές, υπαλλήλους, εργαζόμενους, συνεργάτες και αντιπροσώπους της από κάθε ευθύνη για αποζημίωση, έξοδα (συμπεριλαμβανομένων και των δικαστικών εξόδων), δικαστικές αποφάσεις και άλλες δαπάνες ή απαιτήσεις τρίτων που τυχόν προέλθουν από παραβιάσεις της κείμενης νομοθεσίας, κατά την καταχώριση της θέσης πρακτικής άσκησης στο Πληροφοριακό Σύστημα του έργου ή/και τη διενέργειά της από τους φοιτητές.</value>
+  </data>
+  <data name="Provider6" xml:space="preserve">
+    <value>Ο συμμετέχων ΦΥΠΑ δηλώνει ρητά και υπεύθυνα ότι κάθε στοιχείο που καταχωρίζει είναι ακριβές και αληθές. Ο συμμετέχων ΦΥΠΑ οφείλει με δική του ευθύνη να ενημερώνει τα καταχωρισμένα στοιχεία για τυχόν αλλαγές.</value>
+  </data>
+  <data name="Provider7" xml:space="preserve">
+    <value>Η διαχείριση και προστασία των προσωπικών δεδομένων του συμμετέχοντα ΦΥΠΑ υπόκεινται στους παρόντες όρους καθώς και στις σχετικές διατάξεις του ελληνικού και ευρωπαϊκού δικαίου για την εν γένει προστασία του ατόμου από την επεξεργασία δεδομένων προσωπικού χαρακτήρα και το απόρρητο των επικοινωνιών, όπως ερμηνεύονται µε τις αποφάσεις των αρμόδιων Ανεξάρτητων Διοικητικών Αρχών. Σε κάθε περίπτωση η Ε∆ΕΤ Α.Ε. διατηρεί το δικαίωμα αλλαγής των όρων προστασίας των προσωπικών δεδομένων κατόπιν ενημέρωσης των συμμετεχόντων ΦΥΠΑ µέσω της παρούσας ιστοσελίδας. Η ΕΔΕΤ Α.Ε. δεν εμπλέκεται σε καμία περίπτωση και με κανένα τρόπο σε οιαδήποτε διένεξη τυχόν προκύψει μεταξύ τρίτων, φυσικών ή νομικών προσώπων που συμμετέχουν στο πρόγραμμα «Άτλας».</value>
+  </data>
+  <data name="Provider8" xml:space="preserve">
+    <value>Η συμμετοχή στο πρόγραμμα συνεπάγεται τη ρητή και ανεπιφύλακτη συναίνεση του ΦΥΠΑ α. για καταχώριση των προσωπικών του στοιχείων σε αρχείο που θα τηρείται µε αυτά και β. για την επεξεργασία τους από την Ε∆ΕΤ Α.Ε. στο πλαίσιο της υλοποίησης του παρόντος έργου σύμφωνα µε τις διατάξεις του Ν.2472/1997 όπως ισχύει. Έτσι, η Ε∆ΕΤ Α.Ε. δύναται να χρησιμοποιεί τα προσωπικά στοιχεία για την επικοινωνία µε τους συμμετέχοντες ΦΥΠΑ και την ενημέρωσή τους για ζητήματα που σχετίζονται µε το έργο. Η Ε∆ΕΤ Α.Ε. διαφυλάσσει τον προσωπικό χαρακτήρα των στοιχείων που δηλώνουν οι συμμετέχοντες ΦΥΠΑ και δε δύναται να τα μεταβιβάσει χωρίς τη συναίνεσή τους σε οποιονδήποτε τρίτο (φυσικό ή νομικό πρόσωπο) για κανένα λόγο, µε την εξαίρεση σχετικών διατάξεων του νόμου και προς τις αρμόδιες και µόνο Αρχές.</value>
+  </data>
+  <data name="Provider9" xml:space="preserve">
+    <value>Η ΕΔΕΤ Α.Ε. δύναται να τροποποιήσει/επικαιροποιήσει τους παρόντες όρους χρήσης χωρίς καμία  προηγούμενη προειδοποίηση. Για τον λόγο αυτό οποτεδήποτε γίνεται χρήση της ηλεκτρονικής υπηρεσίας «Άτλας», ο εκάστοτε χρήστης της θα πρέπει να ελέγχει τους ισχύοντες όρους χρήσης,  καθόσον η συμμετοχή του στο πρόγραμμα «Άτλας» συνεπάγεται τη ρητή και ανεπιφύλακτη αποδοχή των παρόντων όρων.</value>
+  </data>
+  <data name="Provider_Accept" xml:space="preserve">
+    <value>Έχω διαβάσει και αποδέχομαι τους &lt;em&gt;Όρους και Προϋποθέσεις&lt;/em&gt; συμμετοχής στο 'Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ' (κάντε scroll για να τους διαβάσετε)</value>
+  </data>
+  <data name="Provider_AcceptHeader" xml:space="preserve">
+    <value>Δηλώνω υπεύθυνα ότι:</value>
+  </data>
+  <data name="Provider_Check1" xml:space="preserve">
+    <value>Έχω διαβάσει και αποδέχομαι τους </value>
+  </data>
+  <data name="Provider_Check2" xml:space="preserve">
+    <value>όρους συμμετοχής</value>
+  </data>
+  <data name="Provider_Check3" xml:space="preserve">
+    <value> στο "Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ</value>
+  </data>
+  <data name="Provider_CheckError" xml:space="preserve">
+    <value>Για να εγγραφείτε στην υπηρεσία ΑΤΛΑΣ θα πρέπει να αποδεχτείτε τους όρους συμμετοχής</value>
+  </data>
+  <data name="Provider_ConditionHeader" xml:space="preserve">
+    <value>Όροι και Προϋποθέσεις Συμμετοχής στο Πρόγραμμα «Άτλας»</value>
+  </data>
+  <data name="Provider_Continue" xml:space="preserve">
+    <value>Συνέχεια Εγγραφής</value>
+  </data>
+  <data name="Provider_Exists" xml:space="preserve">
+    <value>Η εγγραφή στην εφαρμογή δεν μπορεί να πραγματοποιηθεί, γιατί υπάρχει ήδη πιστοποιημένος Φορέας Υποδοχής με Α.Φ.Μ. {0}&lt;br/&gt;&lt;br/&gt;Σε περίπτωση που έχετε πραγματοποιήσει παλαιότερα εγγραφή στην εφαρμογή και δεν θυμάστε τον κωδικό πρόσβασης, μπορείτε να ζητήσετε Υπενθύμιση Κωδικού πατώντας &lt;a style=\"font-weight:bold; text-decoration: underline; color: Blue\" href=\"ForgotPassword.aspx\"&gt;εδώ&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Σε αντίθετη περίπτωση μπορείτε να επικοινωνήσετε με το Γραφείο Αρωγής για να διαπιστωθεί τι συμβαίνει.&lt;br/&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="Provider_FillError" xml:space="preserve">
+    <value>Υπάρχει σφάλμα ή έλλειψη συμπλήρωσης ενός από τα πεδία της φόρμας. Παρακαλώ κάντε τις απαραίτητες διορθώσεις.</value>
+  </data>
+  <data name="Provider_vCyprusNotAllowd" xml:space="preserve">
+    <value>Το σύστημα "Άτλας" δεν είναι διαθέσιμο για Φορείς Υποδοχής από την Κύπρο.</value>
+  </data>
+  <data name="Provider_vForeignNotAllowd" xml:space="preserve">
+    <value>Το σύστημα "Άτλας" δεν είναι διαθέσιμο για Φορείς Υποδοχής από τo εξωτερικό.</value>
+  </data>
+  <data name="Provider_vNotAllowed" xml:space="preserve">
+    <value>Το σύστημα "Άτλας" θα είναι διαθέσιμο για τους Φορείς Υποδοχής ΠΑ από τις 17.09.2012</value>
+  </data>
+  <data name="RegistrationBtn" xml:space="preserve">
+    <value>Δημιουργία Λογαριασμού</value>
+  </data>
+  <data name="RegistrationPdf" xml:space="preserve">
+    <value>http://atlas.grnet.gr/Files/Atlas_Terms_And_Conditions.pdf</value>
+  </data>
+</root>

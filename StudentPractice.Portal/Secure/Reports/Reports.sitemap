@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Γενικά Στοιχεία" roles="SystemAdministrator, Reports, SuperReports">
+    <siteMapNode title="Γενικά Στοιχεία" url="~/Secure/Reports/Default.aspx" roles="SystemAdministrator, Reports, SuperReports"/>
+    <siteMapNode title="Στοιχεία Θέσεων"  roles="SystemAdministrator, Reports, SuperReports">
+      <siteMapNode title="Ανά Ημέρα" url="~/Secure/Reports/StatisticsByDay.aspx" roles="SystemAdministrator, Reports, SuperReports" />
+      <siteMapNode title="Ανά Γραφείο Πρακτικής Άσκησης" url="~/Secure/Reports/StatisticsByOffice.aspx" roles="SystemAdministrator, Reports, SuperReports" />
+      <siteMapNode title="Ανά Φορέα Υποδοχής" url="~/Secure/Reports/StatisticsByProvider.aspx" roles="SystemAdministrator, Reports, SuperReports" />
+      <siteMapNode title="Μετρήσεις Ανά Γραφείο Πρακτικής Άσκησης" url="~/Secure/Reports/InternshipOfficeCounters.aspx" roles="SystemAdministrator, Reports, SuperReports" />
+    </siteMapNode>
+    <siteMapNode title="Φορείς Υποδοχής" url="~/Secure/Reports/InternshipProviders.aspx" roles="SystemAdministrator, Reports, SuperReports"/>
+    <siteMapNode title="Γραφεία Πρακτικής Άσκησης" url="~/Secure/Reports/InternshipOffices.aspx" roles="SystemAdministrator, Reports, SuperReports"/>
+    <siteMapNode title="Φοιτητές" url="~/Secure/Helpdesk/SearchStudents.aspx"  roles="SystemAdministrator, Helpdesk, SuperHelpdesk, Reports, SuperReports, Supervisor" />
+    <siteMapNode title="Θέσεις Πρακτικής Άσκησης" url="~/Secure/Reports/InternshipPositions.aspx" roles="SystemAdministrator, Reports, SuperReports"/>
+    <siteMapNode title="Ομαδοποιημένες ΘΠΑ" url="~/Secure/Reports/InternshipPositionGroups.aspx" roles="SystemAdministrator, Reports, SuperReports"/>
+  </siteMapNode>
+</siteMap>

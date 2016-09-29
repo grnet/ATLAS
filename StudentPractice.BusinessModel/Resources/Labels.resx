@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="enCallType_Incoming" xml:space="preserve">
+    <value>Εισερχόμενη</value>
+  </data>
+  <data name="enCallType_Outgoing" xml:space="preserve">
+    <value>Εξερχόμενη</value>
+  </data>
+  <data name="enCancellationReason_None" xml:space="preserve">
+    <value>Κανένας</value>
+  </data>
+  <data name="enCancellationReason_FromOffice" xml:space="preserve">
+    <value>Έγινε ακύρωση της θέσης από το ΓΠΑ (ο φοιτητής δεν ολοκλήρωσε την πρακτική του)</value>
+  </data>
+  <data name="enCancellationReason_FromProvider" xml:space="preserve">
+    <value>Έγινε απόσυρση του group από το ΦΥΠΑ, οπότε ακυρώθηκαν αυτόματα οι μη προδεσμευμένες θέσεις</value>
+  </data>
+  <data name="enCancellationReason_ReprintingWithoutCharge" xml:space="preserve">
+    <value>Έγινε απόσυρση του group από το ΦΥΠΑ, οπότε ακυρώθηκαν αυτόματα οι μη προδεσμευμένες θέσεις</value>
+  </data>
+  <data name="enCancellationReason_CanceledGroupCascade" xml:space="preserve">
+    <value>Η θέση αποσύρθηκε από το ΦΥΠΑ και απελευθερώθηκε από το ΓΠΑ</value>
+  </data>
+  <data name="enCancellationReason_FromHelpdesk" xml:space="preserve">
+    <value>Η θέση αποσύρθηκε από το Helpdesk</value>
+  </data>
+  <data name="enDispatchType_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="enDispatchType_Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="enDispatchType_SMS" xml:space="preserve">
+    <value>SMS</value>
+  </data>
+  <data name="enHandlerStatus_Closed" xml:space="preserve">
+    <value>Έχει κλείσει</value>
+  </data>
+  <data name="enHandlerStatus_NotHandledBySupervisor" xml:space="preserve">
+    <value>Δεν χρειάζεται επικοινωνία</value>
+  </data>
+  <data name="enHandlerStatus_Pending" xml:space="preserve">
+    <value>Εκκρεμεί</value>
+  </data>
+  <data name="enHandlerType_Helpdesk" xml:space="preserve">
+    <value>Γραφείο Αρωγής</value>
+  </data>
+  <data name="enHandlerType_Supervisor" xml:space="preserve">
+    <value>Ομάδα Παρακολούθησης</value>
+  </data>
+  <data name="enIdentificationType_ID" xml:space="preserve">
+    <value>Αστυνομική Ταυτότητα</value>
+  </data>
+  <data name="enIdentificationType_Passport" xml:space="preserve">
+    <value>Διαβατήριο</value>
+  </data>
+  <data name="enReporterType_Other" xml:space="preserve">
+    <value>Άλλο</value>
+  </data>
+  <data name="enReporterType_InternshipProvider" xml:space="preserve">
+    <value>Φορέας Υποδοχής</value>
+  </data>
+  <data name="enReporterType_InternshipOffice" xml:space="preserve">
+    <value>Γραφείο Πρακτικής</value>
+  </data>
+  <data name="enReporterType_Student" xml:space="preserve">
+    <value>Φοιτητής</value>
+  </data>
+  <data name="enReportStatus_Answered" xml:space="preserve">
+    <value>Έχει απαντηθεί</value>
+  </data>
+  <data name="enReportStatus_Answered_Icon" xml:space="preserve">
+    <value>&lt;img src='/_img/iconUserComment.png' title='Έχει απαντηθεί' align='absmiddle' hspace='5'/&gt;</value>
+  </data>
+  <data name="enReportStatus_Closed" xml:space="preserve">
+    <value>Έχει κλείσει</value>
+  </data>
+  <data name="enReportStatus_Closed_Icon" xml:space="preserve">
+    <value>&lt;img src='/_img/iconAcceptAll.png' title='Έχει κλείσει' align='absmiddle' hspace='5'/&gt;</value>
+  </data>
+  <data name="enReportStatus_Pending" xml:space="preserve">
+    <value>Εκκρεμεί</value>
+  </data>
+  <data name="enReportStatus_Pending_Icon" xml:space="preserve">
+    <value>&lt;img src='/_img/iconPending.png' title='Εκκρεμεί' align='absmiddle' hspace='5'/&gt;</value>
+  </data>
+  <data name="enCertifierType_AEIPresident" xml:space="preserve">
+    <value>Πρύτανης</value>
+  </data>
+  <data name="enCertifierType_TEIPresident" xml:space="preserve">
+    <value>Πρόεδρος Ιδρύματος</value>
+  </data>
+  <data name="enProviderType_NGO" xml:space="preserve">
+    <value>Μ.Κ.Ο.</value>
+  </data>
+  <data name="enProviderType_Other" xml:space="preserve">
+    <value>Άλλο</value>
+  </data>
+  <data name="enProviderType_PrivateCarrier" xml:space="preserve">
+    <value>Ιδιωτικός Φορέας</value>
+  </data>
+  <data name="enProviderType_PublicCarrier" xml:space="preserve">
+    <value>Δημόσιος Φορέας</value>
+  </data>
+  <data name="enReporterType_FacultyMember" xml:space="preserve">
+    <value>Διδακτικό Προσωπικό / Επόπτης</value>
+  </data>
+  <data name="enPositionType_FullTime" xml:space="preserve">
+    <value>Πλήρες ωράριο</value>
+  </data>
+  <data name="enPositionType_PartTime" xml:space="preserve">
+    <value>Μερικό ωράριο</value>
+  </data>
+  <data name="enPositionStatus_Assigned" xml:space="preserve">
+    <value>Αντιστοιχισμένη</value>
+  </data>
+  <data name="enPositionStatus_Available" xml:space="preserve">
+    <value>Ελεύθερη</value>
+  </data>
+  <data name="enPositionStatus_Completed" xml:space="preserve">
+    <value>Ολοκληρωμένη</value>
+  </data>
+  <data name="enPositionStatus_PreAssigned" xml:space="preserve">
+    <value>Προδεσμευμένη</value>
+  </data>
+  <data name="enPositionStatus_UnderImplementation" xml:space="preserve">
+    <value>Υπό διενέργεια</value>
+  </data>
+  <data name="enPositionStatus_UnPublished" xml:space="preserve">
+    <value>Μη Δημοσιευμένη</value>
+  </data>
+  <data name="enReporterDeclarationType_FromHelpdesk" xml:space="preserve">
+    <value>Δηλώθηκε από το Γραφείο Αρωγής</value>
+  </data>
+  <data name="enReporterDeclarationType_FromPortal" xml:space="preserve">
+    <value>Δηλώθηκε μόνος του (από Portal)</value>
+  </data>
+  <data name="enReporterDeclarationType_FromRegistration" xml:space="preserve">
+    <value>Εγγεγραμμένος</value>
+  </data>
+  <data name="enCertifierType_DepartmentPresident" xml:space="preserve">
+    <value>Πρόεδρος Τμήματος</value>
+  </data>
+  <data name="enCertifierType_DepartmentChief" xml:space="preserve">
+    <value>Προϊστάμενος Τμήματος</value>
+  </data>
+  <data name="enOfficeType_Departmental" xml:space="preserve">
+    <value>Τμηματικό</value>
+  </data>
+  <data name="enOfficeType_Institutional" xml:space="preserve">
+    <value>Ιδρυματικό</value>
+  </data>
+  <data name="enOfficeType_MultipleDepartmental" xml:space="preserve">
+    <value>Πολλαπλά Τμηματικό</value>
+  </data>
+  <data name="enOfficeType_None" xml:space="preserve">
+    <value>Με ελλειπή στοιχεία</value>
+  </data>
+  <data name="enBlockingReason_RolledbackPreAssignment" xml:space="preserve">
+    <value>Έγινε αποδέσμευση της θέσης μετά από μια ημέρα από την ημ/νία της προδέσμευσης</value>
+  </data>
+  <data name="enBlockingReason_TimeForAssignmentExpired" xml:space="preserve">
+    <value>Έληξε ο χρόνος που είχε το Γραφείο για να αντιστοιχίσει τη θέση σε φοιτητή</value>
+  </data>
+  <data name="enBlockingReason_RolledbackAssignmentOutOfTime" xml:space="preserve">
+    <value>Αφαιρέθηκε ο αντιστοιχισμένος φοιτητής ενώ είχαν περάσει 10 ημέρες από την ημ/νία της προδέσμευσης</value>
+  </data>
+  <data name="enPositionStatus_Canceled" xml:space="preserve">
+    <value>Ακυρωμένη</value>
+  </data>
+  <data name="enBlockingReason_BlockCascade" xml:space="preserve">
+    <value>Μεταφορά ποινής από το υπάρχον Ιδρυματικό ή Τμηματικό ΓΠΑ</value>
+  </data>
+  <data name="enPositionGroupStatus_Deleted" xml:space="preserve">
+    <value>Διεγραμμένη</value>
+  </data>
+  <data name="enPositionGroupStatus_Published" xml:space="preserve">
+    <value>Δημοσιευμένη</value>
+  </data>
+  <data name="enPositionGroupStatus_Revoked" xml:space="preserve">
+    <value>Αποσυρμένη</value>
+  </data>
+  <data name="enPositionGroupStatus_UnPublished" xml:space="preserve">
+    <value>Μη Δημοσιευμένη</value>
+  </data>
+  <data name="enPositionCreationType_FromOffice" xml:space="preserve">
+    <value>Από Γραφείο Πρακτικής</value>
+  </data>
+  <data name="enPositionCreationType_FromProvider" xml:space="preserve">
+    <value>Από Φορέα Υποδοχής</value>
+  </data>
+  <data name="enEmailType_CompletedPositionStudentNotification" xml:space="preserve">
+    <value>Ενημέρωση Φοιτητή για ολοκλήρωση θέσης Πρακτικής Άσκησης</value>
+  </data>
+  <data name="enFundingType_ESPA" xml:space="preserve">
+    <value>ΕΣΠΑ</value>
+  </data>
+  <data name="enFundingType_Institution" xml:space="preserve">
+    <value>Ίδρυμα</value>
+  </data>
+  <data name="enFundingType_InternshipProvider" xml:space="preserve">
+    <value>Φορέας Υποδοχής</value>
+  </data>
+  <data name="enFundingType_OAED" xml:space="preserve">
+    <value>ΟΑΕΔ</value>
+  </data>
+  <data name="enFundingType_Other" xml:space="preserve">
+    <value>Άλλο</value>
+  </data>
+</root>

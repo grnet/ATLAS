@@ -1,0 +1,311 @@
+﻿h1 {
+    font-size: 14pt;
+}
+
+body {
+    background-color: #9dacb5;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* cell1 */
+.cell1_box {
+    background: #fabe37;
+}
+
+.cell1_top div {
+    background: url(../_img/login_cell1_top_left.png) no-repeat top left;
+}
+
+.cell1_top {
+    background: url(../_img/login_cell1_top_right.png) no-repeat top right;
+}
+
+.cell1_bottom div {
+    background: url(../_img/login_cell1_bottom_left.png) no-repeat bottom left;
+}
+
+.cell1_bottom {
+    background: url(../_img/login_cell1_bottom_right.png) no-repeat bottom right;
+}
+
+    .cell1_top div, .cell1_top, .cell1_bottom div, .cell1_bottom {
+        width: 100%;
+        height: 16px;
+        font-size: 1px;
+    }
+
+.cell1_content {
+    margin: 16px;
+}
+
+/* cell 2 */
+.cell2_box {
+    background: #cedef0;
+}
+
+.cell2_top div {
+    background: url(../_img/login_cell2_top_left.png) no-repeat top left;
+}
+
+.cell2_top {
+    background: url(../_img/login_cell2_top_right.png) no-repeat top right;
+}
+
+.cell2_bottom div {
+    background: url(../_img/login_cell2_bottom_left.png) no-repeat bottom left;
+}
+
+.cell2_bottom {
+    background: url(../_img/login_cell2_bottom_right.png) no-repeat bottom right;
+}
+
+    .cell2_top div, .cell2_top, .cell2_bottom div, .cell2_bottom {
+        width: 100%;
+        height: 16px;
+        font-size: 1px;
+    }
+
+.cell2_content {
+    margin: 16px;
+}
+
+/* cell 3 */
+.cell3_box {
+    background: #cedef0;
+}
+
+.cell3_top div {
+    background: url(../_img/login_cell3_top_left.png) no-repeat top left;
+}
+
+.cell3_top {
+    background: url(../_img/login_cell3_top_right.png) no-repeat top right;
+}
+
+.cell3_bottom div {
+    background: url(../_img/login_cell3_bottom_left.png) no-repeat bottom left;
+}
+
+.cell3_bottom {
+    background: url(../_img/login_cell3_bottom_right.png) no-repeat bottom right;
+}
+
+    .cell3_top div, .cell3_top, .cell3_bottom div, .cell3_bottom {
+        width: 100%;
+        height: 16px;
+        font-size: 1px;
+    }
+
+.cell3_content {
+    margin: 16px;
+}
+
+#footer * {
+    color: #666;
+}
+
+.small {
+    font-size: 8pt;
+}
+
+.small-footer {
+    font-size: 8pt;
+    margin-left: 15px;
+}
+
+.login-cell1 {
+    width: 330px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 8px;
+}
+
+    .login-cell1 * {
+        color: #221111;
+    }
+
+    .login-cell1 tr {
+        vertical-align: top;
+    }
+
+    .login-cell1 table {
+        width: 100%;
+    }
+
+.login-cell2 {
+    margin-top: 8px;
+    width: 590px;
+    text-align: justify;
+    float: left;
+    margin-right: 5px;
+}
+
+    .login-cell2 * {
+        color: #221111;
+    }
+
+    .login-cell2 ul {
+        text-align: left;
+        margin: 0px 0px 0px 8px;
+        padding: 0px 0px 0px 8px;
+    }
+
+.login-cell3 {
+    margin-top: 8px;
+    margin-right: 5px;
+    width: 300px;
+    text-align: center;
+    float: left;
+}
+
+    .login-cell3 ul {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        list-style-position: inside;
+    }
+
+    .login-cell3 * {
+        color: #221111;
+    }
+
+.outer-content {
+    display: table;
+    height: 280px;
+}
+
+.middle-content {
+    left: 0%;
+}
+
+.inner-content {
+}
+
+.cell-heading {
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+}
+
+a.icon-btn:hover, a.icon-right-btn:hover {
+    border: 1px solid #506070;
+    background-color: #efefef;
+    color: #555;
+}
+
+.btn-login {
+    background-image: url(/_img/login.png);
+    background-position: 64px;
+    background-repeat: no-repeat;
+    text-align: left;
+    font-weight: bold;
+    width: 73px;
+}
+
+a.squarebutton {
+    background: transparent url('/_img/square-gray-left.gif') no-repeat top left;
+    display: block;
+    float: left;
+    font: normal 12px Arial; /* Change 12px as desired */
+    line-height: 24px; /* This value + 4px + 4px (top and bottom padding of SPAN) must equal height of button background (default is 23px) */
+    height: 32px; /* Height of button background height */
+    padding-left: 42px; /* Width of left menu image */
+    text-decoration: none;
+    font-weight: bold;
+    width: 260px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+a:link.squarebutton, a:visited.squarebutton, a:active.squarebutton {
+    color: #494949; /*button text color*/
+}
+
+a.squarebutton span {
+    background: transparent url('/_img/square-gray-right.gif') no-repeat top right;
+    display: block;
+    padding: 4px 20px 4px 0; /*Set 9px below to match value of 'padding-left' value above*/
+    font-weight: bold;
+}
+
+a.squarebutton:hover {
+    /* Hover state CSS */
+    background-position: bottom left;
+}
+
+    a.squarebutton:hover span {
+        /* Hover state CSS */
+        background-position: bottom right;
+    }
+
+.buttonwrapper {
+    overflow: hidden; /*See: http://www.quirksmode.org/css/clearing.html */
+    width: 100%;
+}
+
+.breadcrumb {
+    background-image: url("/_img/bc_bg.png");
+    background-repeat: repeat-x;
+    border: 1px solid gray;
+    border-bottom: 0px;
+    display: block;
+    font: 13px/30px Tahoma,Arial,Sans-Serif;
+    height: 30px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0px auto;
+    width: 960px;
+}
+
+    .breadcrumb span {
+        cursor: pointer;
+        float: left;
+        padding-left: 34px;
+        padding-right: 23px;
+    }
+
+        .breadcrumb span a {
+            color: #454545;
+            display: block;
+            height: 30px;
+            font-size: 13px;
+            text-decoration: none;
+            padding-left: 43px;
+            outline-style: none;
+        }
+
+.bcSeparator {
+    background-image: url("/_img/bc_separator.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.home {
+    background-image: url("/_img/home.png");
+}
+
+.contact {
+    background-image: url("/_img/phone.png");
+}
+
+.help {
+    background-image: url("/_img/information.png");
+}
+
+.faq {
+    background-image: url("/_img/help.png");
+}
+
+.hasImage {
+    background-position: left center;
+    background-repeat: no-repeat;
+    border: medium none;
+    padding-left: 24px;
+}
+
+.breadcrumb a:hover {
+    color: #2D7271;
+}

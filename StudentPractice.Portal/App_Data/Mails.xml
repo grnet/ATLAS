@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Mails>
+    <Mail Category="CustomMessage">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] %SUBJECT%]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+%MESSAGE%]]>
+        </Body>
+    </Mail>
+    <Mail Category="CustomMessage_EN">
+        <Subject>
+            <![CDATA[[ATLAS - INTERSHIP] %SUBJECT%]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+%MESSAGE%]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="IncidentReportSubmitConfirmation">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Ερώτημα προς Γραφείο Αρωγής]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Ευχαριστούμε για την επικοινωνία σας. Στείλατε το ακόλουθο ερώτημα στο Γραφείο Αρωγής:
+
+%REPORTTEXT%
+
+
+Σύντομα θα έρθει η απάντηση στο ερώτημά σας στη διεύθυνση e-mail που δηλώσατε.
+      ]]>
+        </Body>
+    </Mail>
+    <Mail Category="IncidentReportSubmitConfirmation_EN">
+        <Subject>
+            <![CDATA[[ATLAS - INTERSHIP] New feedback message  to Helpdesk]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Thank you for your feedback. You have sent the following message to the Atlas Helpdesk:
+
+%REPORTTEXT%
+
+
+You will soon receive a reply to your email
+      ]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="IncidentReportAnswer">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Απάντηση στο ερώτημά σας]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Σχετικά με το ερώτημά σας
+
+%REPORTTEXT%
+
+
+η απάντηση είναι η εξής:
+      
+%REPORTANSWER%
+      ]]>
+        </Body>
+    </Mail>
+    <Mail Category="IncidentReportAnswer_EN">
+        <Subject>
+            <![CDATA[[ATLAS - INTERSHIP] Reply to your feedback message]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Regarding your feedback message:
+
+%REPORTTEXT%
+
+
+the reply follows bellow:
+      
+%REPORTANSWER%
+      ]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="EmailVerification">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Οδηγίες Πιστοποίησης E-mail Λογαριασμού]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %NAME% του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ,
+
+Ευχαριστούμε για την εγγραφή σας στο Σύστημα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ. 
+
+Για να επιβεβαιώσετε το e-mail που έχετε δηλώσει για το λογαριασμό σας, επιλέξτε τον υπερσύνδεσμο που ακολουθεί:
+
+%LINK%]]>
+        </Body>
+    </Mail>
+    <Mail Category="EmailVerification_EN">
+        <Subject>
+            <![CDATA[[ATLAS - INTERSHIP] Verification instructions for your E-mail Acount]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+To user %NAME% of the Centralized Internship Support System for Greek Higher Education Students - ATLAS,
+
+Thank you for your registration in the Centralized Internship Support System for Greek Higher Education Students. 
+
+To confirm your registered E-mail account, please click on the following hyperlink: 
+%LINK%]]>
+        </Body>
+    </Mail>
+
+
+    <Mail Category="OfficeUserEmailVerification">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Οδηγίες Πιστοποίησης E-mail Λογαριασμού]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %NAME% , O υπεύθυνος του Γραφείου Πρακτικής Άσκησης δημούργησε για σας, λογαριασμο χρήστη στο Συστήμα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ.
+
+Για να επιβεβαιώσετε το e-mail που δηλώθηκε για το λογαριασμό σας, επιλέξτε τον υπερσύνδεσμο που ακολουθεί:
+
+%LINK%]]>
+        </Body>
+    </Mail>
+    <Mail Category="OfficeUserEmailVerification_EN">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Οδηγίες Πιστοποίησης E-mail Λογαριασμού]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %USERNAME% , o υπεύθυνος του Γραφείου Πρακτικής Άσκησης δημούργησε για σας, λογαριασμο χρήστη στο Συστήμα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ.
+
+Για να επιβεβαιώσετε το e-mail που δηλώθηκε για το λογαριασμό σας, επιλέξτε τον υπερσύνδεσμο που ακολουθεί:
+
+%LINK%]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="ProviderUserEmailVerification">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Οδηγίες Πιστοποίησης E-mail Λογαριασμού]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %NAME% ,o λογαριασμος σας στο Συστήμα Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ δημιουργήθηκε.
+
+Για να επιβεβαιώσετε το e-mail που δηλώθηκε για το λογαριασμό σας, επιλέξτε τον υπερσύνδεσμο που ακολουθεί:
+
+%LINK%
+
+Στον λογαριασμό σας θα δείτε περισσότερες πληροφορίες για τον φορέα πρακτικής άσκησης, που σας δήλωσε ώς υπεθυνο παραρτήματος.
+]]>
+        </Body>
+    </Mail>
+    <Mail Category="ProviderUserEmailVerification_EN">
+        <Subject>
+            <![CDATA[[ATLAS - INTERSHIP] Verification instructions for your E-mail Acount]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+To user %USERNAME%, your account in the Centralized Internship Support System for Greek Higher Education Students, was created successfully. 
+
+To confirm your registered e-mail account, please click on the following hyperlink:  
+
+%LINK%
+
+You will find further  information in your account about the Internship Host Company that has registered you as the Contact person for their Provider Branch . 
+]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="ForgotPassword">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Νεός Κωδικός Πρόσβασης]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %USERNAME% του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ,
+
+Ο νέος κωδικός πρόσβασης είναι %PASSWORD%
+
+
+Μπορείτε να τον αλλάξετε, αφού συνδεθείτε στην εφαρμογή.]]>
+        </Body>
+    </Mail>
+    <Mail Category="ForgotPassword_EN">
+        <Subject>
+            <![CDATA[[ATLAS - INTERSHIP] New Password]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+To user %USERNAME% of the Centralized Internship Support System for Greek Higher Education Students,
+
+Your new password is %PASSWORD%
+
+
+You may change it once you login to your account.]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="ProviderVerification">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Πιστοποίηση Λογαριασμού]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %USERNAME% του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ,
+
+Ο λογαριασμός σας πιστοποιήθηκε με επιτυχία!
+
+Με τα στοιχεία του λογαριασμού σας μπορείτε να ξεκινήσετε τη δημιουργία νέων θέσεων Πρακτικής Άσκησης.
+
+Περισσότερες πληροφορίες μπορείτε να βρείτε στην ιστοσελίδα http://atlas.grnet.gr/CompanyOffers]]>
+        </Body>
+    </Mail>
+    <Mail Category="ProviderVerification_EN">
+        <Subject>
+            <![CDATA[[ATLAS - INTERSHIP] Account certification]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+To user %USERNAME% of the Centralized Internship Support System for Greek Higher Education Students,
+
+Your account has been certified successfully!
+
+You can now use Atlas to register new Intership Positions. 
+
+You can find more information in http://atlas.grnet.gr/CompanyOffers]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="OfficeVerification">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Πιστοποίηση Λογαριασμού]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %USERNAME% του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ,
+
+Ο λογαριασμός σας πιστοποιήθηκε με επιτυχία!
+
+Με τα στοιχεία του λογαριασμού σας μπορείτε να ξεκινήσετε την ανάθεση θέσεων Πρακτικής Άσκησης σε Φοιτητές.
+
+Περισσότερες πληροφορίες μπορείτε να βρείτε στην ιστοσελίδα http://atlas.grnet.gr/OfferCommitment]]>
+        </Body>
+    </Mail>
+    
+    <Mail Category="CompletedPositionStudentNotification">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Ολοκλήρωση θέσης Πρακτικής Άσκησης]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %NAME% του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ.
+
+Σας ενημερώνουμε ότι σύμφωνα με τα τηρούμενα στοιχεία της υπηρεσίας ΑΤΛΑΣ, έχετε ολοκληρώσει επιτυχώς την παρακάτω θέση πρακτικής άσκησης:
+
+Κωδικός Θέσης: %POSITIONID%
+Τίτλος Θέσης: %POSITIONTITLE%
+Φορέας Υποδοχής: %PROVIDERNAME%
+
+Από την καρτέλα "Θέσεις Πρακτικής Άσκησης" (https://submit-atlas.grnet.gr/Secure/Students/AssignedPositions.aspx) έχετε πλέον τη δυνατότητα να συμπληρώσετε τα ερωτηματολόγια αξιολόγησης που αφορούν τον παραπάνω Φορέα Υποδοχής Πρακτικής Άσκησης και το Γραφείο Πρακτικής Άσκησης του Ιδρύματός σας, καθώς και να καταγράψετε τις παρατηρήσεις και τις προτάσεις σας για τη βελτίωση της διαδικασίας της Πρακτικής Άσκησης.]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="AssignedPositionStudentNotification">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Αντιστοίχιση σε θέση Πρακτικής Άσκησης]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %NAME% του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ,
+
+Σας ενημερώνουμε ότι αντιστοιχιστήκατε στην παρακάτω Θέση Πρακτικής Άσκησης από το Γραφείο Πρακτικής Άσκησης του Ιδρύματός σας.
+
+Κωδικός Θέσης: %POSITIONID%
+Τίτλος Θέσης: %POSITIONTITLE%
+Φορέας Υποδοχής: %PROVIDERNAME%
+
+Για περισσότερες πληροφορίες μπορείτε να συνδεθείτε στο Πληροφοριακό Σύστημα και να μεταβείτε στην καρτέλα "Θέσεις Πρακτικής Άσκησης".]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="AssignedPositionProviderNotification">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Αντιστοίχιση φοιτητή σε θέση Πρακτικής Άσκησης]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %USERNAME% του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ,
+
+Σας ενημερώνουμε ότι στη Θέση Πρακτικής Άσκησής σας με κωδικό %POSITIONID% και τίτλο "%POSITIONTITLE%" αντιστοιχίστηκε ο παρακάτω φοιτητής από το Γραφείο Πρακτικής Άσκησης του Ιδρύματός του.
+
+Ον/μο: %STUDENTNAME%
+Ίδρυμα: %INSTITUTION%
+Σχολή: %SCHOOL%
+Τμήμα: %DEPARTMENT%
+Αρ. Μητρώου: %STUDENTNUMBER%
+
+Για περισσότερες πληροφορίες μπορείτε να συνδεθείτε στο Πληροφοριακό Σύστημα και να μεταβείτε στην καρτέλα "Επιλεγμένες Θέσεις".]]>
+        </Body>
+    </Mail>
+    <Mail Category="AssignedPositionProviderNotification_EN">
+        <Subject>
+            <![CDATA[[ATLAS - INTERSHIP] Student assignment in Internship Position]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+To user %USERNAME% of the Centralized Internship Support System for Greek Higher Education Students,
+
+We inform you that your Intership Position with ID  %POSITIONID% and title "%POSITIONTITLE%" has been assigned to the Student with the following details by the Intership Office of his/her Institution.
+
+Full name: %STUDENTNAME%
+Institution: %INSTITUTION%
+School:  %SCHOOL%
+Department: %DEPARTMENT%
+Student ID: %STUDENTNUMBER%
+
+For further information you may login in ATLAS and navigate to the "Selected Intership Position" tab.]]>
+        </Body>
+    </Mail>
+
+    <Mail Category="NewlyPublishedPositions">
+        <Subject>
+            <![CDATA[[ΥΠ.Π.Ε.Θ. - ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ] Προσθήκη νέων Θέσεων Πρακτικής Άσκησης]]>
+        </Subject>
+        <Body>
+            <![CDATA[
+Προς χρήστη %USERNAME% του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ,
+
+%POSITIONCOUNT%
+
+Για αναλυτικά στοιχεία μπορείτε να συνδεθείτε στο Πληροφοριακό Σύστημα και να μεταβείτε στην καρτέλα "Θέσεις Πρακτικής".]]>
+        </Body>
+    </Mail>
+
+    <Footer>
+        <![CDATA[
+
+
+ΠΡΟΣΟΧΗ:
+Το e-mail αυτό σας αποστέλλεται από το Online HelpDesk του Συστήματος Κεντρικής Υποστήριξης της Πρακτικής Άσκησης Φοιτητών ΑΕΙ
+Παρακαλούμε MHN απαντήσετε σε αυτό το e-mail.
+Εάν έχετε απορίες, μπορείτε να επικοινωνήσετε με το Γραφείο Αρωγής Χρηστών στο σύνδεσμο http://atlas.grnet.gr/Contact.aspx
+    ]]>
+    </Footer>
+    <Footer_EN>
+        <![CDATA[
+
+
+ATTENTION:
+This mail has been sent from the Online Helpdesk of the Centralized Internship Support System for Greek Higher Education Students.
+Please do not reply to this email. 
+For any remarks or problems you may contact Helpdesk at http://atlas.grnet.gr/Contact.aspx
+    ]]>
+    </Footer_EN>
+</Mails>

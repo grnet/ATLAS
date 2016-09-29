@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StudentPractice.BusinessModel.Reporter" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>X6lXUVrSQrCrqIErdirnmKZ1GqEGjpoHU1iCZeil0xE=</HashCode>
+      <FileName>DBEntities.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StudentPractice.BusinessModel.Student">
+    <Position X="13.25" Y="0.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAgC4ABgCAwAkCC1IBCEABIwjRCECBDAR6QgAAQEgTQ=</HashCode>
+      <FileName>DBEntities.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StudentPractice.BusinessModel.InternshipOffice">
+    <Position X="3.5" Y="1.75" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BADahUEHiNihwqDYQaQACWbQEAARAEIDgBAySAQA4ok=</HashCode>
+      <FileName>DBEntities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentPractice.BusinessModel.InternshipProvider">
+    <Position X="0.5" Y="1.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>pEbihQBRzAwqAHB8QciZIGbaeBKRWZdDYCAxBdQiFBk=</HashCode>
+      <FileName>DBEntities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StudentPractice.BusinessModel.InternshipPosition">
+    <Position X="9.5" Y="1.25" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>8m4A3IhCAgBAmQJQCSRvBCAYYEQkaIKRiBwEN2uFUgU=</HashCode>
+      <FileName>DBEntities.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StudentPractice.BusinessModel.InternshipPositionGroup">
+    <Position X="7" Y="1.25" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QJoG9WrDkCMnilB5JbglgYBgoK4ReMPVoDwRRUAFy00=</HashCode>
+      <FileName>DBEntities.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="StudentPractice.BusinessModel.Academic">
+    <Position X="12.75" Y="6.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>RAqAtUIBiIIggChIYSBGIVcAOoABIABjQRCwCAQEAAg=</HashCode>
+      <FileName>DBEntities.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

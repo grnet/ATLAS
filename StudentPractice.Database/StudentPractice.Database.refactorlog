@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="167f66cb-2114-4165-9727-44e0a1aba81d" ChangeDateTime="07/12/2013 11:55:20">
+    <Property Name="ElementName" Value="[dbo].[QueueEntry].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[QueueEntry]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a8a50c19-4d4e-4ba8-b0d6-46538d9db8c4" ChangeDateTime="07/12/2013 11:57:51">
+    <Property Name="ElementName" Value="[dbo].[QueueEntry].[QueueDataXml]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[QueueEntry]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="QueueData" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d7d60feb-f266-4d8f-8bfa-cc01534cd830" ChangeDateTime="07/12/2013 12:02:32">
+    <Property Name="ElementName" Value="[dbo].[QueueEntry].[MaxNumberOfRetrier]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[QueueEntry]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MaxNumberOfRetries" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0922191b-d289-41f8-947d-b4b9e40084df" ChangeDateTime="07/12/2013 12:15:20">
+    <Property Name="ElementName" Value="[dbo].[QueueEntry].[MaxNumberOfRetries]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[QueueEntry]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MaxNoOfRetries" />
+  </Operation>
+</Operations>

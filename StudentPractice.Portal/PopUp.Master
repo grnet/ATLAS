@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PopUp.master.cs" Inherits="StudentPractice.Portal.PopUp" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>PopUp</title>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+        <%= StudentPractice.Portal.Html.Css("/_css/main.css") %>
+        <%= StudentPractice.Portal.Html.Css("/_css/style-popup.css") %>
+        <%= StudentPractice.Portal.Html.Css("/_css/jquery-ui.css", StudentPractice.Portal.enVersioning.Disabled) %>
+        <meta name="version" content="<%= StudentPractice.Portal.Global.VersionNumber %>" />
+    </asp:PlaceHolder>
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="padding: 5px; margin: 0;">
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="sm">
+            <CompositeScript>
+                <Scripts>
+                    <asp:ScriptReference Path="~/_js/jquery-1.9.1.min.js" />
+                     <asp:ScriptReference Path="~/_js/Resources.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-migrate-1.1.1.min.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-ui-1.10.1.custom.min.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-ui-datepickerRegional.js" />
+                    <asp:ScriptReference Path="~/_js/jquery-impromptu.1.8.js" />
+                    <asp:ScriptReference Path="~/_js/jquery.printElement.js" />
+                    <asp:ScriptReference Path="~/_js/SchoolSearch.js" />
+                    <asp:ScriptReference Path="~/_js/popUp.js" />
+                    <asp:ScriptReference Path="~/_js/Imis.Lib.js" />
+                    <asp:ScriptReference Path="~/_js/DxExtensions.js" />
+                </Scripts>
+            </CompositeScript>
+            <Services>
+                <asp:ServiceReference Path="~/PortalServices/Services.asmx" />
+            </Services>
+        </asp:ScriptManager>
+        <div>
+            <dx:ASPxPopupControl runat="server" ID="dxpcPopup" AllowDragging="true" Height="300"
+                Width="700" Modal="true" PopupHorizontalAlign="WindowCenter" ClientInstanceName="devExPopup"
+                PopupVerticalAlign="WindowCenter" CloseAction="CloseButton">
+                <ClientSideEvents CloseUp="function(s,e){popUp.hide();}" />
+            </dx:ASPxPopupControl>
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

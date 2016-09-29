@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddAlternateContactPerson" xml:space="preserve">
+    <value>In order to set an additional Contact Person please click here</value>
+  </data>
+  <data name="AFM" xml:space="preserve">
+    <value>VAT Number</value>
+  </data>
+  <data name="AFMInvalid" xml:space="preserve">
+    <value>Field 'VAT Number' is not valid</value>
+  </data>
+  <data name="AFMTooltip" xml:space="preserve">
+    <value>Provider's VAT Number&lt;br /&gt;[Checking the validity of the VAT Number]</value>
+  </data>
+  <data name="AFMValidation" xml:space="preserve">
+    <value>Field 'VAT Number' is required</value>
+  </data>
+  <data name="AlternateContactEmail" xml:space="preserve">
+    <value>Deputy contact person's email</value>
+  </data>
+  <data name="AlternateContactEmailInvalid" xml:space="preserve">
+    <value>Email of Host Company’s Deputy Contact Person for “Atlas” program is not valid</value>
+  </data>
+  <data name="AlternateContactEmailTooltip" xml:space="preserve">
+    <value>Email of Host Company’s Deputy Contact Person for “Atlas” program&lt;br /&gt;[valid e-mail, e.g. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="AlternateContactEmailValidation" xml:space="preserve">
+    <value>Email of Host Company’s Deputy Contact Person for “Atlas” program is required</value>
+  </data>
+  <data name="AlternateContactMobilePhone" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="AlternateContactMobilePhoneInvalid" xml:space="preserve">
+    <value>Mobile Number of Host Company’s Deputy Deputy Contact Person for “Atlas” program  should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="AlternateContactMobilePhoneTooltip" xml:space="preserve">
+    <value>Mobile Number of Host Company’s Deputy Contact Person for “Atlas” program&lt;br/&gt;[should consist of digits or start with the special character '+']</value>
+  </data>
+  <data name="AlternateContactMobilePhoneValidation" xml:space="preserve">
+    <value>Field 'Mobile Number' of Host Company’s Deputy Contact Person for “Atlas” program is required</value>
+  </data>
+  <data name="AlternateContactName" xml:space="preserve">
+    <value>Name – Surname</value>
+  </data>
+  <data name="AlternateContactNameTooltip" xml:space="preserve">
+    <value>Full name of Host Company’s Deputy Contact Person for “Atlas” program&lt;br /&gt;[free text, up to  100 characters]</value>
+  </data>
+  <data name="AlternateContactNameValidation" xml:space="preserve">
+    <value>Field 'Name-Surname' of Host Company’s Deputy Contact Person for “Atlas” program is required</value>
+  </data>
+  <data name="AlternateContactPersonDetailsHeader" xml:space="preserve">
+    <value>Contact Information of Host Company’s Deputy Contact Person for “Atlas” program.</value>
+  </data>
+  <data name="AlternateContactPhone" xml:space="preserve">
+    <value>Telephone number</value>
+  </data>
+  <data name="AlternateContactPhoneInvalid" xml:space="preserve">
+    <value>Field 'Telephone number' of Host Company’s Deputy Contact Person for “Atlas” program should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="AlternateContactPhoneTooltip" xml:space="preserve">
+    <value>Field "Telephone number" of Host Company’s Deputy Contact Person for “Atlas” program should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="AlternateContactPhoneValidation" xml:space="preserve">
+    <value>Field "Telephone number" of Host Company’s Deputy Contact Person for “Atlas” program  is required</value>
+  </data>
+  <data name="ContactEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="ContactEmailInvalid" xml:space="preserve">
+    <value>Email of Host Company’s Contact Person for “Atlas” program is not valid</value>
+  </data>
+  <data name="ContactEmailTooltip" xml:space="preserve">
+    <value>Email of Host Company’s Contact Person for “Atlas”&lt;br /&gt;[valid e-mail, e.g. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="ContactEmailValidation" xml:space="preserve">
+    <value>Email of Host Company’s Contact Person for “Atlas” program is required</value>
+  </data>
+  <data name="ContactMobilePhone" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="ContactMobilePhoneInvalid" xml:space="preserve">
+    <value>Field 'Mobile number' of Host Company’s Contact Person for “Atlas” program should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="ContactMobilePhoneTooltip" xml:space="preserve">
+    <value>Field 'Mobile number' of Host Company’s Contact Person for “Atlas” program should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="ContactMobilePhoneValidation" xml:space="preserve">
+    <value>Field 'Mobile number' of Host Company’s Contact Person for “Atlas” program  is required</value>
+  </data>
+  <data name="ContactName" xml:space="preserve">
+    <value>Name – Surname</value>
+  </data>
+  <data name="ContactNameTooltip" xml:space="preserve">
+    <value>Full name of Host Company’s Contact Person for “Atlas” program&lt;br /&gt;[free text, up to  100 characters]</value>
+  </data>
+  <data name="ContactNameValidation" xml:space="preserve">
+    <value>Field 'Name-Surname' of Host Company’s Contact Person for “Atlas” program is required</value>
+  </data>
+  <data name="ContactPersonDetailsHeader" xml:space="preserve">
+    <value>Contact Information of Host Company’s Contact Person for “Atlas” program</value>
+  </data>
+  <data name="ContactPhone" xml:space="preserve">
+    <value>Telephone number</value>
+  </data>
+  <data name="ContactPhoneInvalid" xml:space="preserve">
+    <value>Field 'Telephone number' of Host Company’s Contact Person for “Atlas” program  should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="ContactPhoneTooltip" xml:space="preserve">
+    <value>Field 'Telephone number' of Host Company’s Contact Person for “Atlas” program  should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="ContactPhoneValidation" xml:space="preserve">
+    <value>Field 'Telephone number' of Host Company’s  Contact Person for “Atlas” program  is required</value>
+  </data>
+  <data name="DOY" xml:space="preserve">
+    <value>Public Economic Service</value>
+  </data>
+  <data name="DOYValidation" xml:space="preserve">
+    <value>The field "Public Economic Service" is required</value>
+  </data>
+  <data name="LegalPersonDetailsHeader" xml:space="preserve">
+    <value>Host company’s legal representative’s information</value>
+  </data>
+  <data name="LegalPersonEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="LegalPersonEmailInvalid" xml:space="preserve">
+    <value>Host company’s Legal Representative’s email is not valid&lt;br /&gt;[valid e-mail, e.g. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="LegalPersonEmailTooltip" xml:space="preserve">
+    <value>Host company’s legal representative's email&lt;br /&gt;[valid e-mail, e.g. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="LegalPersonEmailValidation" xml:space="preserve">
+    <value>Field 'Legal Representative’s email' is required</value>
+  </data>
+  <data name="LegalPersonName" xml:space="preserve">
+    <value>Name – Surname</value>
+  </data>
+  <data name="LegalPersonNameTooltip" xml:space="preserve">
+    <value>Host company’s Legal Representative’s Name-surname&lt;br /&gt;[free text, up to  100 characters]</value>
+  </data>
+  <data name="LegalPersonNameValidation" xml:space="preserve">
+    <value>Field 'Legal Representative Full name' is required</value>
+  </data>
+  <data name="LegalPersonPhone" xml:space="preserve">
+    <value>Telephone number</value>
+  </data>
+  <data name="LegalPersonPhoneInvalid" xml:space="preserve">
+    <value>Host company’s Legal Representative’s Telephone number should consist of digits   or start with the special character '+'</value>
+  </data>
+  <data name="LegalPersonPhoneTooltip" xml:space="preserve">
+    <value>Host company’s Legal Representative’s Telephone number&lt;br /&gt; should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="LegalPersonPhoneValidation" xml:space="preserve">
+    <value>Field 'Legal Representative’s Telephone number' is required</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NameTooltip" xml:space="preserve">
+    <value>Host company's Full name&lt;br /&gt;[free text, 500 characters limit]</value>
+  </data>
+  <data name="NameValidation" xml:space="preserve">
+    <value>Field 'Name' is required</value>
+  </data>
+  <data name="PrimaryActivityHeader" xml:space="preserve">
+    <value>Field of activity</value>
+  </data>
+  <data name="PrimaryActivityValidation" xml:space="preserve">
+    <value>Field 'Field of activity' is required</value>
+  </data>
+  <data name="ProviderDetailsHeader" xml:space="preserve">
+    <value>Host company’s information</value>
+  </data>
+  <data name="ProviderEmail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="ProviderEmailInvalid" xml:space="preserve">
+    <value>Host company’s email is not valid</value>
+  </data>
+  <data name="ProviderEmailTooltip" xml:space="preserve">
+    <value>Host company's contact e-mail&lt;br /&gt;vaild e-mail, e.g. myaccount@myisp.gr ]</value>
+  </data>
+  <data name="ProviderEmailValidation" xml:space="preserve">
+    <value>Field 'E-mail' is required</value>
+  </data>
+  <data name="ProviderFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="ProviderFaxTooltip" xml:space="preserve">
+    <value>Host company's Fax number&lt;br /&gt;[should consist of digits or start with the special character '+']</value>
+  </data>
+  <data name="ProviderFaxValidation" xml:space="preserve">
+    <value>Field 'Fax' should consist of digits  or start with the special character '+'</value>
+  </data>
+  <data name="ProviderMobilePhone" xml:space="preserve">
+    <value>Host company’s mobile number&lt;br /&gt;[should consist of digits or start with the special character '+']</value>
+  </data>
+  <data name="ProviderNumberOfEmployees" xml:space="preserve">
+    <value>Number Of Employees</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesAnalytical" xml:space="preserve">
+    <value>The number of the employees of the Host company in full time estimation on annual basis.&lt;br/&gt;&lt;br/&gt;  In the case of seasonal full-time employees, the equivalent in annual base is calculated &lt;br/&gt; e.g. 4 employees with six months full-time job = 2  employees&lt;br/&gt; &lt;br/&gt;In the case of part-time, the equivalent of full-time in annual base is calculated&lt;br/&gt;e.g. 4 employees with six months part-time (50%) = 1 employee &lt;br /&gt; &lt;br/&gt; [digits only, without dots, e.g. 60]</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesInvalid" xml:space="preserve">
+    <value>Field 'Number Of Employees' must only be numeric characters</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesTooltip" xml:space="preserve">
+    <value>The number of the employees of the Host company on annual basis&lt;br /&gt;[digits only, without dots, eg 60]</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesValidation" xml:space="preserve">
+    <value>Field 'Number Of Employees' is required</value>
+  </data>
+  <data name="ProviderNumberOfEmployeesZero" xml:space="preserve">
+    <value>Field 'Number Of Employees' must be greater than 0</value>
+  </data>
+  <data name="ProviderPhone" xml:space="preserve">
+    <value>Telephone number</value>
+  </data>
+  <data name="ProviderPhoneInvalid" xml:space="preserve">
+    <value>Field 'Telephone number' should start from digits 2 or 800 or 801 and consists of exactly 10 digits or be five-digit or four-digit number</value>
+  </data>
+  <data name="ProviderPhoneTooltip" xml:space="preserve">
+    <value>The Telephone number of the Host company&lt;br /&gt;[ should start from digits 2 or 800 or 801 and consists of exactly 10 numeric characters or be five-digit or four-digit number without space]</value>
+  </data>
+  <data name="ProviderPhoneValidation" xml:space="preserve">
+    <value>Field 'Telephone number' is required</value>
+  </data>
+  <data name="ProviderTypeHeader" xml:space="preserve">
+    <value>Host category</value>
+  </data>
+  <data name="ProviderTypeValidation" xml:space="preserve">
+    <value>Field 'Host category' is required</value>
+  </data>
+  <data name="ProviderURL" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="ProviderURLTooltip" xml:space="preserve">
+    <value>The Url of the Host company's website&lt;br /&gt;[valid website url, e.g. http://www.mypage.gr ]</value>
+  </data>
+  <data name="TradeName" xml:space="preserve">
+    <value>Brand name</value>
+  </data>
+  <data name="TradeNameTooltip" xml:space="preserve">
+    <value>Brand name of Host company&lt;br /&gt;[free text, 500 characters limit]</value>
+  </data>
+  <data name="AlternatePhoneValidationMessage" xml:space="preserve">
+    <value>It should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="SelectDOY" xml:space="preserve">
+    <value>-- choose DOY --</value>
+  </data>
+  <data name="SelectPrimaryActivity" xml:space="preserve">
+    <value>-- choose field of activity --</value>
+  </data>
+  <data name="SelectProviderType" xml:space="preserve">
+    <value>-- choose Host category --</value>
+  </data>
+  <data name="ProviderIdIssueDate" xml:space="preserve">
+    <value>Issuance Date</value>
+  </data>
+  <data name="ProviderIdIssueDateCustom" xml:space="preserve">
+    <value>Issuance Date must greater than today's date</value>
+  </data>
+  <data name="ProviderIdIssueDateInvalid" xml:space="preserve">
+    <value>Field 'Issuance Date of Certification Document' is not vaild</value>
+  </data>
+  <data name="ProviderIdIssueDateValidation" xml:space="preserve">
+    <value>Field 'Issuance Date of Certification Document ' is required</value>
+  </data>
+  <data name="ProviderIdIssuer" xml:space="preserve">
+    <value>Issuance Authority</value>
+  </data>
+  <data name="ProviderIdIssuerValidation" xml:space="preserve">
+    <value>Field 'Issuance Authority of Certification Document' is required</value>
+  </data>
+  <data name="ProviderIdNumber" xml:space="preserve">
+    <value>Host company's ID Number</value>
+  </data>
+  <data name="ProviderIdNumberValidation" xml:space="preserve">
+    <value>Field 'Host company's ID Number' is required</value>
+  </data>
+  <data name="ProviderIdType" xml:space="preserve">
+    <value>Type of Certification Document</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Street – Number</value>
+  </data>
+  <data name="AddressValidation" xml:space="preserve">
+    <value>Field 'Street - Number' is not valid</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="CityValidation" xml:space="preserve">
+    <value>Field "City" is required</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CountryValidation" xml:space="preserve">
+    <value>Field "Country" is mandatory</value>
+  </data>
+  <data name="ForeignAddressDetailsHeader" xml:space="preserve">
+    <value>Host Company’s Address Information</value>
+  </data>
+  <data name="ZipCode" xml:space="preserve">
+    <value>Zip code</value>
+  </data>
+  <data name="ZipCodeValidation" xml:space="preserve">
+    <value>Field 'Zip code' is required</value>
+  </data>
+  <data name="SelectCountry" xml:space="preserve">
+    <value>-- choose country --</value>
+  </data>
+  <data name="ProviderUrlInvalid" xml:space="preserve">
+    <value>Provider's Website Url is not valid</value>
+  </data>
+  <data name="AlternateProviderPhoneInvalid" xml:space="preserve">
+    <value>Field 'Telephone number' should consist of digits or start with the special character '+'</value>
+  </data>
+  <data name="ZipCodeRegex" xml:space="preserve">
+    <value>Zip/postal code must be 5 numeric digits</value>
+  </data>
+</root>

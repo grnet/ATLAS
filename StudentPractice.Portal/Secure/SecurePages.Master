@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SecurePages.master.cs" Inherits="StudentPractice.Portal.Secure.SecurePages" MasterPageFile="~/Portal.master" %>
+
+<%@ Register Src="~/UserControls/GenericControls/LoginBar.ascx" TagName="LoginBar" TagPrefix="my" %>
+<%@ Register Src="~/UserControls/GenericControls/LanguageBar.ascx" TagName="LanguageBar" TagPrefix="my" %>
+
+<asp:Content runat="server" ContentPlaceHolderID="cphHead">
+    <meta name="expires" content="-1" />
+    <asp:ContentPlaceHolder ID="cphHead" runat="server" />
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="cphMain">
+    <style>
+        #container {
+            padding: 0px;
+        }
+
+        #body-container {
+            width: 1200px;
+        }
+    </style>
+    <script>
+        $(document).ready(initCountrySelector);
+        $(document).on( "change", ".countrySelector", initCountrySelector);
+        function initCountrySelector() {
+            if(   ($(".countrySelector").val() == '')
+               || ($(".countrySelector").val() == <%= StudentPractice.BusinessModel.StudentPracticeConstants.GreeceCountryID%>) 
+               || ($(".countrySelector").val() == <%= StudentPractice.BusinessModel.StudentPracticeConstants.CyprusCountryID%>))
+            {
+                $(".ddls").show();
+                $(".txts").hide();
+                $(".txts input").val('');
+            }
+            else
+            {
+                $(".ddls").hide();
+                $(".txts").show();
+            }
+        }
+    </script>
+
+    <div id="login-area">
+        <table style="width: 100%">
+            <tr align="right">
+                <td>
+                    <my:LoginBar ID="loginBar" runat="server" />                    
+                </td>
+            </tr>
+        </table>
+        <my:LanguageBar ID="ucLanguageBar" runat="server" Visible="false" />
+    </div>
+
+    <div id="alertsArea" runat="server" class="reminder" clientidmode="Static">
+        <asp:Literal ID="ltAlerts" runat="server" />
+    </div>
+
+    <div id="registeredUsers-menu">
+        <asp:Repeater ID="repMenu" DataSourceID="siteMapDS" runat="server">
+            <ItemTemplate>
+                <asp:HyperLink ID="HyperLink1" CssClass='<%# Container.DataItem == ((System.Web.SiteMapNode)Container.DataItem).Provider.CurrentNode ? "active" : "" %>'
+                    runat="server" NavigateUrl='<%# Eval("Url") %>' Visible='<%# IsNodeVisible(Container.DataItem) %>'><%# GetTitle((System.Web.SiteMapNode)Container.DataItem) %></asp:HyperLink>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+
+    <div id="student-container">
+        <asp:SiteMapDataSource runat="server" SiteMapProvider="SecurePages" ID="siteMapDS" ShowStartingNode="false" />
+        <asp:ContentPlaceHolder ID="cphBeforeHeaderTitle" runat="server">
+        </asp:ContentPlaceHolder>
+        <div style="clear: both;">
+        </div>
+        <fieldset class="student">
+            <asp:ContentPlaceHolder ID="cphMain" runat="server">
+            </asp:ContentPlaceHolder>
+        </fieldset>
+    </div>
+
+    <dx:ASPxPopupControl ID="dxpcPopup" runat="server" ClientInstanceName="devExPopup"
+        Width="800" Height="610" Modal="true" PopupHorizontalAlign="WindowCenter" PopupVerticalAlign="WindowCenter"
+        AllowDragging="true" CloseAction="CloseButton">
+    </dx:ASPxPopupControl>
+    
+</asp:Content>

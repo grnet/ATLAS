@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Provider1" xml:space="preserve">
+    <value>Each Host Company  should read these terms carefully before participating in the program "Atlas - Central System Support Internships Students Universities". The participation of each Host Company in the "Atlas" implies explicit and unconditional acceptance of these terms.</value>
+  </data>
+  <data name="Provider2" xml:space="preserve">
+    <value>The participant Host Company in the "Atlas" declares and accepts expressly and without reservation, that every activity of the Information System Project will obey these terms and conditions and the applicable law.</value>
+  </data>
+  <data name="Provider3" xml:space="preserve">
+    <value>Host Company’s Participation Certificate  signed by the legal representative of FYPA when registering in the "Atlas" Solemn Declaration lieu of Law 1599/1986.</value>
+  </data>
+  <data name="Provider4" xml:space="preserve">
+    <value>With Host Company’s Participation Certificate, participant FYPA authorizes legally a natural person who becomes responsible for the "Atlas", which automatically accepts the terms and conditions for the participation in the Program and is required to comply with them. Any act or omission by the authorized contact person is considered an act or omission of Host Company.</value>
+  </data>
+  <data name="Provider5" xml:space="preserve">
+    <value>The participant is required to FYPA accepts and assumes any claim raised by GRNET and exempt AboutGRNETS.A SA and their directors , officers , employees, partners and agents from any liability for damages, expenses ( including legal fees) , judgments and any other costs or claims by third parties that may result from violations of the current legislation , when entering the position practice exercise in the Information System project and / or dealt with by the students.</value>
+  </data>
+  <data name="Provider6" xml:space="preserve">
+    <value>The participant Host Company explicitly and honor that every item record is accurate and true. The participant Host Company is the only responsible to update the registered details in case of any change.</value>
+  </data>
+  <data name="Provider7" xml:space="preserve">
+    <value>The management and protection of personal data of the participant Host Company subject to these terms and the relevant provisions of Greek and European law for the general protection of individuals with regard to processing of personal data and privacy of communications, as interpreted by decisions of competent independent Administrative Authorities. In any case GRNET reserves the right to change the terms of protection of personal data on information of participants Host Company through this website . The GRNETis  not involved in any way in any dispute which may arise between third natural or legal persons involved in the ""ATLAS"" .</value>
+  </data>
+  <data name="Provider8" xml:space="preserve">
+    <value>Participation in the program involves the explicit and unconditional consent of Host Company for registering their personal details in a file that is kept by them and for the modification of them by GRNET SA. in the implementation of this project in accordance with the provisions of N.2472/1997 as applicable. So GRNET may use personal information to communicate with participants Host Company and information on issues related to the project. The GRNET safeguards the personal nature of the information reported by the participant Host Companies and may not be transferred without their consent to any third party (natural or legal) for any reason , with the exception of the relevant provisions of law and the relevant authorities .</value>
+  </data>
+  <data name="Provider9" xml:space="preserve">
+    <value>GRNET may amend / update these terms without any prior notice. For this reason, whenever possible usage of the online service 'Atlas' takes place, every user must check the applicable terms of use, since participation in the 'Atlas' implies explicit and unconditional acceptance of these terms.</value>
+  </data>
+  <data name="Provider_Accept" xml:space="preserve">
+    <value>I have read and agree to the &lt;em&gt;Terms and Conditions&lt;/em&gt; of Centralized Internship Support system for Greek Higher Education Students (scroll down to read it)</value>
+  </data>
+  <data name="Provider_AcceptHeader" xml:space="preserve">
+    <value>I declare that: I have read and agree to the Terms of Centralized Internship Support system for Greek Higher Education Students</value>
+  </data>
+  <data name="Provider_Check1" xml:space="preserve">
+    <value>I have read and agree to the </value>
+  </data>
+  <data name="Provider_Check2" xml:space="preserve">
+    <value>the Terms</value>
+  </data>
+  <data name="Provider_Check3" xml:space="preserve">
+    <value> of Centralized Internship Support system for Greek Higher Education Students</value>
+  </data>
+  <data name="Provider_CheckError" xml:space="preserve">
+    <value>To subscribe to the "ATLAS" Program you must accept the terms of participation</value>
+  </data>
+  <data name="Provider_ConditionHeader" xml:space="preserve">
+    <value>Terms and Conditions in "Atlas" program</value>
+  </data>
+  <data name="Provider_Continue" xml:space="preserve">
+    <value>Continue registration</value>
+  </data>
+  <data name="Provider_Exists" xml:space="preserve">
+    <value>The registration cannot take place because there is another certified Host company with this VAT number{0}&lt;br/&gt;&lt;br/&gt; In case you have previously made ​​a register application and do not remember your password, you can request a Password Reminder by clicking &lt;a style=\"font-weight:bold; text-decoration: underline; color: Blue\" href=\"ForgotPassword.aspx\"&gt;εδώ&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;Otherwise you can contact the “ATLAS” helpdesk at +0030-215 215 7860.</value>
+  </data>
+  <data name="Provider_FillError" xml:space="preserve">
+    <value>During the form completion either an error occurred or a field was filled imperfectly. Please make the necessary corrections.</value>
+  </data>
+  <data name="Provider_vCyprusNotAllowd" xml:space="preserve">
+    <value>Το σύστημα "Άτλας" δεν είναι διαθέσιμο για Φορείς Υποδοχής από την Κύπρο.</value>
+  </data>
+  <data name="Provider_vForeignNotAllowd" xml:space="preserve">
+    <value>"Atlas" programme is not available fot foreign internship hosts.</value>
+  </data>
+  <data name="Provider_vNotAllowed" xml:space="preserve">
+    <value>Το σύστημα "Άτλας" θα είναι διαθέσιμο για τους Φορείς Υποδοχής ΠΑ από τις 17.09.2012</value>
+  </data>
+  <data name="RegistrationBtn" xml:space="preserve">
+    <value>Create Account</value>
+  </data>
+  <data name="RegistrationPdf" xml:space="preserve">
+    <value>http://atlas.grnet.gr/Files/Atlas%20Terms%20and%20Conditions_provider_en.pdf</value>
+  </data>
+</root>

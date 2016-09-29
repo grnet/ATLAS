@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[SmsLog]
+    ADD CONSTRAINT [FK_SmsLog_Reporter] FOREIGN KEY ([ReporterID]) REFERENCES [dbo].[Reporter] ([ID]) ON DELETE NO ACTION ON UPDATE NO ACTION;
+

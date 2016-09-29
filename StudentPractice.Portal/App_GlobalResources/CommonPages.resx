@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied_Header" xml:space="preserve">
+    <value>Απαγορεύεται η πρόσβαση</value>
+  </data>
+  <data name="AccessDenied_Message" xml:space="preserve">
+    <value>Απαγορεύεται η πρόσβαση σε αυτή τη σελίδα</value>
+  </data>
+  <data name="ChangePassword_Btn" xml:space="preserve">
+    <value>Αλλαγή Κωδικού Πρόσβασης</value>
+  </data>
+  <data name="ChangePassword_Conf" xml:space="preserve">
+    <value>Επιβεβαίωση</value>
+  </data>
+  <data name="ChangePassword_ConfRequired" xml:space="preserve">
+    <value>Το πεδίο 'Επιβεβαίωση' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ChangePassword_Header" xml:space="preserve">
+    <value>Αλλαγή Κωδικού Πρόσβασης</value>
+  </data>
+  <data name="ChangePassword_Here" xml:space="preserve">
+    <value>εδώ</value>
+  </data>
+  <data name="ChangePassword_Match" xml:space="preserve">
+    <value>Οι κωδικοί δεν ταιριάζουν</value>
+  </data>
+  <data name="ChangePassword_Message1" xml:space="preserve">
+    <value>Επειδή είναι η πρώτη φορά που συνδέεστε στην εφαρμογή μετά την Υπενθύμιση Κωδικού Πρόσβασης παρακαλούμε να αλλάξετε τον κωδικό που σας ήρθε με e-mail.</value>
+  </data>
+  <data name="ChangePassword_Message2" xml:space="preserve">
+    <value>Για τη δική σας ασφάλεια σας συνιστούμε να επιλέξετε έναν συνδυασμό από γράμματα, αριθμούς ή σύμβολα για να δημιουργήσετε έναν μοναδικό κωδικό πρόσβασης που δεν σχετίζεται με τα προσωπικά σας στοιχεία. Ή, επιλέξτε μια τυχαία λέξη ή φράση και εισαγάγετε λέξεις και αριθμούς στην αρχή, στη μέση και στο τέλος, για να είναι ακόμα πιο δύσκολο να τη μαντέψει κανείς (για παράδειγμα 'm1awra1ap3tal0uda'). Η χρήση απλών λέξεων ή φράσεων όπως 'password' ή 'letmein', οι ακολουθίες πλήκτρων όπως 'qwerty' ή 'qazwsx' ή οι ακολουθίες διαδοχικών χαρακτήρων, όπως 'abcd1234' κάνουν πιο εύκολη την αποκρυπτογράφηση του κωδικού σας. Επίσης, σε περίπτωση που συνδέεστε στο σύστημα από δημόσιο υπολογιστή, βεβαιωθείτε ότι πάντα πατάτε το κουμπί 'Αποσύνδεση' πάνω δεξιά στην οθόνη κατά την έξοδό σας.</value>
+  </data>
+  <data name="ChangePassword_New" xml:space="preserve">
+    <value>Νέος κωδικός πρόσβασης</value>
+  </data>
+  <data name="ChangePassword_NewRegex" xml:space="preserve">
+    <value>Ο κωδικός πρόσβασης πρέπει να αποτελείται από τουλάχιστον 7 χαρακτήρες</value>
+  </data>
+  <data name="ChangePassword_NewRequired" xml:space="preserve">
+    <value>Το πεδίο 'Νέος κωδικός πρόσβασης' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ChangePassword_Old" xml:space="preserve">
+    <value>Παλιός κωδικός πρόσβασης</value>
+  </data>
+  <data name="ChangePassword_OldRequired" xml:space="preserve">
+    <value>Το πεδίο 'Παλιός κωδικός πρόσβασης' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ChangePassword_Student" xml:space="preserve">
+    <value>Για αλλαγή του Κωδικού Πρόσβασης θα πρέπει να επικοινωνήσετε με το Κέντρο Δικτύων του Ιδρύματός σας.</value>
+  </data>
+  <data name="ChangePassword_Success" xml:space="preserve">
+    <value>Η αλλαγή του κωδικού πρόσβασης πραγματοποιήθηκε επιτυχώς. Για να συνεχίσετε με τη χρήση της εφαρμογής πατήστε</value>
+  </data>
+  <data name="ChangePassword_Validation" xml:space="preserve">
+    <value>Υπάρχει σφάλμα ή έλλειψη συμπλήρωσης ενός από τα πεδία της φόρμας. Παρακαλώ κάντε τις απαραίτητες διορθώσεις.</value>
+  </data>
+  <data name="ChangePassword_WrongOld" xml:space="preserve">
+    <value>Ο παλιός κωδικός πρόσβασης δεν είναι σωστός. Βεβαιωθείτε ότι εισάγετε σωστά τον κωδικό που σας ήρθε με το e-mail Υπενθύμισης Κωδικού Πρόσβασης.</value>
+  </data>
+  <data name="ForgotPassword_Btn" xml:space="preserve">
+    <value>Αποστολή Κωδικού Πρόσβασης</value>
+  </data>
+  <data name="ForgotPassword_EmailNotFound" xml:space="preserve">
+    <value>Το E-mail που εισάγατε δεν αντιστοιχεί σε κάποιο χρήστη του πληροφοριακού συστήματος.&lt;br/&gt;&lt;br/&gt;Βεβαιωθείτε ότι το πληκτρολογείτε σωστά, διαφορετικά επικοινωνήστε με το Γραφείο Αρωγής Χρηστών στο τηλέφωνο &lt;b&gt;215 215 7860&lt;/b&gt; για να διαπιστώσετε τι συμβαίνει.&lt;br/&gt;&lt;br/&gt;Σας υπενθυμίζουμε ότι αν είστε Προπτυχιακός Φοιτητής θα πρέπει να επικοινωνήσετε με το Κέντρο Δικτύων του Ιδρύματός σας για την υπενθύμιση του Κωδικού Πρόσβασης.</value>
+  </data>
+  <data name="ForgotPassword_EmailRegex" xml:space="preserve">
+    <value>Το E-mail δεν είναι έγκυρο</value>
+  </data>
+  <data name="ForgotPassword_EmailRequired" xml:space="preserve">
+    <value>Το πεδίο 'E-mail' είναι υποχρεωτικό</value>
+  </data>
+  <data name="ForgotPassword_Error" xml:space="preserve">
+    <value>Υπήρξε σφάλμα.</value>
+  </data>
+  <data name="ForgotPassword_Header" xml:space="preserve">
+    <value>Υπενθύμιση Κωδικού Πρόσβασης</value>
+  </data>
+  <data name="ForgotPassword_Message1" xml:space="preserve">
+    <value>Σε περίπτωση που ξεχάσατε τον κωδικό πρόσβασης, πληκτρολογήστε το e-mail που είχατε δηλώσει κατά τη δημιουργία του λογαριασμού για να σταλεί ένας καινούργιος κωδικός. Τον κωδικό αυτό μπορείτε να τον αλλάξετε αφότου συνδεθείτε στο σύστημα.</value>
+  </data>
+  <data name="ForgotPassword_Message2" xml:space="preserve">
+    <value>Σημαντική Σημείωση:</value>
+  </data>
+  <data name="ForgotPassword_Message3" xml:space="preserve">
+    <value>Οι Φοιτητές που έχουν ξεχάσει τον κωδικό πρόσβασης θα πρέπει να απευθύνονται στο Κέντρο Δικτύων του Ιδρύματός τους, καθότι η σύνδεση στην εφαρμογή γίνεται μέσω του Ιδρύματος στο οποίο φοιτούν</value>
+  </data>
+  <data name="ForgotPassword_MoreEmail" xml:space="preserve">
+    <value>Βρέθηκαν παραπάνω από ένας χρήστες με το e-mail που εισάγατε. Παρακαλούμε επικοινωνήστε με το Γραφείο Αρωγής Χρηστών για να διαπιστώσετε τι συμβαίνει.</value>
+  </data>
+  <data name="ForgotPassword_Success" xml:space="preserve">
+    <value>Ο νέος κωδικός πρόσβασης στάλθηκε με επιτυχία στο e-mail που δηλώσατε.</value>
+  </data>
+  <data name="ForgotPassword_User" xml:space="preserve">
+    <value>Στοιχεία Χρήστη</value>
+  </data>
+  <data name="ForgotPassword_Validation" xml:space="preserve">
+    <value>Υπάρχει σφάλμα ή έλλειψη συμπλήρωσης ενός από τα πεδία της φόρμας. Παρακαλώ κάντε τις απαραίτητες διορθώσεις.</value>
+  </data>
+  <data name="GeneralError_Header" xml:space="preserve">
+    <value>Σφάλμα</value>
+  </data>
+  <data name="GeneralError_Message1" xml:space="preserve">
+    <value>Παρουσιάστηκε κάποιο σφάλμα στην εφαρμογή. Ζητούμε συγνώμη για το πρόβλημα.</value>
+  </data>
+  <data name="GeneralError_Message2" xml:space="preserve">
+    <value>Μπορείτε να μεταβείτε στην</value>
+  </data>
+  <data name="GeneralError_Message3" xml:space="preserve">
+    <value>αρχική σελίδα</value>
+  </data>
+  <data name="GeneralError_Message4" xml:space="preserve">
+    <value>για να ξαναπροσπαθήσετε. Μην προσπαθήσετε να χρησιμοποιήσετε τα πλήκτρα "back" ή "reload" του browser σας καθώς θα επαναληφθεί το ίδιο σφάλμα.</value>
+  </data>
+  <data name="LoggedAs" xml:space="preserve">
+    <value>Έχετε συνδεθεί ως</value>
+  </data>
+  <data name="PageNotFound_Header" xml:space="preserve">
+    <value>Η σελίδα που ζητήσατε δεν βρέθηκε.</value>
+  </data>
+  <data name="PageNotFound_Message1" xml:space="preserve">
+    <value>Η σελίδα που ζητήσατε δεν βρέθηκε. Μετάβαση στην</value>
+  </data>
+  <data name="PageNotFound_Message2" xml:space="preserve">
+    <value>αρχική σελίδα</value>
+  </data>
+  <data name="VerifyEmail_AlreadyVerified" xml:space="preserve">
+    <value>Έχετε ήδη επιβεβαιώσει το e-mail σας.</value>
+  </data>
+  <data name="VerifyEmail_Header" xml:space="preserve">
+    <value>Επιβεβαίωση E-mail Χρήστη</value>
+  </data>
+  <data name="VerifyEmail_InvalideUrl" xml:space="preserve">
+    <value>Η διεύθυνση ενεργοποίησης δεν είναι έγκυρη.</value>
+  </data>
+  <data name="VerifyEmail_NoUser" xml:space="preserve">
+    <value>Δεν βρέθηκε χρήστης με το e-mail που δηλώσατε. Αν τυχόν αλλάξατε το e-mail που είχατε δηλώσει ή πατήσατε 2 φορές το κουμπί για επαναποστολή E-mail Πιστοποίησης, βεβαιωθείτε ότι πατάτε στο σύνδεσμο του τελευταίου e-mail που σας έχει έρθει.</value>
+  </data>
+  <data name="VerifyEmail_Verified" xml:space="preserve">
+    <value>Η επιβεβαίωση του e-mail σας πραγματοποιήθηκε επιτυχώς. Για να συνδεθείτε στο σύστημα πατήστε &lt;a href='../Default.aspx'&gt;εδώ&lt;/a&gt;</value>
+  </data>
+</root>
